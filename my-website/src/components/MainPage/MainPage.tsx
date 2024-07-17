@@ -1,6 +1,11 @@
+import Nav from "../Nav/Nav";
+
 export const MainPage = () => {
     return (
         <>
+        <div className="nav-menu">
+            <Nav/>
+        </div>
         <div className="welcome-text-conteiner">
             <h1 className="welcome-first-header">HI, I`M ARTEM</h1>
             <h2 className="welcome-second-header">I`M A JUNIOR FRONTEND DEVELOPER</h2>
@@ -10,6 +15,7 @@ export const MainPage = () => {
                 Quibusdam asperiores itaque recusandae ipsum dolorum aliquam laboriosam.</p>
                 <button className="welcome-button">VIEW MY PROJECTS</button>
         </div>
+        
         </>
     )
 }

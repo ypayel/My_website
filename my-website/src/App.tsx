@@ -9,8 +9,8 @@ import Contact from './components/Contact/Contact';
 function App() {
   return (
     <div className="App">
-      <MainPage/>
       <Routes>
+        <Route path='/main' element={<MainPage />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
