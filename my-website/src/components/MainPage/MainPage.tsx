@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Nav from "../Nav/Nav";
 import "./MainPage.scss"
 export const MainPage = () => {
@@ -13,7 +14,7 @@ export const MainPage = () => {
                 Laboriosam dolore culpa qui pariatur non dolor tenetur harum officiis?
                 Et dolores corrupti illo.
                 Quibusdam asperiores itaque recusandae ipsum dolorum aliquam laboriosam.</p>
-                <button className="welcome-button">VIEW MY PROJECTS</button>
+                <button className="welcome-button"><Link className="welcome-button-text" to="/projects">VIEW MY PROJECTS</Link></button>
         </div>
         </>
     )

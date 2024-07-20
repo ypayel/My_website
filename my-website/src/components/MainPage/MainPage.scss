@@ -3,7 +3,7 @@ body {
     color: white;
 }
 
-.link-about, .link-contact, .link-main, .link-projects {
+.link-about, .link-contact, .link-main, .link-projects, .welcome-button-text {
     text-decoration:none;
     color: white;
 }
@@ -11,6 +11,8 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    margin-left: 200px;
+    margin-top: 100px;
 }
 .nav-conteiner {
     display: flex;
@@ -19,4 +21,25 @@ body {
 .nav-menu {
     display: flex;
     justify-content: flex-end;
+}
+.welcome-text {
+    width: 450px;
+    font-size: 20px;
+    color: gray;
+}
+.welcome-first-header {
+    font-size: 25px;
+}
+.welcome-second-header {
+    font-size: 45px;
+    width: 350px;
+}
+.welcome-button {
+    background-color: black;
+    border-radius: 16px;
+    border-style:groove;
+    border-color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
 }
