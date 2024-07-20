@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import MainPage from "../MainPage/MainPage";
-
+import './Nav.scss';
 export const Nav = () => {
     return (
         <>
@@ -10,8 +10,8 @@ export const Nav = () => {
             <p><Link className="link-about" to="/about">About</Link></p>
             <p><Link className="link-contact" to="/contact">Contact</Link></p>
             <p className="spacer">|</p>
-            <a href="https://www.linkedin.com/in/artsiom-kukankou/" className="linkedIn"><img src="images/icons8-linkedin.svg" alt="icon"/></a>
-            <a href="https://github.com/ypayel" className="gitHub"><img src="images/icons8-github.svg" alt="icon" /></a>
+            <a href="https://www.linkedin.com/in/artsiom-kukankou/" className="linkedIn"><img src="images/icons8-linkedin.svg" alt="icon" className="linkedin-icon"/></a>
+            <a href="https://github.com/ypayel" className="gitHub"><img src="images/icons8-github.svg" alt="icon" className="github-icon"/></a>
         </div>
         </>
     )

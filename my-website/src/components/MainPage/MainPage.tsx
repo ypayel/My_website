@@ -2,7 +2,7 @@ import Nav from "../Nav/Nav";
 import "./MainPage.scss"
 export const MainPage = () => {
     return (
-        <><div className="content-conteiner">
+        <>
         <div className="nav-menu">
             <Nav/>
         </div>
@@ -14,7 +14,6 @@ export const MainPage = () => {
                 Et dolores corrupti illo.
                 Quibusdam asperiores itaque recusandae ipsum dolorum aliquam laboriosam.</p>
                 <button className="welcome-button">VIEW MY PROJECTS</button>
-        </div>
         </div>
         </>
     )

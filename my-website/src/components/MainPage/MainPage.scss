@@ -7,3 +7,16 @@ body {
     text-decoration:none;
     color: white;
 }
+.welcome-text-conteiner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.nav-conteiner {
+    display: flex;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+}
