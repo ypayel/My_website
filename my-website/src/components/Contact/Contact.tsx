@@ -1,7 +1,11 @@
+import Nav from "../Nav/Nav";
 import "./Contact.scss";
 export const Contact = () => {
     return (
         <>
+        <div className="nav-menu">
+            <Nav/>
+        </div>
         <div className="contact-conteiner">
             <h1 className="contact-first-header">Contact Me</h1>
             <p className="contact-welcometext">Here you will find how to contact me
