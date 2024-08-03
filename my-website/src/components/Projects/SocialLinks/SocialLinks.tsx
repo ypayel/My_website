@@ -5,7 +5,7 @@ export const SocialLinks = () => {
 
             <div className="main-conteiner">
                 <div className="title">
-                    <img src="images/favicon-32x32.png" alt="icon" className="favicon" />
+                    <img src="images/favicon-32x32.png" alt="icon" className="favicon"/>
                     <title>Frontend Mentor | Social links profile</title>
                 </div>
                 <header>
@@ -20,11 +20,11 @@ export const SocialLinks = () => {
                 </header>
                 <main>
                     <div className="links-section">
-                        <button><a href="https://github.com/ypayel" target="_blank">GitHub</a></button>
-                        <button><a href="https://www.frontendmentor.io/profile/ypayel" target="_blank">Frontend Mentor</a></button>
-                        <button><a href="https://www.linkedin.com/in/artsiom-kukankou/" target="_blank">LinkedIn</a></button>
-                        <button><a href="https://x.com/" target="_blank">Twitter</a></button>
-                        <button><a href="https://www.instagram.com/" target="_blank">Instagram</a></button>
+                        <button className="links-button"><a href="https://github.com/ypayel" target="_blank" className="links-link">GitHub</a></button>
+                        <button className="links-button"><a href="https://www.frontendmentor.io/profile/ypayel" target="_blank" className="links-link">Frontend Mentor</a></button>
+                        <button className="links-button"><a href="https://www.linkedin.com/in/artsiom-kukankou/" target="_blank" className="links-link">LinkedIn</a></button>
+                        <button className="links-button"><a href="https://x.com/" target="_blank" className="links-link">Twitter</a></button>
+                        <button className="links-button"><a href="https://www.instagram.com/" target="_blank" className="links-link">Instagram</a></button>
                     </div>
                 </main>
                 <footer className="attribution">
