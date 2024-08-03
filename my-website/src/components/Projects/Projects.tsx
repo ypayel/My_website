@@ -1,8 +1,10 @@
+import SocialLinks from "./SocialLinks/SocialLinks";
+
 export const Projects = () => {
     return (
         <>
         <div>
-            Hi
+            <SocialLinks/>
         </div>
         </>
     )
