@@ -5,7 +5,6 @@ export const SocialLinks = () => {
 
             <div className="main-conteiner">
                 <div className="title">
-                    <img src="images/favicon-32x32.png" alt="icon" className="favicon"/>
                     <title>Frontend Mentor | Social links profile</title>
                 </div>
                 <header>
@@ -28,7 +27,6 @@ export const SocialLinks = () => {
                     </div>
                 </main>
                 <footer className="attribution">
-                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
                     Coded by <a href="https://github.com/ypayel" target="_blank">ypayel</a>.
                 </footer>
             </div>

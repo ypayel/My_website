@@ -1,3 +1,4 @@
+import OmletRecipe from "./OmletRecipet/OmletRecipe";
 import SocialLinks from "./SocialLinks/SocialLinks";
 
 export const Projects = () => {
@@ -5,6 +6,7 @@ export const Projects = () => {
         <>
         <div>
             <SocialLinks/>
+            <OmletRecipe/>
         </div>
         </>
     )
