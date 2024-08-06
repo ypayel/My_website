@@ -1,3 +1,4 @@
+import CreditCard from "./CreditCard/CreaditCard";
 import OmletRecipe from "./OmletRecipet/OmletRecipe";
 import SocialLinks from "./SocialLinks/SocialLinks";
 
@@ -7,6 +8,7 @@ export const Projects = () => {
         <div>
             <SocialLinks/>
             <OmletRecipe/>
+            <CreditCard />
         </div>
         </>
     )
