@@ -27,7 +27,7 @@ export const SocialLinks = () => {
                     </div>
                 </main>
                 <footer className="attribution">
-                    Coded by <a href="https://github.com/ypayel" target="_blank">ypayel</a>.
+                    Coded by <a href="https://github.com/ypayel" target="_blank" className="link-attribution">ypayel</a>.
                 </footer>
             </div>
         </>
