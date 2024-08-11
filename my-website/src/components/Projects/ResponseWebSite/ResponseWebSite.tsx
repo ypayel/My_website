@@ -104,21 +104,21 @@ export const ResponseWebSite = () => {
                     <ul className="steps-list">
                         <li className="step-1">
                             <img className="small-star" src="images/small-star.webp" />
-                            <h3>Step 1</h3>
+                            <h3 className="step-header">Step 1</h3>
                             <p className="text-steps">Third you will likely be required to install the fixed mounts. These are what will keep the apparatus.</p>
                             <img className="arrow" src="images/arrow_forward.webp" />
                         </li>
                         <img className="arrow-right" src="images/arrow-right.webp" />
                         <li className="step-2">
                             <img className="small-star" src="images/small-star.webp" />
-                            <h3>Step 2</h3>
+                            <h3 className="step-header2">Step 2</h3>
                             <p className="text-steps">Third you will likely be required to install the fixed mounts. These are what will keep the apparatus.</p>
                             <img className="arrow" src="images/arrow_forward.webp" />
                         </li>
                         <img className="arrow-right" src="images/arrow-right.webp" />
                         <li className="step-3">
                             <img className="small-star" src="images/small-star.webp" />
-                            <h3>Step 3</h3>
+                            <h3 className="step-header3">Step 3</h3>
                             <p className="text-steps">Third you will likely be required to install the fixed mounts. These are what will keep the apparatus.</p>
                         </li>
                     </ul>
@@ -207,13 +207,13 @@ export const ResponseWebSite = () => {
                         <div className="main-link">
                             <div className="link">
                                 <ul className="list">
-                                    <h3>Category</h3>
+                                    <h3 className="header-category">Category</h3>
                                     <li className="links-list">First Link</li>
                                     <li className="links-list">Second Link</li>
                                     <li className="links-list">Third Link</li>
                                 </ul>
                                 <ul className="list">
-                                    <h3 className="links-list">Category</h3>
+                                    <h3 className="header-category">Category</h3>
                                     <li className="links-list">First Link</li>
                                     <li className="links-list">Second Link</li>
                                     <li className="links-list">Third Link</li>
@@ -222,7 +222,7 @@ export const ResponseWebSite = () => {
                                     <li className="links-list">Sixth Long Link</li>
                                 </ul>
                                 <ul className="list">
-                                    <h3>Category</h3>
+                                    <h3 className="header-category">Category</h3>
                                     <li className="links-list">First Link</li>
                                     <li className="links-list">Second Link</li>
                                     <li className="links-list">Third Link</li>
