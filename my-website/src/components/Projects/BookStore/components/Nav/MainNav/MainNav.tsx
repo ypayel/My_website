@@ -21,6 +21,9 @@ export const MainNav = () => {
           <li className="main-nav-list-item">
             <Link className="main-nav-link" to="/sell">{t(`sellproduct`)}</Link>
           </li>
+          <li className="main-nav-list-item">
+            <Link className="main-nav-link" to="/projects">{t(`backtoprojects`)}</Link>
+          </li>
         </ul>
       </span>   
     </div>

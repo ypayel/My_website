@@ -35,5 +35,6 @@ export default {
         "booksshow" : "Number of available items",
         "showdetails" : "Show Details",
         "bookdetails" : "Book Details",
+        "backtoprojects" : "Back to Projects"
     },
 };

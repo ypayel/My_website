@@ -36,5 +36,6 @@ export default {
         "booksshow" : "Liczba dostępnych pozycji",
         "showdetails" : "Pokaż szczegóły",
         "bookdetails" : "Szczegóły książki",
+        "backtoprojects" : "Wrócić do strony głównej"
     },
 };
