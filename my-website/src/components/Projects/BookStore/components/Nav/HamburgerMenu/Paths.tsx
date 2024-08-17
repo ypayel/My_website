@@ -1,6 +1,6 @@
 const Paths = {
-  home: "/",
-  add: "/add",
+  home: "/second",
+  add: "/add-product",
   edit: "/edit",
   sell: "/sell",
   cart: "/cart",

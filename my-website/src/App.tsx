@@ -5,6 +5,13 @@ import MainPage from './components/MainPage/MainPage';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import AddProduct from './components/Projects/BookStore/components/AddProduct/AddProduct';
+import EditBooks from './components/Projects/BookStore/components/EditBooks/EditBooks';
+import { BookDetails } from './components/Projects/BookStore/components/BookDetails/BookDetails';
+import { CartBook } from './components/Projects/BookStore/components/CartButton/CartButton';
+import SellBookComponent from './components/Projects/BookStore/components/SellBookComponent/sellBookComponent';
+import { TranslateButtons } from './components/Projects/BookStore/components/TranslateButtons/TranslateButtons';
+import MainPageBook from './components/Projects/BookStore/components/MainPageBook/MainPageBook';
 
 function App() {
   return (
@@ -14,6 +21,13 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path="/add-product" element={<AddProduct />} />
+        <Route path="/edit" element={<EditBooks />} />
+        <Route path="/bookdetails/:id" element={<BookDetails />} />
+        <Route path="/sell" element={<SellBookComponent />} />
+        <Route path="/trans" element={<TranslateButtons />} />
+        <Route path="/second" element ={<MainPageBook />} />
+        <Route path="/cart" element ={<CartBook />} />
       </Routes>
     </div>
   );

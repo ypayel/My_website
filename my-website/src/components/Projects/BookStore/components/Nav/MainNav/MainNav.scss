@@ -1,13 +1,11 @@
 $gap: 20px;
-ul {
-  list-style-type: none;
-}
+
 .main-nav-list {
   display: flex;
   justify-content: center;
   list-style-type: none;
   padding: 0;
-  a {
+  .main-nav-link {
     text-decoration: none;
     color: #ffffff;
   }
@@ -26,9 +24,9 @@ ul {
   width: 800px;
   height: 65px;
   background-color: #b8c8db;
-  position: fixed;
   top: 0;
   border-radius: 100px;
+  margin: 30px;
 }
 .main-nav {
   display: flex;

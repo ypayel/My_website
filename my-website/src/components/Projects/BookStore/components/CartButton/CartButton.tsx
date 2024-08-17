@@ -6,17 +6,17 @@ import { TranslateButtons } from "../../components/TranslateButtons/TranslateBut
 import { useTranslation } from "react-i18next";
 import { HamburgerMenu } from "../../components/Nav/HamburgerMenu/HamburgerMenu";
 import BasketBookContext from "../BasketBookContext/BasketBookContext";
+
 export const CartBook = () => {
   const { cart } = useContext(BasketBookContext);
   const { t, i18n } = useTranslation();
   return (
     <>
-    
-    <div className="change-menu-button">
-    <HamburgerMenu />
-    <TranslateButtons />
-    </div>
-    
+
+      <div className="change-menu-button">
+        <HamburgerMenu />
+        <TranslateButtons />
+      </div>
       <Link to="/cart">
         <div className="cart">
           <button className="cart-button">

@@ -8,7 +8,7 @@ export default {
         "updatedBookDetails": "Zaktualizowane szczegóły książki",
         "submit": "Wysli",
         "search": "Wyszukaj",
-        "areyousure": "Czy na pewno chcesz sprzedać wybraną książkę",
+        "areyousure": "Czy na pewno chcesz sprzedać wybraną książkę?",
         "listbook": "Lista Książek",
         "no": "Nie",
         "yes": "Tak",

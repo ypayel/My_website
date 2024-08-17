@@ -3,6 +3,7 @@
   flex-direction: column;
   align-content: center;
   flex-wrap: wrap;
+  background-color: #abbacb;
 }
 
 .book-list {
@@ -64,7 +65,9 @@
   text-align: center;
   margin: 0 auto;
 }
-
+.confirm-message {
+  color: black;
+}
 @media only screen and (max-width: 375px) {
   .list-header {
     font-size: 20px;

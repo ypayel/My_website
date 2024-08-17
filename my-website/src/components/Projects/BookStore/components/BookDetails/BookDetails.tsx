@@ -29,7 +29,7 @@ export const BookDetails: React.FC = () => {
   }, [id]);
   if (!book) return <div>Loading...</div>;
   return (
-  <div>
+  <div className="main">
     <div className="translate-button">
       <TranslateButtons />
     </div>

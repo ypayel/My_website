@@ -28,6 +28,7 @@ export const EditBooks = () => {
 
     return (
         <>
+        <div className="main-edit">
             <div className="hamburger-menu-container">
                 <HamburgerMenu />
                 <div className="translate-button"> 
@@ -106,6 +107,7 @@ export const EditBooks = () => {
                     <p><strong>ID:</strong> {selectedBook.id}</p>
                 </div>
             )}
+            </div>
         </>
     );
 };

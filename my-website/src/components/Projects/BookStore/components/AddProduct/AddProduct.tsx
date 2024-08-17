@@ -61,7 +61,6 @@ export const AddProduct = () => {
         <TranslateButtons />
         </div>
         </div>
-        <img src="images/icons8-book-32.png" alt="Logo strony" />
         <span className="container-form">
           <h2 className="add-new-book-text">{t(`add-new-book`)}</h2>
           <form onSubmit={handleSubmit}>

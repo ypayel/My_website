@@ -5,7 +5,7 @@ import { TranslateButtons } from '../../TranslateButtons/TranslateButtons';
 
 export const Background: React.FC = () => {
   return (
-    <div>
+    <div className='main-color'>
     <div className='button-lang'>
     <TranslateButtons />
     </div>
@@ -15,4 +15,3 @@ export const Background: React.FC = () => {
     </div>
   );
 };
-

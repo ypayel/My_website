@@ -17,20 +17,20 @@ export const HamburgerMenu = () => {
         &#9776;
       </button>
       <ul className={`menu ${isOpen ? "open" : ""}`}>
-        <li>
-          <a href={Paths.home}>{t(`mainpage`)}</a>
+        <li className="list">
+          <a href={Paths.home} className="links-list">{t(`mainpage`)}</a>
         </li>
-        <li>
-          <a href={Paths.add}>{t(`add`)}</a>
+        <li className="list">
+          <a href={Paths.add} className="links-list">{t(`add`)}</a>
         </li>
-        <li>
-          <a href={Paths.edit}>{t(`edit`)}</a>
+        <li className="list">
+          <a href={Paths.edit} className="links-list">{t(`edit`)}</a>
         </li>
-        <li>
-          <a href={Paths.sell}>{t(`sell`)}</a>
+        <li className="list">
+          <a href={Paths.sell} className="links-list">{t(`sell`)}</a>
         </li>
-        <li>
-          <a href={Paths.cart}>{t(`basket`)}</a>
+        <li className="list">
+          <a href={Paths.cart} className="links-list">{t(`basket`)}</a>
         </li>
       </ul>
     </div>

@@ -1,28 +1,28 @@
-
 import { t } from "i18next";
 import "./MainNav.scss";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const MainNav = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="main-nav">
       <span className="container-for-links">
         <ul className="main-nav-list">
           <li className="main-nav-list-item">
-            <a href="/">{t(`mainpage`)}</a>
+            <Link className="main-nav-link" to="/second">{t(`mainpage`)}</Link>
           </li>
           <li className="main-nav-list-item">
-            <a href="/">{t(`addproduct`)}</a>
+            <Link className="main-nav-link" to="/add-product">{t(`addproduct`)}</Link>
           </li>
           <li className="main-nav-list-item">
-            <a href="/edit">{t(`editproduct`)}</a>
+            <Link className="main-nav-link" to="/edit">{t(`editproduct`)}</Link>
           </li>
           <li className="main-nav-list-item">
-            <a href="/sell">{t(`sellproduct`)}</a>
+            <Link className="main-nav-link" to="/sell">{t(`sellproduct`)}</Link>
           </li>
         </ul>
-      </span>
+      </span>   
     </div>
   );
 };

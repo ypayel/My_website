@@ -18,16 +18,16 @@
   display: flex;
 }
 
-.menu li {
+.menu .list {
   padding: 15px;
   text-align: center;
 }
 
-.menu li a {
+.menu .list .links-list {
   color: white;
   text-decoration: none;
 }
 
-.menu li a:hover {
+.menu .list .links-list:hover {
   background-color: #575757;
 }

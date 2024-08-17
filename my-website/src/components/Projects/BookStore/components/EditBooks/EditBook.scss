@@ -4,6 +4,7 @@
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 .inputs {
   width: 150px;
@@ -39,7 +40,9 @@ strong {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-
+.main-edit {
+  background-color: #abbacb;
+}
 
 @media only screen and (max-width: 425px) {
   .updated-details {

@@ -7,7 +7,7 @@ export default {
         "updatedBookDetails": "Updated Book Details",
         "submit": "Submit",
         "search": "Search",
-        "areyousure": "Are you sure you want to sell the selected book",
+        "areyousure": "Are you sure you want to sell the selected book?",
         "listbook": "List Book",
         "no": "No",
         "yes": "Yes",
