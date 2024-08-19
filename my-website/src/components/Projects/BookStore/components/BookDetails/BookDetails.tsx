@@ -4,6 +4,7 @@ import { BookType } from "../BookList/BookList";
 import "./BookDetails.scss";
 import { useTranslation } from "react-i18next";
 import { TranslateButtons } from "../TranslateButtons/TranslateButtons";
+import { HamburgerMenu } from "../Nav/HamburgerMenu/HamburgerMenu";
 interface Params {
   id: string;
   [key: string]: string | undefined;
@@ -30,9 +31,12 @@ export const BookDetails: React.FC = () => {
   if (!book) return <div>Loading...</div>;
   return (
   <div className="main">
-    <div className="translate-button">
-      <TranslateButtons />
-    </div>
+    <div className="hamburger-menu-container">
+                <HamburgerMenu />
+                <div className="translate-button"> 
+                    <TranslateButtons />
+                </div>
+            </div>
     <div className="book-details">
       <h2>{t(`bookdetails`)}</h2>
       <p>

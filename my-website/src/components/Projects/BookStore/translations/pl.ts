@@ -19,7 +19,7 @@ export default {
         "basket" : "Koszyk",
         "nocartitems": "Brak elementów koszyka",
         "add-new-book": "Dodaj nową książke",
-        "title": "Tytuł:",
+        "title": "Tytuł",
         "pages": "Strony:",
         "addProduct": "Dodaj produkt",
         "preview-new-book": "Podgląd nowej książki",
@@ -36,6 +36,6 @@ export default {
         "booksshow" : "Liczba dostępnych pozycji",
         "showdetails" : "Pokaż szczegóły",
         "bookdetails" : "Szczegóły książki",
-        "backtoprojects" : "Wrócić do strony głównej"
+        "backtoprojects" : "Powrót Projecty"
     },
 };

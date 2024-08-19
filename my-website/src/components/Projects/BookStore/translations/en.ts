@@ -18,7 +18,7 @@ export default {
         "basket" : "Basket",
         "nocartitems": "No cart Items",
         "add-new-book": "Add New Book",
-        "title": "Title:",
+        "title": "Title",
         "pages": "Pages:",
         "addProduct": "Add product",
         "preview-new-book": "preview of the new book",
