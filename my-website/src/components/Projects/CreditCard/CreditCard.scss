@@ -1,9 +1,7 @@
-.main-conteiner {
-    width: 100%;
-    min-height: 100vh;
+.main-conteiner-content {
     font-size: 16px;
-    font-weight: 500;
     font-family: "Space Grotesk", sans-serif;
+    background-color: white;
   }
 
 .front-card, .back-card {
@@ -33,6 +31,11 @@
     margin-top: 15px;
 }
 
+.attribution {
+    color: black;
+}
+
+
 @media only screen and (max-width: 1440px) { 
 
     .form-conteiner {
@@ -44,21 +47,17 @@
         margin-left: 800px;
        
     }
-    .background {
-       height: 100vh;
+    .background-card {
+       display: flex;
     }
     .front-card {
         position: absolute;
-        top: 20%;
-        left: 10%;
-        z-index: 1;
+        
         color: white;
       }
       
       .back-card {
         position: absolute;
-        top: 50%;
-        left: 15%;
         color: white;
       }
       .number-front {
@@ -97,7 +96,7 @@
 } 
 
 @media only screen and (max-width: 375px) {
-    .background {
+    .background-card {
         position: relative;
         width: 430px;
         height: 260px;

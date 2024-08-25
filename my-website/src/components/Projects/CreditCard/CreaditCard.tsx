@@ -2,8 +2,8 @@ import "./CreditCard.scss"
 export const CreditCard = () => {
     return (
         <>
-            <div className="main-conteiner">
-                <div className="background">
+            <div className="main-conteiner-content">
+                <div className="background-card">
                     <img src="images/bg-main-desktop.png" alt="background-image" className="background-image" />
                     <div className="front-card">
                         <img src="./images/bg-card-front.png" alt="card" className="front-card-image" />
