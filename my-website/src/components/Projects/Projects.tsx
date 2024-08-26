@@ -12,27 +12,27 @@ export const Projects = () => {
         <>
         <div>
             <div className="project-social">
-            <h3 className="header">Moj pierwszy projekt - Social Links</h3>
+            <h3 className="header-social">Moj pierwszy projekt - Social Links</h3>
             <SocialLinks/>
             </div>
             <div className="project-omlette">
-            <h3 className="header">Omelette Recipe</h3>
+            <h3 className="header-omlette">Omelette Recipe</h3>
             <OmletRecipe/>
             </div>
             <div className="project-creditcard">
-                <h3 className="header">Credit Card Page</h3>
+                <h3 className="header-credit">Credit Card Page</h3>
                 <CreditCard />
             </div>
             <div className="project-calculator">
-                <h3 className="header">Calculator</h3>
+                <h3 className="header-calculator">Calculator</h3>
                 <Calculator />
             </div>
             <div className="project-response-website">
-                <h3 className="header">Response WebSite</h3>
+                <h3 className="header-response">Response WebSite</h3>
                 <ResponseWebSite />
             </div>
             <div className="project-book">
-                <h3 className="header">Book Store</h3>
+                <h3 className="header-book">Book Store</h3>
                 <BookStore />
             </div>
             

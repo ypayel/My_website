@@ -57,7 +57,7 @@ export const OmletRecipe = () => {
                                     <li>Fat<strong className="kcal kcal-4">22g</strong></li>
                                 </ul>
                             </div>
-                            <div className="attribution">
+                            <div className="attribution-omlette">
                                 Coded by <a href="https://github.com/ypayel">ypayel</a>.
                             </div>
                         </div>

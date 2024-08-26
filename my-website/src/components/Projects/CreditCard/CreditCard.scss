@@ -26,39 +26,38 @@
     background-color: hsl(278, 94%, 30%);
     line-height: 30px;
     width: 205px;
-    margin-left: 905px;
-    margin-bottom: 50px;
-    margin-top: 15px;
 }
 
-.attribution {
+.attribution-credit {
     color: black;
+    text-align: center;
 }
 
 
 @media only screen and (max-width: 1440px) { 
-
-    .form-conteiner {
-        display: flex;
-      }
-
     .inputs-button {
-        margin-top: -550px;
-        margin-left: 800px;
-       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 220px;
     }
     .background-card {
        display: flex;
+       align-items: center;
+       width: 1150px;
     }
     .front-card {
         position: absolute;
-        
+        margin-left: 150px;
+        margin-bottom: 190px;
         color: white;
       }
       
       .back-card {
         position: absolute;
         color: white;
+        margin-top: 350px;
+        margin-left: 220px;
       }
       .number-front {
         position: absolute;
@@ -88,9 +87,6 @@
         color: white;
         background-color: hsl(278, 94%, 30%);
         line-height: 30px;
-        width: 205px;
-        margin-left: 905px;
-        margin-bottom: 50px;
         margin-top: 15px;
     }
 } 

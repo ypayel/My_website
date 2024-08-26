@@ -15,8 +15,7 @@ export const CreditCard = () => {
                         <img src="images/bg-card-back.png" alt="card" className="back-card-image" />
                         <h4 className="cvc-card">000</h4>
                     </div>
-                </div>
-                <div className="form-conteiner">
+                    <div className="form-conteiner">
                     <form className="card-form">
                         <div className="inputs-button">
                             <div className="name-input">
@@ -46,14 +45,17 @@ export const CreditCard = () => {
                                     <input type="text" value="e.g. 123" className="five-input" maxLength={3} />
                                 </label>
                             </div>
-                        </div>
-                        <div className="button-confirm">
+                            <div className="button-confirm">
                             <button className="confirm">Confirm</button>
                         </div>
+                        </div>
                     </form>
+                    
                 </div>
+                </div>
+                
                 <div className="footer-conteiner">
-                    <div className="attribution">
+                    <div className="attribution-credit">
                         Coded by <a href="https://github.com/ypayel">ypayel</a>.
                     </div>
                 </div>
