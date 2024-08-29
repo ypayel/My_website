@@ -7,6 +7,7 @@ import OmletRecipe from "./OmletRecipet/OmletRecipe";
 import ResponseWebSite from "./ResponseWebSite/ResponseWebSite";
 import SocialLinks from "./SocialLinks/SocialLinks";
 import Nav from "../Nav/Nav";
+import Fryzjer from "./Fryzjer/Fryzjer";
 
 export const Projects = () => {
     return (
@@ -39,7 +40,10 @@ export const Projects = () => {
                 <h3 className="header-book">Book Store</h3>
                 <BookStore />
             </div>
-            
+            <div className="project-fryzjer">
+                <h3 className="header-fryzjer">Fryzjer</h3>
+                <Fryzjer />
+            </div>
         </div>
         </>
     )
