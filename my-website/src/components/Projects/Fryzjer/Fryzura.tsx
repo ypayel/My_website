@@ -1,19 +1,25 @@
 import { Link } from "react-router-dom"
 import "./Fryzjer";
 
-// const odkryj = ()=> {
-// 	let krotkie = document.getElementById("krotkie").checked;
-// 	let srednie = document.getElementById("srednie").checked;
-// 	let poldlugie = document.getElementById("poldlugie").checked;
-// 	let dlugie = document.getElementById("dlugie").checked;
-// 	let wynik = document.getElementById("wynik");
-// 	let cena = 0;
-// 	if(krotkie) cena = 25;
-// 	if(srednie) cena = 30;
-// 	if(poldlugie) cena = 40;
-// 	if(dlugie) cena = 50;
-// 	wynik.innerHTML = "Cena strzyżenia: " + cena;
-// }
+const odkryj = ()=> {
+	let krotkie = document.getElementById("krotkie") as HTMLInputElement;
+    let srednie = document.getElementById("srednie") as HTMLInputElement;
+    let poldlugie = document.getElementById("poldlugie") as HTMLInputElement;
+    let dlugie = document.getElementById("dlugie") as HTMLInputElement;
+	let wynik = document.getElementById("wynik");
+	let cena = 0;
+
+	if(krotkie.checked) cena = 25;
+    if(srednie.checked) cena = 30;
+    if(poldlugie.checked) cena = 40;
+    if(dlugie.checked) cena = 50;
+
+	if(wynik) {
+		wynik.innerHTML = "Cena strzyżenia: " + cena;
+	} else {
+		console.log("Erorr")
+	}
+}
 export const Fryzura = () => {
     return (
         <>
@@ -57,7 +63,7 @@ export const Fryzura = () => {
 			<input type="radio" name="typ" id="dlugie" />
 			Długie<br/>
 		</label>
-		{/* <button type="button" onClick="odkryj()">Odkryj promocję</button> */}
+		<button type="button" onClick={odkryj}>Odkryj promocję</button>
 		<p id="wynik"></p>
 	</div>
 	<div id="prawy3">
