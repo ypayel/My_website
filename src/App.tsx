@@ -19,8 +19,9 @@ import Galleria from './components/Projects/Galleria/Galleria';
 function App() {
   return (
     <div className="App">
+      
       <Routes>
-        <Route path='/main' element={<MainPage />} />
+        <Route path='/' element={<MainPage />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
