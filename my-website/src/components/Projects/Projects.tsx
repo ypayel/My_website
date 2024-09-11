@@ -16,6 +16,7 @@ export const Projects = () => {
         <div className="nav-menu">
             <Nav/>
         </div>
+        <div className="projects-contiener">
             <div className="project-social">
             <h3 className="header-social">Moj pierwszy projekt - Social Links</h3>
             <SocialLinks/>
@@ -43,6 +44,7 @@ export const Projects = () => {
             <div className="project-fryzjer">
                 <h3 className="header-fryzjer">Fryzjer</h3>
                 <Fryzjer />
+            </div>
             </div>
         </div>
         </>
