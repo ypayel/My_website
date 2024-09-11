@@ -14,6 +14,7 @@ import { TranslateButtons } from './components/Projects/BookStore/components/Tra
 import MainPageBook from './components/Projects/BookStore/components/MainPageBook/MainPageBook';
 import Fryzjer from './components/Projects/Fryzjer/Fryzjer';
 import { Fryzura } from './components/Projects/Fryzjer/Fryzura';
+import Galleria from './components/Projects/Galleria/Galleria';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/cart" element ={<CartBook />} />
         <Route path="/salon" element={<Fryzjer />} />
         <Route path="/hair" element={<Fryzura />} />
+        <Route path='/galeria' element={<Galleria />} />
       </Routes>
     </div>
   );
