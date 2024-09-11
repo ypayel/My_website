@@ -2,7 +2,7 @@ import "./CreditCard.scss"
 export const CreditCard = () => {
     return (
         <>
-            <div className="main-conteiner">
+            <div className="main-conteiner-content">
                 <div className="background">
                     <img src="images/bg-main-desktop.png" alt="background-image" className="background-image" />
                     <div className="front-card">
