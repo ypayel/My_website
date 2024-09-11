@@ -1,9 +1,7 @@
 .main-conteiner-content {
-    width: 100%;
-    min-height: 100vh;
     font-size: 16px;
-    font-weight: 500;
     font-family: "Space Grotesk", sans-serif;
+    background-color: white;
   }
 
 .front-card, .back-card {
@@ -28,38 +26,38 @@
     background-color: hsl(278, 94%, 30%);
     line-height: 30px;
     width: 205px;
-    margin-left: 905px;
-    margin-bottom: 50px;
-    margin-top: 15px;
 }
 
+.attribution-credit {
+    color: black;
+    text-align: center;
+}
+
+
 @media only screen and (max-width: 1440px) { 
-
-    .form-conteiner {
-        display: flex;
-      }
-
     .inputs-button {
-        margin-top: -550px;
-        margin-left: 800px;
-       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 220px;
     }
-    .background {
-       height: 100vh;
+    .background-card {
+       display: flex;
+       align-items: center;
+       width: 1150px;
     }
     .front-card {
         position: absolute;
-        top: 20%;
-        left: 10%;
-        z-index: 1;
+        margin-left: 150px;
+        margin-bottom: 190px;
         color: white;
       }
       
       .back-card {
         position: absolute;
-        top: 50%;
-        left: 15%;
         color: white;
+        margin-top: 350px;
+        margin-left: 220px;
       }
       .number-front {
         position: absolute;
@@ -89,15 +87,12 @@
         color: white;
         background-color: hsl(278, 94%, 30%);
         line-height: 30px;
-        width: 205px;
-        margin-left: 905px;
-        margin-bottom: 50px;
         margin-top: 15px;
     }
 } 
 
 @media only screen and (max-width: 375px) {
-    .background {
+    .background-card {
         position: relative;
         width: 430px;
         height: 260px;

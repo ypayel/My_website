@@ -2,23 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding: 20px;
+    width: 700px;
+    height: 700px;
 }
 
 .image-container {
     flex-shrink: 0;
     margin-left: px; 
     margin-top: 75px;
-    margin-left: 250px;
+    margin-left: 100px;
 }
 
 .my-image {
-    height: 550px;
-    width: 475px;
+    height: 500px;
+    width: 435px;
     border: 10px solid white; 
     border-radius: 20px; 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.705); 
-    
 }
 
 .text-container {
