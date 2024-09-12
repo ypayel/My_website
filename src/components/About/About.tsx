@@ -26,7 +26,7 @@ export const About = () => {
                 </p> 
             </div>
             <div className="image-container">
-            <img src="/public/images/me.jpg" alt="me" className="my-image" />
+            <img src={process.env.PUBLIC_URL + '/images/me.jpg'} alt="me" className="my-image" />
             </div>
         </div>
         </>
