@@ -230,10 +230,10 @@ export const ResponseWebSite = () => {
                             </div>
                             <div className="link">
                                 <ul className="media">
-                                    <li className="list-media"><img src="images/IconColor2.svg" alt="facebook" />Facebook</li>
-                                    <li className="list-media"><img src="images/IconColor.svg" alt="youtube" />Youtube</li>
-                                    <li className="list-media"><img src="images/IconColor3.svg" alt="instagram" />Instagram</li>
-                                    <li className="list-media"><img src="images/IconColor4.svg" alt="twitter" />Twitter</li>
+                                    <li className="list-media"><img src={process.env.PUBLIC_URL + '/images/IconColor2.svg'} alt="facebook" />Facebook</li>
+                                    <li className="list-media"><img src={process.env.PUBLIC_URL + '/images/IconColor.svg'} alt="youtube" />Youtube</li>
+                                    <li className="list-media"><img src={process.env.PUBLIC_URL + '/images/IconColor3.svg'} alt="instagram" />Instagram</li>
+                                    <li className="list-media"><img src={process.env.PUBLIC_URL + '/images/IconColor4.svg'} alt="twitter" />Twitter</li>
                                 </ul>
                             </div>
                         </div>
