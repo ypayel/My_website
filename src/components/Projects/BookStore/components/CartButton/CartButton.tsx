@@ -21,7 +21,7 @@ export const CartBook = () => {
         <div className="cart">
           <button className="cart-button">
             <span className="basket">{t(`mybasket`)}</span>
-            <img src="images/cart-icon.png" alt="Shopping Cart" className="shopping-cart" />
+            <img src={process.env.PUBLIC_URL + '/images/cart-icon.png'} alt="Shopping Cart" className="shopping-cart" />
           </button>
         </div>
       </Link>

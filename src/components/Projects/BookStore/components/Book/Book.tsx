@@ -15,7 +15,7 @@ export const Book: React.FC<BookProps> = ({
     <div className="book">
       <img
         className="image"
-        src="images/book-cover-placeholder.png"
+        src={process.env.PUBLIC_URL + '/images/book-cover-placeholder.png'}
         alt={title}
       ></img>
       <h3>{title}</h3>

@@ -303,7 +303,7 @@
       
     }
   
-    .footer .heading-element, .steps-list, .list-articles, .list, .media, .link-footer {
+    .footer .heading-element, .steps-list, .list-articles, .media, .link-footer {
       list-style-type: none;
       display: flex;
       flex-direction: row;
@@ -331,9 +331,9 @@
   }
   
   .list {
-    list-style: none;
-    letter-spacing: -0.2px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
   }
   .list .links-list {
@@ -494,11 +494,9 @@
   
   .link  {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     column-count: 3;
     gap: 50px;
-    
+    flex-direction: row;
     
   }
   

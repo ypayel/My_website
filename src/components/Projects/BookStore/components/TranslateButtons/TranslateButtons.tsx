@@ -13,7 +13,7 @@ export const TranslateButtons = () => {
     return (
         <div className="language-conteiner">
             <button className="language" onClick={handleLenguageChange}>
-                {i18n.language === 'en' ? <img src="/images/favicon-poland.png" alt="poland-flag" className="poland"/> : <img src="/images/favicon-britan.png" alt="britan-flag" className="britan" />} 
+                {i18n.language === 'en' ? <img src={process.env.PUBLIC_URL + '/images/favicon-poland.png'} alt="poland-flag" className="poland"/> : <img src={process.env.PUBLIC_URL + '/images/favicon-britan.png'} alt="britan-flag" className="britan" />} 
             </button>
         </div>
     );
