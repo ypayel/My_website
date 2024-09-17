@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./Fryzjer";
-
+import './Fryzjer.scss'
 const odkryj = ()=> {
 	let krotkie = document.getElementById("krotkie") as HTMLInputElement;
     let srednie = document.getElementById("srednie") as HTMLInputElement;
@@ -26,7 +26,7 @@ export const Fryzura = () => {
         <div className="fryzura-main">
         <div id="lewy1">
 		<h2 className="header-fryzura"><Link className="salon-link" to="/salon">SALON FRYZJERSKI</Link></h2>
-		<img src="images/obraz2.jpg" alt="Czesanie" className="second-img"/>
+		<img src={process.env.PUBLIC_URL + '/images/obraz2.jpg'} alt="Czesanie" className="second-img"/>
 	</div>
 	<div id="prawy1">
 		<h2>MENU</h2>
@@ -67,7 +67,7 @@ export const Fryzura = () => {
 		<p id="wynik"></p>
 	</div>
 	<div id="prawy3">
-		<img src="images/obraz1.jpg" alt="Fryzjer" className="first-img"/>
+		<img src={process.env.PUBLIC_URL + '/images/obraz1.jpg'} alt="Fryzjer" className="first-img"/>
 	</div>
 	<div id="stopka">
 		<p>Autor: 00000000</p>

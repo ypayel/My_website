@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Fryzjer";
+import './Fryzjer.scss';
 export const Fryzjer = () => {
   return (
     <>
@@ -8,7 +8,7 @@ export const Fryzjer = () => {
           <h2 className="header-fryzjer">
             <Link className="salon-link" to="/salon">SALON FRYZJERSKI</Link>
           </h2>
-          <img src="images/obraz2.jpg" alt="Czesanie" className="second-img"/>
+          <img src={process.env.PUBLIC_URL + '/images/obraz2.jpg'} alt="Czesanie" className="second-img"/>
         </div>
         <div id="prawy1">
           <h2 className="menu-fryzjer">MENU</h2>
@@ -37,7 +37,7 @@ export const Fryzjer = () => {
           </p>
         </div>
         <div id="prawy3">
-          <img src="images/obraz1.jpg" alt="Fryzjer" className="first-img"/>
+          <img src={process.env.PUBLIC_URL + '/images/obraz1.jpg'} alt="Fryzjer" className="first-img"/>
         </div>
         <div id="stopka">
           <p>Autor: 000000000</p>
