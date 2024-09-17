@@ -9,7 +9,7 @@ export const SocialLinks = () => {
                 </div>
                 <header>
                     <div className="avatar-section">
-                        <img src="images/avatar-jessica.jpeg" alt="avatar" className="avatar" />
+                        <img src={process.env.PUBLIC_URL + '/images/avatar-jessica.jpeg'} alt="avatar" className="avatar" />
                     </div>
                     <div className="description-social">
                         <span className="name-social">Jessica Randall</span>

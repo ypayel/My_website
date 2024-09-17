@@ -5,10 +5,10 @@ export const ResponseWebSite = () => {
             <div className="main-conteiner">
                 <div className="header">
                     <div className="logo-section">
-                        <img className="logo" src="/icon/58px.webp" /> <span>Sections</span>
+                        <img className="logo" src={process.env.PUBLIC_URL + '/images/58px.webp'}/> <span>Sections</span>
                     </div>
                     <div className="nav">
-                        <img className="nav-icon" src="/icon/menu.webp" />
+                        <img className="nav-icon" src={process.env.PUBLIC_URL + '/images/menu.webp'}/>
                         <div className="nav-links">
                             <span>First Link</span>
                             <span>Second Link</span>
@@ -33,7 +33,7 @@ export const ResponseWebSite = () => {
                     <p className="subscribe-info">
                         No spam, notifications only about new products, updates and freebies.
                     </p>
-                    <img className="phone" src="images/iPhone X.webp" />
+                    <img className="phone" src={process.env.PUBLIC_URL + '/images/iPhone X.webp'}/>
                 </div>
                 <hr className="spacer"/>
                 <div className="paragraph">
@@ -47,19 +47,19 @@ export const ResponseWebSite = () => {
                 <div className="heading-list">
                     <ul className="heading-element">
                         <li className="heading-list-element">
-                            <img className="star-icon" src="images/star.webp" />
+                            <img className="star-icon" src={process.env.PUBLIC_URL + '/images/star.webp'}/>
                             <span className="heading-title">Heading</span>
                             <p className="heading-paragraph">You will likely be required to install the fixed mounts. These are what will keep the apparatus stable and secure with your computer monitor in it. Follow directions carefully so that
                                 you can be sure to get everything.</p>
                             <span className="learn-more">Learn more</span>
                         </li>
                         <li className="heading-list-element">
-                            <img className="star-icon" src="images/star.webp" /><span className="heading-title">Heading</span>
+                            <img className="star-icon" src={process.env.PUBLIC_URL + '/images/star.webp'}/><span className="heading-title">Heading</span>
                             <p className="heading-paragraph">TeYou will likely be required to install the fixed mounts. These are what will keep the apparatus stable and secure with your computer monitor in it. Follow directions carefully so that
                                 you can be sure to get everything.xt</p>
                             <span className="learn-more">Learn more</span></li>
                         <li className="heading-list-element">
-                            <img className="star-icon" src="images/star.webp" />
+                            <img className="star-icon" src={process.env.PUBLIC_URL + '/images/star.webp'}/>
                             <span className="heading-title">Heading</span>
                             <p className="heading-paragraph">
                                 You will likely be required to install the fixed mounts. These are what will keep the apparatus stable and secure with your computer monitor in it. Follow directions carefully so that
@@ -103,21 +103,21 @@ export const ResponseWebSite = () => {
                     </div>
                     <ul className="steps-list">
                         <li className="step-1">
-                            <img className="small-star" src="images/small-star.webp" />
+                            <img className="small-star" src={process.env.PUBLIC_URL + '/images/small-star.webp'}/>
                             <h3 className="step-header">Step 1</h3>
                             <p className="text-steps">Third you will likely be required to install the fixed mounts. These are what will keep the apparatus.</p>
-                            <img className="arrow" src="images/arrow_forward.webp" />
+                            <img className="arrow" src={process.env.PUBLIC_URL + '/images/arrow_forward.webp'}/>
                         </li>
-                        <img className="arrow-right" src="images/arrow-right.webp" />
+                        <img className="arrow-right" src={process.env.PUBLIC_URL + '/images/arrow-right.webp'}/>
                         <li className="step-2">
-                            <img className="small-star" src="images/small-star.webp" />
+                            <img className="small-star" src={process.env.PUBLIC_URL + '/images/small-star.webp'}/>
                             <h3 className="step-header2">Step 2</h3>
                             <p className="text-steps">Third you will likely be required to install the fixed mounts. These are what will keep the apparatus.</p>
-                            <img className="arrow" src="images/arrow_forward.webp" />
+                            <img className="arrow" src={process.env.PUBLIC_URL + '/images/arrow_forward.webp'}/>
                         </li>
-                        <img className="arrow-right" src="images/arrow-right.webp" />
+                        <img className="arrow-right" src={process.env.PUBLIC_URL + '/images/arrow-right.webp'} alt="arrow_right"/>
                         <li className="step-3">
-                            <img className="small-star" src="images/small-star.webp" />
+                            <img className="small-star" src={process.env.PUBLIC_URL + '/images/small-star.webp'} alt="small_star"/>
                             <h3 className="step-header3">Step 3</h3>
                             <p className="text-steps">Third you will likely be required to install the fixed mounts. These are what will keep the apparatus.</p>
                         </li>
@@ -126,17 +126,17 @@ export const ResponseWebSite = () => {
                 <hr className="spacer"/>
                 <div className="astronomy">
                     <div className="astronomy-description">
-                        <img className="small-star" src="images/small-star.webp" />
+                        <img className="small-star" src={process.env.PUBLIC_URL + '/images/small-star.webp'} alt="star"/>
                         <h2 className="astronomy-heading">Heading</h2>
                         <p className="astronomy-paragraph">The beauty of astronomy is that anybody can do it. From the tiniest baby to the most advanced astrophysicist, there is something for anyone who wants to enjoy astronomy.</p>
                         <span className="learn-more">Learn more</span></div>
-                    <img className="phone" src="images/iPhone X.webp" />
+                    <img className="phone" src={process.env.PUBLIC_URL + '/images/iPhone X.webp'} alt="iphone"/>
                 </div>
                 <hr className="spacer"/>
                     <div className="articles">
                         <ul className="list-articles">
                             <li className="article-1">
-                                <img className="article-img" src="images/Image.webp" />
+                                <img className="article-img" src={process.env.PUBLIC_URL + '/images/Image.webp'} alt="image_web"/>
                                 <span className="article-date">1 MAY 2020</span>
                                 <h3 className="article-title">Heading</h3>
                                 <p className="article-description">Moment in the life of any aspiring astronomer of that it is time to buy that first telescope.</p>
@@ -148,7 +148,7 @@ export const ResponseWebSite = () => {
                                 </div>
                             </li>
                             <li className="article-2">
-                                <img className="article-img" src="images/Image.webp" />
+                                <img className="article-img" src={process.env.PUBLIC_URL + '/images/Image.webp'} alt="image_web"/>
                                 <span className="article-date">1 MAY 2020</span>
                                 <h3 className="article-title">Two line long header example for web project </h3>
                                 <p className="article-description">Moment in the life of any aspiring astronomer of that it is time to buy that first telescope.</p>
@@ -160,7 +160,7 @@ export const ResponseWebSite = () => {
                                 </div>
                             </li>
                             <li className="article-3">
-                                <img className="article-img" src="images/Image.webp" />
+                                <img className="article-img" src={process.env.PUBLIC_URL + '/images/Image.webp'} alt="image_web"/>
                                 <span className="article-date">1 MAY 2020</span>
                                 <h3 className="article-title">Heading</h3>
                                 <p className="article-description">Moment in the life of any aspiring astronomer of that it is time to buy that first telescope.</p>
@@ -172,7 +172,7 @@ export const ResponseWebSite = () => {
                                 </div>
                             </li>
                             <li className="article-4">
-                                <img className="article-img" src="images/Image.webp" />
+                                <img className="article-img" src={process.env.PUBLIC_URL + '/images/Image.webp'} alt="image_web"/>
                                 <span className="article-date">1 MAY 2020</span>
                                 <h3 className="article-title">Two line long header example for web project </h3>
                                 <p className="article-description">Moment in the life of any aspiring astronomer of that it is time to buy that first telescope.</p>
@@ -202,7 +202,7 @@ export const ResponseWebSite = () => {
                     <hr  className="spacer"/>
                     <div className="article-6">
                         <div className="logo-section-2">
-                            <img className="logo" src="images/58px.webp" /><h2>Sections</h2>
+                            <img className="logo" src={process.env.PUBLIC_URL + '/images/58px.webp'} alt="58px"/><h2>Sections</h2>
                         </div>
                         <div className="main-link">
                             <div className="link">

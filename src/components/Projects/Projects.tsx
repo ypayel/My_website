@@ -6,11 +6,13 @@ import CreditCard from "./CreditCard/CreaditCard";
 import OmletRecipe from "./OmletRecipet/OmletRecipe";
 import ResponseWebSite from "./ResponseWebSite/ResponseWebSite";
 import SocialLinks from "./SocialLinks/SocialLinks";
+import Nav from "../Nav/Nav";
 
 export const Projects = () => {
     return (
         <>
         <div>
+            <Nav/>
             <div className="project-social">
             <h3 className="header">Moj pierwszy projekt - Social Links</h3>
             <SocialLinks/>

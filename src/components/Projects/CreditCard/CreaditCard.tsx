@@ -13,15 +13,15 @@ export const CreditCard = () => {
         <>
             <div className="main-conteiner-content">
                 <div className="background-card">
-                    <img src="images/bg-main-desktop.png" alt="background-image" className="background-image" />
+                    <img src={process.env.PUBLIC_URL + "/images/bg-main-desktop.png"} alt="background-image" className="background-image" />
                     <div className="front-card">
-                        <img src="./images/bg-card-front.png" alt="card" className="front-card-image" />
+                        <img src={process.env.PUBLIC_URL + "/images/bg-card-front.png"} alt="card" className="front-card-image" />
                         <h4 className="number-front">{cardNumber}</h4>
                         <h4 className="name">{cardName}</h4>
                         <h4 className="mounth-card">{expMonth}/{expYear}</h4>
                     </div>
                     <div className="back-card">
-                        <img src="images/bg-card-back.png" alt="card" className="back-card-image" />
+                        <img src={process.env.PUBLIC_URL + '/images/bg-card-back.png'} alt="card" className="back-card-image" />
                         <h4 className="cvc-card">{cvc}</h4>
                     </div>
                     <div className="form-conteiner">
