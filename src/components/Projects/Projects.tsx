@@ -12,12 +12,12 @@ import Fryzjer from "./Fryzjer/Fryzjer";
 export const Projects = () => {
   return (
     <>
-      {/* <div className="navigation-conteiner">
-        <Nav/>
-        </div> */}
+      <Nav />
       <div className="projects-conteiner">
         <div className="project-social">
-          <h3 className="header-projects">Moj pierwszy projekt - Social Links</h3>
+          <h3 className="header-projects">
+            Moj pierwszy projekt - Social Links
+          </h3>
           <SocialLinks />
         </div>
         <div className="project-omlette">
@@ -41,8 +41,8 @@ export const Projects = () => {
           <BookStore />
         </div>
         <div className="project-fryzjer">
-            <h3 className="header-projects">Fryzjer</h3>
-            <Fryzjer/>
+          <h3 className="header-projects">Fryzjer</h3>
+          <Fryzjer />
         </div>
       </div>
     </>

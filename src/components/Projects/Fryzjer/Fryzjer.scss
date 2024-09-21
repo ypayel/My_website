@@ -5,29 +5,22 @@
   flex-direction: column;
 }
 #lewy1 {
-  height: 400px;
-  width: 70%;
+  background: SteelBlue;
 }
 #lewy2 {
-  height: 400px;
-  width: 70%;
   font-size: 150%;
+  background: SteelBlue;
 }
 #prawy1 {
-  height: 150px;
-  width: 30%;
   background: SteelBlue;
   color: white;
 }
 #prawy2 {
-  height: 350px;
-  width: 30%;
   background: SteelBlue;
   color: white;
 }
 #prawy3 {
-  height: 300px;
-  width: 30%;
+  background: SteelBlue;
 }
 #stopka {
   background: SteelBlue;
@@ -38,15 +31,17 @@
 .header-fryzura {
   font-size: 250%;
 }
-
 .first-img,
 .second-img:hover {
   border: 1px solid SteelBlue;
 }
 .salon-link, .hairstyle {
-	text-decoration: none;
-	color: white;
-}
-.salon-link, .hairstyle, :hover {
 	text-decoration: underline;
+	color: white;
+  font-size: 20px;
+}
+
+.header-fryzjer {
+  text-align: center;
+
 }

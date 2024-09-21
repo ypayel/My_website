@@ -3,9 +3,7 @@ import "./About.scss";
 export const About = () => {
     return (
         <>
-        <div className="navigation-conteiner">
         <Nav/>
-        </div>
         <div className="about-container">
             <div className="text-container">
                 <h1 className="about-header">About Me</h1>
