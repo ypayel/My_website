@@ -1,13 +1,13 @@
 export const Galleria = () => {
-    //     let nr = 1
-    // function zamiana(src, numer) {
+        let nr = 1
+    // const zamiana = (src, numer) => {
     //     let glowne = document.getElementById('glowne')
     //     glowne.src = src
     //     nr = numer
     
     // }
     
-    // function prev() {
+    // const prev = () => {
     //     let aktualne = document.getElementById('glowne')
     //     nr--
     //     if (nr == 0) nr = 5
@@ -18,7 +18,7 @@ export const Galleria = () => {
     //     if (nr == 5) aktualne.src = "images/5.jpg"
     // }
     
-    // function next() {
+    // const next = () => {
     //     let aktualne = document.getElementById('glowne')
     //     nr++
     //     if (nr == 6) nr = 1
@@ -28,6 +28,9 @@ export const Galleria = () => {
     //     if (nr == 4) aktualne.src = "images/4.jpg"
     //     if (nr == 5) aktualne.src = "images/5.jpg"
     // }
+    const handleClick = () => {
+
+    }
         return (
             <>
             <div className="header-galleria">

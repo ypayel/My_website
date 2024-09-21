@@ -8,6 +8,7 @@ import ResponseWebSite from "./ResponseWebSite/ResponseWebSite";
 import SocialLinks from "./SocialLinks/SocialLinks";
 import Nav from "../Nav/Nav";
 import Fryzjer from "./Fryzjer/Fryzjer";
+import Galleria from "./Galleria/Galleria";
 
 export const Projects = () => {
   return (
@@ -44,6 +45,11 @@ export const Projects = () => {
           <h3 className="header-projects">Fryzjer</h3>
           <Fryzjer />
         </div>
+        <div className="projects-galleria">
+          <h3 className="header-projects">Galleria</h3>
+          <Galleria />
+        </div>
+
       </div>
     </>
   );
