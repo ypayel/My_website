@@ -9,6 +9,7 @@ import SocialLinks from "./SocialLinks/SocialLinks";
 import Nav from "../Nav/Nav";
 import Fryzjer from "./Fryzjer/Fryzjer";
 import Galleria from "./Galleria/Galleria";
+import { GalleriaStorage } from "./Galleria/GalleriaStorage";
 
 export const Projects = () => {
   return (
@@ -47,7 +48,8 @@ export const Projects = () => {
         </div>
         <div className="projects-galleria">
           <h3 className="header-projects">Galleria</h3>
-          <Galleria />
+          <Galleria imgURL={GalleriaStorage} />
+
         </div>
 
       </div>

@@ -1,78 +1,116 @@
-export const Galleria = () => {
-        let nr = 1
-    // const zamiana = (src, numer) => {
-    //     let glowne = document.getElementById('glowne')
-    //     glowne.src = src
-    //     nr = numer
-    
-    // }
-    
-    // const prev = () => {
-    //     let aktualne = document.getElementById('glowne')
-    //     nr--
-    //     if (nr == 0) nr = 5
-    //     if (nr == 1) aktualne.src = "images/1.jpg"
-    //     if (nr == 2) aktualne.src = "images/2.jpg"
-    //     if (nr == 3) aktualne.src = "images/3.jpg"
-    //     if (nr == 4) aktualne.src = "images/4.jpg"
-    //     if (nr == 5) aktualne.src = "images/5.jpg"
-    // }
-    
-    // const next = () => {
-    //     let aktualne = document.getElementById('glowne')
-    //     nr++
-    //     if (nr == 6) nr = 1
-    //     if (nr == 1) aktualne.src = "images/1.jpg"
-    //     if (nr == 2) aktualne.src = "images/2.jpg"
-    //     if (nr == 3) aktualne.src = "images/3.jpg"
-    //     if (nr == 4) aktualne.src = "images/4.jpg"
-    //     if (nr == 5) aktualne.src = "images/5.jpg"
-    // }
-    const handleClick = () => {
+import { useEffect, useState } from "react";
 
+interface GalleriaProps {
+  imgURL: { imgURL: string; imgAlt: string }[];
+}
+
+export const Galleria = ({ imgURL }: GalleriaProps) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [slideDone, setSlideDone] = useState(true);
+  const [timeID, setTimeID] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (slideDone) {
+      setSlideDone(false);
+      const id = setTimeout(() => {
+        slideNext();
+        setSlideDone(true);
+      }, 5000);
+
+      setTimeID(id as unknown as number);
+
+      return () => clearTimeout(id);
     }
-        return (
-            <>
-            <div className="header-galleria">
-            <h1>Galeria obrazów</h1>
-            </div>
-            <div className="main-galleria">
-            <section id="panelLewy">
-                <img src="zdjecie.jpg" alt="zdjęcie dnia" />
-                <h3>Zdjęcia opublikowali</h3>
-                <table>
-                    <tr>
-                        <td>Anna Porada</td>
-                        <td>10 zdjęc</td>
-                    </tr>
-                    <tr>
-                        <td>Krzysztof Wasilewski</td>
-                        <td>12 zdjęc</td>
-                    </tr>
-                    <tr>
-                        <td>Monika Kowalska</td>
-                        <td>4 zdjęcia</td>
-                    </tr>
-                </table>
-            </section>
-            <section id="panelPrawy">
-                {/* <button type="button" onClick={prev}>prev</button> */}
-                <img id="glowne" src="1.jpg" alt="galeria" />
-                {/* <button type="button" onClick={next}>next</button> */}
-                <hr />
-                {/* <img src="images/1.jpg" alt="miniatura" onClick="zamiana('1.jpg',1)" />
-                <img src="images/2.jpg" alt="miniatura" onClick="zamiana('2.jpg',2)" />
-                <img src="images/3.jpg" alt="miniatura" onClick="zamiana('3.jpg',3)" />
-                <img src="images/4.jpg" alt="miniatura" onClick="zamiana('4.jpg',4)" />
-                <img src="images/5.jpg" alt="miniatura" onClick="zamiana('5.jpg',5)" /> */}
-            </section>
-        <footer>
-            <a href="https://pixabay.com" target="_blank">Więcej obrazów</a>
-            <p>Galerię wykonał: 00000000</p>
-        </footer>
-            </div>
-            </>
-        )
+  }, [slideDone]);
+
+  const slideNext = () => {
+    setActiveIndex((val) => {
+      if (val >= imgURL.length - 1) {
+        return 0;
+      } else {
+        return val + 1;
+      }
+    });
+  };
+
+  const slidePrev = () => {
+    setActiveIndex((val) => {
+      if (val <= 0) {
+        return imgURL.length - 1;
+      } else {
+        return val - 1;
+      }
+    });
+  };
+
+  const AutoPlayStop = () => {
+    if (timeID) {
+      clearTimeout(timeID);
+      setSlideDone(false);
     }
-    
+  };
+
+  const AutoPlayStart = () => {
+    if (!slideDone) {
+      setSlideDone(true);
+    }
+  };
+
+  return (
+    <div
+      className="container__slider"
+      onMouseEnter={AutoPlayStop}
+      onMouseLeave={AutoPlayStart}
+    >
+      {imgURL.map((item, index) => (
+        <div
+          className={
+            "slider__item " +
+            (index === activeIndex ? "slider__item-active" : "")
+          }
+          key={index}
+        >
+          <img src={item.imgURL} alt={item.imgAlt} />
+        </div>
+      ))}
+
+      <div className="container__slider__links">
+        {imgURL.map((_, index) => (
+          <button
+            key={index}
+            className={
+              activeIndex === index
+                ? "container__slider__links-small container__slider__links-small-active"
+                : "container__slider__links-small"
+            }
+            onClick={(e) => {
+              e.preventDefault();
+              setActiveIndex(index);
+            }}
+          ></button>
+        ))}
+      </div>
+
+      <button
+        className="slider__btn-next"
+        onClick={(e) => {
+          e.preventDefault();
+          slideNext();
+        }}
+      >
+        {">"}
+      </button>
+      <button
+        className="slider__btn-prev"
+        onClick={(e) => {
+          e.preventDefault();
+          slidePrev();
+        }}
+      >
+        {"<"}
+      </button>
+    </div>
+  );
+};
+
 export default Galleria;
