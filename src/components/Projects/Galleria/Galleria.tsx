@@ -65,15 +65,13 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
       {imgURL.map((item, index) => (
         <div
           className={
-            "slider__item " +
-            (index === activeIndex ? "slider_item-active" : "")
+            "slider_item " + (index === activeIndex ? "slider_item-active" : "")
           }
           key={index}
         >
           <img src={item.imgURL} alt={item.imgAlt} />
         </div>
       ))}
-
       <div className="container_slider_links">
         {imgURL.map((_, index) => (
           <button
@@ -100,6 +98,7 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
       >
         {">"}
       </button>
+
       <button
         className="slider_btn-prev"
         onClick={(e) => {
