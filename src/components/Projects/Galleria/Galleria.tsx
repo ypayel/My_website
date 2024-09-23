@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./Galleria.scss";
 interface GalleriaProps {
   imgURL: { imgURL: string; imgAlt: string }[];
 }
@@ -58,7 +58,7 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
 
   return (
     <div
-      className="container__slider"
+      className="container_slider"
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
@@ -66,7 +66,7 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
         <div
           className={
             "slider__item " +
-            (index === activeIndex ? "slider__item-active" : "")
+            (index === activeIndex ? "slider_item-active" : "")
           }
           key={index}
         >
@@ -74,14 +74,14 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
         </div>
       ))}
 
-      <div className="container__slider__links">
+      <div className="container_slider_links">
         {imgURL.map((_, index) => (
           <button
             key={index}
             className={
               activeIndex === index
-                ? "container__slider__links-small container__slider__links-small-active"
-                : "container__slider__links-small"
+                ? "container_slider_links-small container_slider_links-small-active"
+                : "container_slider_links-small"
             }
             onClick={(e) => {
               e.preventDefault();
@@ -92,7 +92,7 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
       </div>
 
       <button
-        className="slider__btn-next"
+        className="slider_btn-next"
         onClick={(e) => {
           e.preventDefault();
           slideNext();
@@ -101,7 +101,7 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
         {">"}
       </button>
       <button
-        className="slider__btn-prev"
+        className="slider_btn-prev"
         onClick={(e) => {
           e.preventDefault();
           slidePrev();
