@@ -1,33 +1,39 @@
 import { useEffect, useState } from "react";
 import "./Galleria.scss";
+
+
 interface GalleriaProps {
   imgURL: { imgURL: string; imgAlt: string }[];
 }
 
 export const Galleria = ({ imgURL }: GalleriaProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [slideDone, setSlideDone] = useState(true);
   const [timeID, setTimeID] = useState<number | null>(null);
 
   useEffect(() => {
-    if (slideDone) {
-      setSlideDone(false);
-      const id = setTimeout(() => {
-        slideNext();
-        setSlideDone(true);
-      }, 5000);
+    console.log("Setting new timeout for auto-sliding");
+    
+    const id = setTimeout(() => {
+      slideNext();
+    }, 5000);
 
-      setTimeID(id as unknown as number);
+    setTimeID(id as unknown as number);
 
-      return () => clearTimeout(id);
-    }
-  }, [slideDone]);
+    return () => {
+      if (timeID) {
+        console.log("Clearing timeout:", timeID);
+        clearTimeout(timeID);
+      }
+    };
+  }, [activeIndex]);
 
   const slideNext = () => {
     setActiveIndex((val) => {
       if (val >= imgURL.length - 1) {
+        console.log("Reached last slide, going back to the first");
         return 0;
       } else {
+        console.log("Going to next slide, index:", val + 1);
         return val + 1;
       }
     });
@@ -36,8 +42,10 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
   const slidePrev = () => {
     setActiveIndex((val) => {
       if (val <= 0) {
+        console.log("Reached first slide, going to the last");
         return imgURL.length - 1;
       } else {
+        console.log("Going to previous slide, index:", val - 1);
         return val - 1;
       }
     });
@@ -45,15 +53,20 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
 
   const AutoPlayStop = () => {
     if (timeID) {
+      console.log("AutoPlay stopped, clearing timeout:", timeID);
       clearTimeout(timeID);
-      setSlideDone(false);
+      setTimeID(null);
     }
   };
 
   const AutoPlayStart = () => {
-    if (!slideDone) {
-      setSlideDone(true);
-    }
+    console.log("AutoPlay started");
+    
+    const id = setTimeout(() => {
+      slideNext();
+    }, 5000);
+
+    setTimeID(id as unknown as number);
   };
 
   return (
@@ -62,16 +75,10 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
-      {imgURL.map((item, index) => (
-        <div
-          className={
-            "slider_item " + (index === activeIndex ? "slider_item-active" : "")
-          }
-          key={index}
-        >
-          <img src={item.imgURL} alt={item.imgAlt} />
-        </div>
-      ))}
+      <div className="slider_item slider_item-active">
+        <img src={imgURL[activeIndex].imgURL} alt={imgURL[activeIndex].imgAlt} />
+      </div>
+
       <div className="container_slider_links">
         {imgURL.map((_, index) => (
           <button
@@ -83,7 +90,9 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
             }
             onClick={(e) => {
               e.preventDefault();
+              console.log("Button clicked, setting activeIndex to:", index);
               setActiveIndex(index);
+              AutoPlayStop(); 
             }}
           ></button>
         ))}
@@ -93,7 +102,9 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
         className="slider_btn-next"
         onClick={(e) => {
           e.preventDefault();
+          console.log("Next button clicked");
           slideNext();
+          AutoPlayStop(); 
         }}
       >
         {">"}
@@ -103,7 +114,9 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
         className="slider_btn-prev"
         onClick={(e) => {
           e.preventDefault();
+          console.log("Previous button clicked");
           slidePrev();
+          AutoPlayStop(); 
         }}
       >
         {"<"}
