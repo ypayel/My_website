@@ -17,32 +17,32 @@ export const Gazeta = () => {
     return (
         <>
         <div className="container-gazeta">
-        <header>
+        <header className="header-gazeta">
         <h1>Gazeta codzienna</h1>
     </header>
-    <main>
-        <button type="button" onClick={(e) => {e.preventDefault();
+    <main className="main-gazeta">
+        <button className="button-show-article_1" type="button" onClick={(e) => {e.preventDefault();
         pokaz('artykul_1');
     }}>Sekcja wiadomości z kraju</button>
         <section id="artykul_1">
             <h2>Szczepimy seniorów</h2>
             <p>Od piątku...</p>
         </section>
-        <button type="button" onClick={(e) => {e.preventDefault();
+        <button className="button-show-article_2" type="button" onClick={(e) => {e.preventDefault();
             pokaz('artykul_2');
         }}>Sekcja sportowa</button>
         <section id="artykul_2">
             <h2>Stoch i Kubacki...</h2>
             <p>W środę...</p>
         </section>
-        <button type="button" onClick={(e) => {e.preventDefault();
+        <button className="button-show-article_3" type="button" onClick={(e) => {e.preventDefault();
             pokaz('artykul_3');
         }}>Sekcja aktualności</button>
         <section id="artykul_3">
             <h2>Dzień Babci 2021...</h2>
             <p>Dzień Babci to...</p>
         </section>
-        <button type="button" onClick={(e) => {e.preventDefault();
+        <button className="button-show-article_4" type="button" onClick={(e) => {e.preventDefault();
             pokaz('artykul_4');
         }}>Sekcja ogłoszeń</button>
         <section id="artykul_4">
@@ -50,13 +50,13 @@ export const Gazeta = () => {
             <p>W Oławie...</p>
         </section>
     </main>
-    <footer>
+    <footer className="footer-gazeta">
         <blockquote>Pierwszym obowiązkiem dziennikarza jest nie nudzić. Drugim nie bać się. Trzecim niczego nie
             wyrzucać.</blockquote>
-        <img src="obraz.jpg" alt="redaktor naczelny" />
-        <h5>Jan Nowak<br />Redaktor naczelny<br />gazety codziennej</h5>
+        <img className="image_redaktor" src="obraz.jpg" alt="redaktor naczelny" />
+        <h5 className="header_name">Jan Nowak<br />Redaktor naczelny<br />gazety codziennej</h5>
         <h3>Zespół</h3>
-        <table>
+        <table className="table_gazeta">
             <tr>
                 <td>Ewa</td>
                 <td>wiadomości z kraju</td>
