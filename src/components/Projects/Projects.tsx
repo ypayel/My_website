@@ -10,6 +10,7 @@ import Nav from "../Nav/Nav";
 import Fryzjer from "./Fryzjer/Fryzjer";
 import Galleria from "./Galleria/Galleria";
 import { GalleriaStorage } from "./Galleria/GalleriaStorage";
+import Gazeta from "./Gazeta/Gazeta";
 
 export const Projects = () => {
   return (
@@ -49,9 +50,11 @@ export const Projects = () => {
         <div className="projects-galleria">
           <h3 className="header-projects">Galleria</h3>
           <Galleria imgURL={GalleriaStorage} />
-
         </div>
-
+          <div className="projects-gazeta"> 
+            <h3 className="header-projects">Gazeta</h3>
+            <Gazeta />
+          </div>
       </div>
     </>
   );
