@@ -1,0 +1,47 @@
+.color-conteiner {
+	font-family: Helvetica;
+	background-color: Linen;
+	color: #222;
+	margin: auto;
+	width: 90%;
+}
+.color-header {
+	display: flex;
+}
+.color-header .left,
+.color-header .right {
+	background-color: black;
+	color: white;
+	width: 50%;
+	height: 100px;
+}
+.color-main {
+	padding: 20px;
+}
+.color-footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+.color-table {
+	margin: 40px;
+}
+#d1, #d2, #d3, #d4, #d5 {
+	padding: 30px;
+	text-align: center;
+	font-weight: bold; 
+}
+.color-link {
+	color: #aaa;
+	text-decoration: none;
+}
+.color-link:hover {
+	color: white;
+}
+.color-list {
+	display: inline-block;
+	padding: 5px;
+	margin: 10px;
+	border-bottom: 1px solid white;
+}

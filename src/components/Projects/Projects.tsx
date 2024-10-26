@@ -11,6 +11,7 @@ import Fryzjer from "./Fryzjer/Fryzjer";
 import Galleria from "./Galleria/Galleria";
 import { GalleriaStorage } from "./Galleria/GalleriaStorage";
 import Gazeta from "./Gazeta/Gazeta";
+import ColorPicker from "./ColorPicker/ColorPicker";
 
 export const Projects = () => {
   return (
@@ -54,6 +55,10 @@ export const Projects = () => {
           <div className="projects-gazeta"> 
             <h3 className="header-projects">Gazeta</h3>
             <Gazeta />
+          </div>
+          <div className="projects-colorPicker">
+            <h3 className="header-projects">Color Picker</h3>
+            <ColorPicker />
           </div>
       </div>
     </>
