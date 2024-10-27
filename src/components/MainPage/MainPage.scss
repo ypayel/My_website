@@ -44,3 +44,47 @@ body {
     padding: 20px;
     margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+    .nav-conteiner {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width: 425px) {
+    .nav-conteiner {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .nav-conteiner p {
+        font-size: 30px;
+        text-align: center;
+    }
+    .nav-conteiner a {
+        margin: 0px;
+    }
+    .github-icon {
+        width: 40px;
+        height: 40px;
+        
+    }
+    .linkedin-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .welcome-text-conteiner {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-top: 100px;
+        align-items: stretch;
+    }
+    .welcome-text {
+        width: 400px;
+    }
+    .welcome-button {
+        margin-right: 25px;
+    }
+
+}
