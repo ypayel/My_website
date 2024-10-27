@@ -8,7 +8,6 @@
 
 .image-container {
     flex-shrink: 0;
-    margin-left: px; 
     margin-top: 75px;
     margin-left: 100px;
 }
@@ -33,12 +32,57 @@
 .about-first-text {
     margin-top: 0;
     margin-bottom: 1rem;
-    width: 1250px;
+    width: 1000px;
 }
 .certificate-link {
-    text-decoration:none;
+    text-decoration:underline;
     color: white;
 }
 .navigation-conteiner {
     float: right;
+}
+
+@media screen  and (max-width: 425px) {
+    .nav-conteiner {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .nav-conteiner p {
+        font-size: 30px;
+        text-align: center;
+    }
+    .nav-conteiner a {
+        margin: 0px;
+    }
+    .github-icon {
+        width: 40px;
+        height: 40px;
+        
+    }
+    .linkedin-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    .text-container {
+        width: 400px;
+        height: 400px;
+        margin-top: 0px;
+    }
+    .about-first-text {
+        width: auto;
+    }
+    .my-image {
+        width: 250px;
+        height: 290px;
+    }
+    .image-container {
+        margin-left: 55px;
+        margin-top: 45px;
+    }
 }
