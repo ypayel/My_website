@@ -42,6 +42,35 @@
     float: right;
 }
 
+@media screen and (max-width: 1024px) {
+    .text-container {
+        font-size: 35px;
+    }
+    .nav-conteiner p{
+        font-size: 35px;
+    }
+    .github-icon , .linkedin-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .text-container {
+        width: 500px;
+        height: 450px;
+        margin-top: 0px;
+    }
+    .about-first-text {
+        width: 500px;
+        height: 450px;
+    }
+    .my-image {
+        width: 350px;
+        height: 430px;
+    }
+    .image-container {
+        margin-left: 35px;
+    }
+}
+
 @media screen  and (max-width: 425px) {
     .nav-conteiner {
         display: flex;
@@ -70,8 +99,8 @@
         width: 350px;
     }
     .text-container {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         margin-top: 0px;
     }
     .about-first-text {
@@ -85,4 +114,5 @@
         margin-left: 55px;
         margin-top: 45px;
     }
+    
 }
