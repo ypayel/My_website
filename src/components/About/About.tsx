@@ -25,7 +25,7 @@ export const About = () => {
                     Here below I leave a link to:  
                     <a href="https://app.diplomasafe.com/pl-PL/diploma/d859f9cfc625bf746ae5add1a94d275450f1f2760" target="_blank" className="certificate-link"> Certificate</a>
                 </p>
-                <p className="about-third-text">I also study at the WSB University in Gdansk, majoring in computer science, specializing in Front-End.
+                <p className="about-third-text">I study at the WSB University in Gdansk, majoring in computer science, specializing in Front-End.
                 </p> 
             </div>
            

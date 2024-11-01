@@ -25,14 +25,14 @@ body {
 }
 .welcome-text {
     width: 450px;
-    font-size: 20px;
+    font-size: 30px;
     color: gray;
 }
 .welcome-first-header {
-    font-size: 25px;
+    font-size: 40px;
 }
 .welcome-second-header {
-    font-size: 45px;
+    font-size: 55px;
     width: 350px;
 }
 .welcome-button {
@@ -40,14 +40,29 @@ body {
     border-radius: 16px;
     border-style:groove;
     border-color: white;
-    font-size: 20px;
+    font-size: 25px;
     padding: 20px;
     margin-top: 20px;
 }
+@media screen and (max-width: 1024px) {
+    .nav-conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .welcome-text-conteiner {
+        margin-left: 0px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .nav-conteiner {
         display: flex;
-        justify-content: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .welcome-text-conteiner {
+        margin-left: 0px;
     }
 }
 @media screen and (max-width: 425px) {
@@ -55,36 +70,34 @@ body {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        margin-right: 35px;
     }
     .nav-conteiner p {
         font-size: 30px;
         text-align: center;
+        
     }
     .nav-conteiner a {
         margin: 0px;
     }
-    .github-icon {
-        width: 40px;
-        height: 40px;
+    .github-icon, .linkedin-icon {
+        width: 35px;
+        height: 35px;
         
-    }
-    .linkedin-icon {
-        width: 40px;
-        height: 40px;
     }
     .welcome-text-conteiner {
         display: flex;
-        align-items: flex-start;
         flex-direction: column;
-        margin-left: 25px;
+        margin-left: 0px;
         margin-top: 100px;
-        align-items: stretch;
+        
     }
     .welcome-text {
         width: 400px;
+        font-size: 25px;
     }
     .welcome-button {
-        margin-right: 25px;
+        margin-left: 35px;
     }
 
 }

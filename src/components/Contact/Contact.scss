@@ -15,7 +15,7 @@
     flex-direction: column;
 }
 .contact-link {
-    text-decoration:none;
+    text-decoration:underline;
     color: white;
 }
 .nav-menu {
@@ -24,4 +24,16 @@
 }
 .contact-welcometext {
     font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .info-conteiner {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .info-conteiner {
+        align-items: center;
+    }
 }
