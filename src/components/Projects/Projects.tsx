@@ -12,6 +12,7 @@ import Galleria from "./Galleria/Galleria";
 import { GalleriaStorage } from "./Galleria/GalleriaStorage";
 import Gazeta from "./Gazeta/Gazeta";
 import ColorPicker from "./ColorPicker/ColorPicker";
+import LinksProjects from "./LinksProjects/LinksProjects";
 
 export const Projects = () => {
   return (
@@ -59,6 +60,9 @@ export const Projects = () => {
           <div className="projects-colorPicker">
             <h3 className="header-projects">Color Picker</h3>
             <ColorPicker />
+          </div>
+          <div>
+            <LinksProjects />
           </div>
       </div>
     </>
