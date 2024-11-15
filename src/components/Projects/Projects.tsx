@@ -19,7 +19,7 @@ export const Projects = () => {
     <>
       <Nav />
       <div className="projects-conteiner">
-        <div className="project-social">
+        {/* <div className="project-social">
           <h3 className="header-projects">
             Moj pierwszy projekt - Social Links
           </h3>
@@ -60,7 +60,7 @@ export const Projects = () => {
           <div className="projects-colorPicker">
             <h3 className="header-projects">Color Picker</h3>
             <ColorPicker />
-          </div>
+          </div> */}
           <div>
             <LinksProjects />
           </div>
