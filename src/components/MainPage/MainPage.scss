@@ -11,8 +11,8 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 200px;
-    margin-top: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 .nav-conteiner {
     display: flex;
@@ -43,6 +43,11 @@ body {
     font-size: 25px;
     padding: 20px;
     margin-top: 20px;
+}
+
+.prev-projects {
+    width: 800px;
+    position: relative; left: 850px; bottom: 620px
 }
 @media screen and (max-width: 1024px) {
     .nav-conteiner {
