@@ -29,4 +29,16 @@
     transform: scale(1.05); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
+
+  @media screen and (max-width: 425px) {
+    .links-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .project-container {
+      margin-top: 15px;
+    }
+    
+  }
   
