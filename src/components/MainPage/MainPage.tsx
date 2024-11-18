@@ -16,7 +16,9 @@ export const MainPage = () => {
                 <button className="welcome-button"><Link className="welcome-button-text" to="/projects">VIEW MY PROJECTS</Link></button> 
         </div>
         <div className="prev-projects">
+            <Link to="/projects" className="link-prev-projects">
                 <Galleria imgURL={GalleriaStorage} />
+            </Link>
                 </div> 
         </>
     )
