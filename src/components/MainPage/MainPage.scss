@@ -58,6 +58,10 @@ body {
     .welcome-text-conteiner {
         margin-left: 0px;
     }
+    .prev-projects {
+        width: 500px;
+        position: relative; left: 260px; top: 50px
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -69,13 +73,18 @@ body {
     .welcome-text-conteiner {
         margin-left: 0px;
     }
+
+    .prev-projects {
+        width: 450px;
+        position: relative; left: 155px; top: 50px
+    }
 }
 @media screen and (max-width: 425px) {
     .nav-conteiner {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin-right: 35px;
+        margin-right: 5px;
     }
     .nav-conteiner p {
         font-size: 30px;
@@ -103,6 +112,11 @@ body {
     }
     .welcome-button {
         margin-left: 35px;
+    }
+
+    .prev-projects {
+        width: 400px;
+        position: relative; left: 1px; top: 30px
     }
 
 }

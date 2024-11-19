@@ -9,8 +9,11 @@
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.705); 
+    border: 5px solid white; 
   }
-  
+
   .container_slider > button {
     background-color: transparent;
     outline: none;
