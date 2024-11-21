@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { BasketBookContextProvider } from './components/Projects/BookStore/components/BasketBookContext/BasketBookContext';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './components/Projects/BookStore/i18';
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,6 +17,7 @@ root.render(
     <BasketBookContextProvider>
     <BrowserRouter>
     <App />
+    <SpeedInsights />
     </BrowserRouter>
     </BasketBookContextProvider>
     </I18nextProvider>
