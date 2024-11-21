@@ -7,7 +7,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/second">
           <img
-            src={process.env.PUBLIC_URL + "/images/BookStore.png"}
+            src={process.env.PUBLIC_URL + "/images/BookStore.jpg"}
             className="project-image"
             alt="bookStore"
           />
@@ -16,7 +16,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/calculator">
           <img
-            src={process.env.PUBLIC_URL + "/images/Calculator.png"}
+            src={process.env.PUBLIC_URL + "/images/Calculator.jpg"}
             className="project-image"
             alt="calculator"
           />
@@ -25,7 +25,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/colorPicker">
           <img
-            src={process.env.PUBLIC_URL + "/images/ColorPicker.png"}
+            src={process.env.PUBLIC_URL + "/images/ColorPicker.jpg"}
             className="project-image"
             alt="colorPicker"
           />
@@ -34,7 +34,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/creditCard">
           <img
-            src={process.env.PUBLIC_URL + "/images/CreditCard.png"}
+            src={process.env.PUBLIC_URL + "/images/CreditCard.jpg"}
             className="project-image"
             alt="creditCard"
           />
@@ -43,7 +43,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/fryzjer">
           <img
-            src={process.env.PUBLIC_URL + "/images/Fryzjer.png"}
+            src={process.env.PUBLIC_URL + "/images/Fryzjer.jpg"}
             className="project-image"
             alt="fryzjer"
           />
@@ -52,7 +52,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/gazeta">
           <img
-            src={process.env.PUBLIC_URL + "/images/Gazeta.png"}
+            src={process.env.PUBLIC_URL + "/images/Gazeta.jpg"}
             className="project-image"
             alt="gazeta"
           />
@@ -61,7 +61,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/galleria">
           <img
-            src={process.env.PUBLIC_URL + "/images/Galleria.png"}
+            src={process.env.PUBLIC_URL + "/images/Galleria.jpg"}
             className="project-image"
             alt="galleria"
           />
@@ -70,7 +70,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/linkPage">
           <img
-            src={process.env.PUBLIC_URL + "/images/LinkPage.png"}
+            src={process.env.PUBLIC_URL + "/images/LinkPage.jpg"}
             className="project-image"
             alt="linkPage"
           />
@@ -79,7 +79,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/omlette">
           <img
-            src={process.env.PUBLIC_URL + "/images/Omlette.png"}
+            src={process.env.PUBLIC_URL + "/images/Omlette.jpg"}
             className="project-image"
             alt="omlette"
           />
@@ -88,7 +88,7 @@ export const LinksProjects = () => {
       <div className="project-container">
         <Link className="project-link" to="/responseWeb">
           <img
-            src={process.env.PUBLIC_URL + "/images/ResponseWeb.png"}
+            src={process.env.PUBLIC_URL + "/images/ResponseWeb.jpg"}
             className="project-image"
             alt="responseWeb"
           />
