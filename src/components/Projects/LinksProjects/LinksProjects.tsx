@@ -41,7 +41,7 @@ export const LinksProjects = () => {
         </Link>
       </div>
       <div className="project-container">
-        <Link className="project-link" to="/fryzjer">
+        <Link className="project-link" to="/salon">
           <img
             src={process.env.PUBLIC_URL + "/images/Fryzjer.jpg"}
             className="project-image"
