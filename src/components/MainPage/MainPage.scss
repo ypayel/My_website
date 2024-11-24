@@ -16,7 +16,8 @@ body {
 }
 .nav-conteiner {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-menu {

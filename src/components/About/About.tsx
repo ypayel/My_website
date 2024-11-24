@@ -22,9 +22,11 @@ export const About = () => {
                 <p className="about-second-text">
                     I also completed a programming course at SDA Academy (Software Development Academy)
                     and I have a certificate of completion of the course.
-                    Here below I leave a link to:  
+                    </p>
+                    <p className="about-second-text">Here below I leave a link to: 
                     <a href="https://app.diplomasafe.com/pl-PL/diploma/d859f9cfc625bf746ae5add1a94d275450f1f2760" target="_blank" className="certificate-link"> Certificate</a>
-                </p>
+                    </p> 
+                
                 <p className="about-third-text">I study at the WSB University in Gdansk, majoring in computer science, specializing in Front-End.
                 </p> 
             </div>

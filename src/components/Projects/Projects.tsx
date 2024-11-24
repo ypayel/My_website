@@ -17,7 +17,7 @@ import LinksProjects from "./LinksProjects/LinksProjects";
 export const Projects = () => {
   return (
     <>
-      <Nav />
+    <Nav />
       <div className="projects-conteiner">
           <div className="links-component">
             <LinksProjects />
