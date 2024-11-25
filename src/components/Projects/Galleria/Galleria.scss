@@ -1,18 +1,21 @@
 .container_slider {
     position: relative;
-    width: 100%;
     padding: 0;
-    overflow: hidden;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: black;
-    border-radius: 20px;
+    width: 450px; 
+    height: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border: 8px solid white; 
+    border-radius: 20px; 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.705); 
-    border: 5px solid white; 
+    object-fit: cover;
   }
+  
 
   .container_slider > button {
     background-color: transparent;
@@ -60,11 +63,10 @@
   .container_slider_links-small-active {
     background-color: black;
   }
-  
+
   .slider_item {
     box-sizing: border-box;
     min-width: 100%;
-    height: auto;
     overflow: hidden;
     object-fit: cover;
     height: auto;

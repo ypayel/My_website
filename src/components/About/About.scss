@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 500px;
 }
 
 .image-container {
@@ -50,7 +50,6 @@
 
 @media screen and (max-width: 1024px) {
     
-  
     .text-container {
         width: 500px;
         height: 450px;
@@ -58,7 +57,7 @@
         font-size: 35px;
     }
     .about-first-text {
-        width: 500px;
+        width: 390px;
         height: 450px;
     }
     .my-image {
@@ -71,7 +70,7 @@
 }
 @media screen and (max-width: 768px) {
     .my-image {
-        width: 220px;
+        width: 240px;
         height: 300px;
     }
 }
