@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CreditCard.scss";
+import Nav from "../../Nav/Nav";
 
 export const CreditCard = () => {
 
@@ -12,6 +13,8 @@ export const CreditCard = () => {
     return (
         <>
             <div className="main-conteiner-content">
+                <Nav/>
+                <div className="creditCard-container">
                 <div className="background-card">
                     <img src={process.env.PUBLIC_URL + "/images/bg-main-desktop.png"} alt="background-image" className="background-image" />
                     <div className="front-card">
@@ -90,11 +93,6 @@ export const CreditCard = () => {
                         </form>
                     </div>
                 </div>
-
-                <div className="footer-conteiner">
-                    <div className="attribution-credit">
-                        Coded by <a href="https://github.com/ypayel">ypayel</a>.
-                    </div>
                 </div>
             </div>
         </>
