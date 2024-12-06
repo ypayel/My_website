@@ -1,3 +1,4 @@
+import Nav from "../../Nav/Nav";
 import "./ColorPicker.scss";
 export const  ColorPicker = () => {
 
@@ -14,7 +15,9 @@ const skrypt = () => {
  }
     return (
         <>
-        <div className="color-conteiner">
+        <div className="color">
+			<Nav/>
+			<div className="color-container">
         <header className="color-header">
 		<section className="left">
 			<h1>Pomocnik CSS</h1>
@@ -28,7 +31,7 @@ const skrypt = () => {
 	<main className="color-main">
 		<h2>Podaj składową H koloru w kodzie HSL</h2>
 		<p>od 0 do 30 czerwienie, do 60 żółcie, do 150 zielenie, do 250 niebieskie, do 360 fiolet i purpura</p>
-		<img src={process.env.PUBLIC_URL + '/images/kolory.jpg'}alt="Przestrzeń barw HSL" /><br/>
+		<img src={process.env.PUBLIC_URL + '/images/kolory.jpg'}alt="Przestrzeń barw HSL"  className="color-image"/><br/>
 		<input type="number" id="x" max="360" placeholder="0 - 360" />
 		<button onClick={(e) => {e.preventDefault();skrypt() }}>Generuj paletę</button>
 		<table className="color-table">
@@ -46,6 +49,7 @@ const skrypt = () => {
 	<footer className="color-footer">
 		<p>Autor: 00000000</p>
 	</footer>
+	</div>
         </div>
         </>
     )

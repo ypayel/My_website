@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
 import "./Calculator.scss";
+import Nav from "../../Nav/Nav";
 
 class CalculatorClass {
     display: HTMLInputElement | null = null;
@@ -80,6 +81,8 @@ export const Calculator = () => {
 
     return (
         <div className="calculator">
+            <Nav/>
+            <div className="holder-calculator">
             <input type="text" id="display" disabled />
             <div className="buttons-calculator">
                 <button onClick={() => calculator.clear()} className="button-class">C</button>
@@ -99,6 +102,7 @@ export const Calculator = () => {
                 <button onClick={() => calculator.appendNumber('.')} className="button-class">.</button>
                 <button onClick={() => calculator.calculate()} className="button-class">=</button>
                 <button onClick={() => calculator.appendOperator('/')} className="button-class">/</button>
+            </div>
             </div>
         </div>
     );

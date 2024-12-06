@@ -1,4 +1,4 @@
-.main {
+.container-pageBook {
     background-color: #abbacb;
     
 }
@@ -15,7 +15,7 @@
 
 
 @media only screen and (max-width: 425px) {
-    .main {
+    .container-pageBook {
         display: flex;
         flex-direction: column;
     }

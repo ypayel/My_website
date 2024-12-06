@@ -1,3 +1,4 @@
+import Nav from "../../Nav/Nav";
 import "./BookStore.scss";
 import MainPageBook from "./components/MainPageBook/MainPageBook";
 function BookStore() {
