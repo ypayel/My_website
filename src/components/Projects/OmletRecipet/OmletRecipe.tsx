@@ -4,7 +4,7 @@ export const OmletRecipe = () => {
         <>
             <div className="main-conteiner">
                 <div className="image-conteiner">
-                    <img src={process.env.PUBLIC_URL + "/images/image-omelette.jpeg"} alt="omlette-img" className="omlette" />
+                    <img src={process.env.PUBLIC_URL + "/images/image-omelette.jpeg"} alt="omlette-img" className="omlette-image" />
                 </div>
                 <div className="recipe-conteiner">
                     <h1 className="headline">Simple Omelette Recipe</h1>
