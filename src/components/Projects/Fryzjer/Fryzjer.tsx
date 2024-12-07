@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import './Fryzjer.scss';
+import Nav from "../../Nav/Nav";
 export const Fryzjer = () => {
   return (
     <>
       <div className="fryzjer-main">
+        <Nav/>
+        <div className="container-fryzjer">
         <div id="lewy1">
           <h2 className="header-fryzjer">
             <Link className="salon-link" to="/salon">SALON FRYZJERSKI</Link>
@@ -41,6 +44,7 @@ export const Fryzjer = () => {
         </div>
         <div id="stopka">
           <p>Autor: 000000000</p>
+        </div>
         </div>
       </div>
     </>

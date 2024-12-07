@@ -1,8 +1,9 @@
-.fryzjer-main,
-.fryzura-main {
+.container-fryzjer,
+.container-fryzura {
   display: flex;
   font-family: Helvetica;
   flex-direction: column;
+  margin-top: 25px;
 }
 #lewy1 {
   background: SteelBlue;
@@ -44,4 +45,32 @@
 .header-fryzjer {
   text-align: center;
 
+}
+
+.second-img {
+  width: 1424px;
+  height: 370px;
+}
+
+@media screen and (max-width: 1024px ) {
+  .second-img {
+    width: 1008px;
+    height: 275px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px ) {
+  .second-img {
+    width: 752px;
+    height: 240px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .second-img {
+    width: 409px;
+  }
 }
