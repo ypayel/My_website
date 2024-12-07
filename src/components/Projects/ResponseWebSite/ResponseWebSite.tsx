@@ -1,8 +1,12 @@
+import Nav from "../../Nav/Nav";
 import "./ResponseWebSite.scss"
 export const ResponseWebSite = () => {
     return (
         <>
             <div className="main-conteiner">
+            <Nav/>
+                <div className="response-container">
+                
                 <div className="header">
                     <div className="logo-section">
                         <img className="logo" src={process.env.PUBLIC_URL + '/images/58px.webp'} alt="58px"/> <span>Sections</span>
@@ -250,6 +254,7 @@ export const ResponseWebSite = () => {
                                 <p className="footer-paragraf">Premium UI Goods for Designers;</p>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>    
                 </>

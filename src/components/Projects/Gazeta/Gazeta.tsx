@@ -1,3 +1,4 @@
+import Nav from "../../Nav/Nav";
 import "./Gazeta.scss";
 const pokaz = (id: string) => {
     const sekcje = ['artykul_ 1','artykul_2','artykul_3','artykul_4' ];
@@ -16,7 +17,11 @@ const pokaz = (id: string) => {
 export const Gazeta = () => {
     return (
         <>
-        <div className="container-gazeta">
+        <div className="holder-gazeta">
+            <Nav/>
+            <div className="container-gazeta">
+
+            </div>
         <header className="header-gazeta">
         <h1>Gazeta codzienna</h1>
     </header>

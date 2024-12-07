@@ -1,9 +1,12 @@
+import Nav from "../../Nav/Nav"
 import "./SocialLinks.scss"
 export const SocialLinks = () => {
     return (
         <>
 
             <div className="main-conteiner-social">
+                <Nav/>
+                <div className="social-container">
                 <div className="title">
                     <title>Frontend Mentor | Social links profile</title>
                 </div>
@@ -29,6 +32,7 @@ export const SocialLinks = () => {
                 <footer className="attribution-social">
                     Coded by <a href="https://github.com/ypayel" target="_blank" className="link-attribution-social">ypayel</a>.
                 </footer>
+                </div>
             </div>
         </>
     )

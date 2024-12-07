@@ -1,7 +1,8 @@
 .container-gazeta {
-    margin: 0;
+    margin-top: 35px;
     font-family: Georgia;
     background-color: aliceblue;
+
 }
 
 .header-gazeta {
@@ -56,4 +57,30 @@
     margin: auto;
     width: 95%;
     border: 1px solid aliceblue;
+}
+@media screen  and (max-width: 768px) {
+    .footer-gazeta {
+        width: 30%;
+    }
+    .main-gazeta {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 425px ) {
+    .footer-gazeta {
+        width: 40%;
+    }
+    .table_gazeta {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 95%;
+        
+    }
+    .main-gazeta {
+        width: 45%;
+        
+    }
 }

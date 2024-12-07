@@ -1,4 +1,4 @@
-.container_slider {
+.galleri-container {
     position: relative;
     padding: 0;
     display: flex;
@@ -14,10 +14,12 @@
     border-radius: 20px; 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.705); 
     object-fit: cover;
+    margin-top: 55px;
+    margin-left: 500px;
   }
   
 
-  .container_slider > button {
+  .galleri-container > button {
     background-color: transparent;
     outline: none;
     border: 0;
@@ -106,10 +108,21 @@
     width: 100%;
     height: auto;
   }
-  
+  @media screen and (max-width: 1024px) {
+    .galleri-container {
+      margin-left: 270px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .galleri-container {
+      margin-left: 150px;
+    }
+  }
+
 
   @media screen and (max-width: 425px) {
-    .container_slider {
+    .galleri-container {
       width: 350px;
       height: 350px;
       margin-left: 15px;

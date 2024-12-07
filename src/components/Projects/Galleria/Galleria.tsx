@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Galleria.scss";
+import Nav from "../../Nav/Nav";
 
 
 interface GalleriaProps {
@@ -75,6 +76,9 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
+      <Nav/>
+      <div className="galleri-container">
+      
       <div className="slider_item slider_item-active">
         <img src={imgURL[activeIndex].imgURL} alt={imgURL[activeIndex].imgAlt} />
       </div>
@@ -121,6 +125,7 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
       >
         {"<"}
       </button>
+      </div>
     </div>
   );
 };
