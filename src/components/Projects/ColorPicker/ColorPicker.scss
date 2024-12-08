@@ -29,7 +29,10 @@
 	text-align: center;
 }
 .color-table {
-	margin: 40px;
+	display: flex;
+		flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 }
 #d1, #d2, #d3, #d4, #d5 {
 	padding: 30px;
@@ -64,6 +67,12 @@
 		margin-right: 195px;
 		width: 750px;
 	}
+	.color-table {
+		display: flex;
+		flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+	}
 }
 
 
@@ -79,19 +88,31 @@
 		margin-left: 115px;
 		width: 530px;
 	}
+	.color-table {
+		display: flex;
+		flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+	}
 }
 
 
 
 @media screen and (max-width: 425px) {
 	.color-container {
-	margin-left: 5px;	
-	width: 450px;	
+	margin-left: 0px;
+	width: 410px;	
 	height: 600px;
 
 	}
 	.color-image {
 		width: 320px;
 		height: 60px;
+	}
+	.color-table {
+		display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
 	}
 }

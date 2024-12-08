@@ -78,7 +78,6 @@ export const Galleria = ({ imgURL }: GalleriaProps) => {
     >
       <Nav/>
       <div className="galleri-container">
-      
       <div className="slider_item slider_item-active">
         <img src={imgURL[activeIndex].imgURL} alt={imgURL[activeIndex].imgAlt} />
       </div>

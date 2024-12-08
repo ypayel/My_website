@@ -32,8 +32,8 @@ const skrypt = () => {
 		<h2>Podaj składową H koloru w kodzie HSL</h2>
 		<p>od 0 do 30 czerwienie, do 60 żółcie, do 150 zielenie, do 250 niebieskie, do 360 fiolet i purpura</p>
 		<img src={process.env.PUBLIC_URL + '/images/kolory.jpg'}alt="Przestrzeń barw HSL"  className="color-image"/><br/>
-		<input type="number" id="x" max="360" placeholder="0 - 360" />
-		<button onClick={(e) => {e.preventDefault();skrypt() }}>Generuj paletę</button>
+		<input type="number" id="x" max="360" placeholder="0 - 360" className="input-color"/>
+		<button onClick={(e) => {e.preventDefault();skrypt() }} className="button-color">Generuj paletę</button>
 		<table className="color-table">
 			<tr>
 				<td id="d1" colSpan={4}>Kolor główny</td>

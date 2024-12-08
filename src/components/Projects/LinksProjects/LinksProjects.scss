@@ -28,7 +28,8 @@
 
   .project-container:hover .project-image {
     transform: scale(1.05); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
   }
 
   @media screen and (max-width: 1024px ) {
@@ -54,6 +55,7 @@
       grid-template-columns: repeat(2, 1fr);
      justify-items: center;
     }
+    
   } 
 
   @media screen and (max-width: 425px) {
