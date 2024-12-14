@@ -11,7 +11,6 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 100px;
     margin-top: 50px;
 }
 .nav-conteiner {
@@ -74,7 +73,6 @@ body {
     .welcome-text-conteiner {
         margin-left: 0px;
     }
-
     .prev-projects {
         width: 450px;
         position: relative; left: 155px; top: 50px
@@ -90,7 +88,6 @@ body {
     .nav-conteiner p {
         font-size: 30px;
         text-align: center;
-        
     }
     .nav-conteiner a {
         margin: 0px;
@@ -98,18 +95,15 @@ body {
     .github-icon, .linkedin-icon {
         width: 35px;
         height: 35px;
-        
     }
+    
     .welcome-text-conteiner {
         display: flex;
         flex-direction: column;
-        margin-left: 0px;
-        align-items: center;
     }
     .welcome-text {
         width: 400px;
         font-size: 25px;
-        margin-left: 60px;
     }
     .prev-projects {
         width: 400px;
