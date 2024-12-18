@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import "./CreditCard.scss";
+import './CreditCard.scss';
 import Nav from "../../Nav/Nav";
-
 export const CreditCard = () => {
-
     const [cardName, setCardName] = useState("e.g. Jane Appleseed");
     const [cardNumber, setCardNumber] = useState("e.g. 1234 5678 9123 0000");
     const [expMonth, setExpMonth] = useState("MM");
@@ -14,7 +12,7 @@ export const CreditCard = () => {
         <>
             <div className="main-conteiner-content">
                 <Nav/>
-                <div className="creditCard-container">
+                <div className="creditCard-container" >
                 <div className="background-card">
                     <img src={process.env.PUBLIC_URL + "/images/bg-main-desktop.png"} alt="background-image" className="background-image" />
                     <div className="front-card">

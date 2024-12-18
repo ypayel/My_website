@@ -1,8 +1,13 @@
 
+
 .creditCard-container {
     font-size: 16px;
     font-family: "Space Grotesk", sans-serif;
     background-color: white;
+    background-image: url('http://localhost:3000/images/bg-main-desktop.png');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
   }
 
 .front-card, .back-card {
@@ -27,14 +32,13 @@
     line-height: 30px;
     width: 205px;
 }
-
+.form-conteiner {
+ color: white;
+}
 .attribution-credit {
     color: black;
     text-align: center;
 }
-
-
-
     .inputs-button {
     display: flex;
     flex-direction: column;
@@ -63,7 +67,6 @@
         position: absolute;
         top: 55%;
         left: 10%;
-        letter-spacing: 7px;
       }
       .name {
         position: absolute;
@@ -81,16 +84,62 @@
         left: 80%;
     }
     .confirm {
-        border-radius: 8px;
+        border-radius: 12px;
         border-style: none;
         color: white;
         background-color: hsl(278, 94%, 30%);
         line-height: 30px;
         margin-top: 15px;
     }
+@media screen and (max-width: 2560px){
+    .front-card {
+        margin: 55%;
+        font-size: 32px
+    }
+
+    .front-card-image {
+        width: 600px;
+        height: 300px;
+    }
+    .number-front {
+        top: 15%;
+    }
+    .name {
+        top: 50%;
+    }
+    .back-card {
+        margin: 35%;
+        margin-top: 55%;
+        margin-left: 65%;
+        font-size: 32px;
+    }
+    .back-card-image {
+        width: 600px;
+        height: 300px;
+    }
+    .cvc-card {
+        top: 29%;
+        left: 70%;
+    }
+    .first-input, .second-input, .third-input, .four-input, .five-input {
+        width: 300px;
+        height: 60px;
+        font-size: 32px
+    }
+    .card-name, .card-number, .data, .cvc, .confirm {
+        font-size: 32px;
+        text-align: center;
+    }
+    .confirm {
+        width: 350px;
+       height: 60px;
+    }
+}
 
 @media screen and (max-width: 1024px)  {
-    
+    .form-conteiner {
+        text-align: center;
+    }
 }
 
 
@@ -101,7 +150,7 @@
     }
     .creditCard-container {
         width: 750px;
-        height: 1100px;
+        height: 950px;
         margin-top: 150px;
 
     }
@@ -123,13 +172,13 @@
         position: absolute;
         margin-left: 220px;
         border-radius: 20px;
-        margin-top: 760px;
+        margin-top: 460px;
     }
     .front-card {
         display: flex;
         width: 370px;
         height: 200px;
-        margin-top: 600px;
+        margin-top: 300px;
         position: absolute;
         margin-left: 140px;
         border-radius: 20px;
@@ -137,11 +186,11 @@
     }
     .form-conteiner {
         position: absolute;
-        margin-top: 1300px;
+        margin-top: 1000px;
         width: 300px;
         height: 300px;
-        color: black;
         margin-right: 25px;
+        text-align: center;
     }
     .conteiner-card {
         color: white;
@@ -297,7 +346,7 @@
         margin-top: 1100px;
         width: 300px;
         height: 300px;
-        color: black;
+        color: white;
         margin-right: 25px;
     }
     }
