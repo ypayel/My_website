@@ -24,6 +24,11 @@
 .contact-welcometext {
     font-size: 20px;
 }
+@media screen and (max-width:2560px) {
+    .contact-conteiner, .contact-welcometext {
+        font-size: 44px
+    }
+}
 @media screen and (max-width: 1024px) {
     .info-conteiner {
         align-items: center;
@@ -34,5 +39,14 @@
     
     .info-conteiner {
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .info-conteiner {
+        align-items: center;
+    }
+    .contact-conteiner, .contact-welcometext {
+        font-size: 17px;
     }
 }

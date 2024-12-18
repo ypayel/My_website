@@ -113,3 +113,26 @@ body {
     }
 
 }
+@media screen and (max-width: 320px){
+    .nav-conteiner p {
+        font-size: 20px;
+    }
+    .github-icon, .linkedin-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .welcome-first-header {
+        font-size: 33px;
+    }
+    .welcome-second-header {
+        font-size: 40px;
+        width: 200px;
+    }
+    .welcome-text {
+        font-size: 25px;
+        width: 320px;
+    }
+    .welcome-button {
+        margin-left: 5px;
+    }
+}
