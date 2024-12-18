@@ -113,6 +113,12 @@ body {
     }
 
 }
+@media screen and (max-width: 375px){
+    .nav-conteiner p {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 320px){
     .nav-conteiner p {
         font-size: 20px;
@@ -134,5 +140,8 @@ body {
     }
     .welcome-button {
         margin-left: 5px;
+    }
+    .welcome-text-conteiner {
+        margin-top: 25px;
     }
 }

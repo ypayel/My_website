@@ -34,13 +34,33 @@
         align-items: center;
     }
 }
+@media screen and (max-width: 768px){
+    .info-conteiner {
+        align-items: center;
+    }
+    .contact-conteiner, .contact-welcometext {
+        font-size: 25px;
+    }
+}
 
 @media screen and (max-width: 425px) {
     
     .info-conteiner {
         align-items: center;
     }
+    .contact-conteiner, .contact-welcometext {
+        font-size: 20px;
+    }
 }
+@media screen  and (max-width: 375px){
+    .info-conteiner {
+        align-items: center;
+    }
+    .contact-conteiner, .contact-welcometext {
+        font-size: 20px;
+    }
+}
+
 
 @media screen and (max-width: 320px) {
     .info-conteiner {
