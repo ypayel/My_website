@@ -49,6 +49,9 @@ body {
     width: 800px;
     position: relative; left: 850px; bottom: 620px
 }
+@media screen and (max-width: 2560px) {
+    
+}
 @media screen and (max-width: 1024px) {
     .nav-conteiner {
         display: flex;
@@ -83,7 +86,6 @@ body {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        margin-right: 35px;
     }
     .nav-conteiner p {
         font-size: 30px;
