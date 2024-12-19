@@ -23,33 +23,12 @@ import Gazeta from "./components/Projects/Gazeta/Gazeta";
 import SocialLinks from "./components/Projects/SocialLinks/SocialLinks";
 import OmletRecipe from "./components/Projects/OmletRecipet/OmletRecipe";
 import ResponseWebSite from "./components/Projects/ResponseWebSite/ResponseWebSite";
+import RoutesComponent from "./Routes";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/add-product" element={<AddProduct />} />
-        <Route path="/edit" element={<EditBooks />} />
-        <Route path="/bookdetails/:id" element={<BookDetails />} />
-        <Route path="/sell" element={<SellBookComponent />} />
-        <Route path="/trans" element={<TranslateButtons />} />
-        <Route path="/second" element={<MainPageBook />} />
-        <Route path="/cart" element={<CartBook />} />
-        <Route path="/salon" element={<Fryzjer />} />
-        <Route path="/hair" element={<Fryzura />} />
-        <Route path='/galleria' element={<Galleria imgURL={GalleriaStorage} />} />
-        <Route path="/calculator" element={<Calculator /> } />
-        <Route path="/colorPicker" element={<ColorPicker /> } />
-        <Route path="/creditCard" element={<CreditCard /> } />
-        <Route path="/gazeta" element={<Gazeta />} />
-        <Route path="/linkPage" element={<SocialLinks /> } />
-        <Route path="/omlette" element={<OmletRecipe /> } />
-        <Route path="/responseWeb" element={<ResponseWebSite /> } />
-      </Routes>
+      <RoutesComponent />
     </div>
   );
 }
