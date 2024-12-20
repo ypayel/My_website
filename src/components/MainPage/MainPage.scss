@@ -1,153 +1,248 @@
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
-.link-about, .link-contact, .link-main, .link-projects, .welcome-button-text {
-    text-decoration:none;
-    color: white;
+.link-about,
+.link-contact,
+.link-main,
+.link-projects,
+.welcome-button-text {
+  text-decoration: none;
+  color: white;
 }
 .welcome-text-conteiner {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 50px;
 }
 .nav-conteiner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-menu {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 .welcome-text {
-    width: 450px;
-    font-size: 30px;
-    color: gray;
+  width: 450px;
+  font-size: 30px;
+  color: gray;
 }
 .welcome-first-header {
-    font-size: 40px;
+  font-size: 40px;
 }
 .welcome-second-header {
-    font-size: 55px;
-    width: 350px;
+  font-size: 55px;
+  width: 350px;
 }
 .welcome-button {
-    background-color: #6a11cb;
-    border-radius: 12px;
-    border: 2px solid #ff7e5f;
-    font-size: 22px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background-color: #6a11cb;
+  border-radius: 12px;
+  border: 2px solid #ff7e5f;
+  font-size: 22px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .welcome-button:hover {
-    background-color: #ff7e5f; 
-  color: #ffffff; 
-  border-color: #feb47b; 
+  background-color: #ff7e5f;
+  color: #ffffff;
+  border-color: #feb47b;
   box-shadow: 0 0 10px rgba(255, 126, 95, 0.8);
 }
 .prev-projects {
-    width: 800px;
-    position: relative; left: 850px; bottom: 620px
+  width: 800px;
+  position: relative;
+  left: 850px;
+  bottom: 620px;
 }
 @media screen and (max-width: 2560px) {
-    
+  .nav-conteiner p {
+    font-size: 65px;
+  }
+  .vertical-bar-image {
+    margin-top: 10px;
+    height: 55px;
+    width: 48px;
+  }
+  .github-icon,
+  .linkedin-icon {
+    margin-top: 5px;
+    width: 65px;
+    height: 65px;
+  }
+  .welcome-first-header {
+    font-size: 60px;
+  }
+  .welcome-second-header {
+    font-size: 75px;
+  }
+  .welcome-text {
+    font-size: 50px;
+  }
+  .welcome-button-text {
+    font-size: 50px;
+  }
 }
+@media screen and (max-width: 1440px) {
+  .nav-conteiner p {
+    font-size: 40px;
+  }
+  .vertical-bar-image {
+    height: 40px;
+    width: 42px;
+  }
+  .github-icon,
+  .linkedin-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .welcome-first-header {
+    font-size: 50px;
+  }
+  .welcome-second-header {
+    font-size: 55px;
+  }
+  .welcome-text {
+    font-size: 40px;
+  }
+  .welcome-button-text {
+    font-size: 35px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
-    .nav-conteiner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    .welcome-text-conteiner {
-        margin-left: 0px;
-    }
-    .prev-projects {
-        width: 500px;
-        position: relative; left: 260px; top: 50px
-    }
+  .nav-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .welcome-text-conteiner {
+    margin-left: 0px;
+  }
+  .prev-projects {
+    width: 500px;
+    position: relative;
+    left: 260px;
+    top: 50px;
+  }
+  .welcome-first-header {
+    font-size: 40px;
+  }
+  .welcome-second-header {
+    font-size: 40px;
+  }
+  .welcome-text {
+    font-size: 30px;
+  }
+  .welcome-button-text {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .nav-conteiner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .welcome-text-conteiner {
-        margin-left: 0px;
-    }
-    .prev-projects {
-        width: 450px;
-        position: relative; left: 155px; top: 50px
-    }
+  .nav-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .welcome-text-conteiner {
+    margin-left: 0px;
+  }
+  .prev-projects {
+    width: 450px;
+    position: relative;
+    left: 155px;
+    top: 50px;
+  }
 }
 @media screen and (max-width: 425px) {
-    .nav-conteiner {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .nav-conteiner p {
-        font-size: 30px;
-        text-align: center;
-    }
-    .nav-conteiner a {
-        margin: 0px;
-    }
-    .github-icon, .linkedin-icon {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .welcome-text-conteiner {
-        display: flex;
-        flex-direction: column;
-    }
-    .welcome-text {
-        width: 400px;
-        font-size: 25px;
-    }
-    .prev-projects {
-        width: 400px;
-        position: relative; left: 1px; top: 30px
-    }
+  .nav-conteiner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .nav-conteiner p {
+    font-size: 30px;
+    text-align: center;
+  }
+  .nav-conteiner a {
+    margin: 0px;
+  }
+  .github-icon,
+  .linkedin-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+  }
 
+  .welcome-text-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome-text {
+    width: 400px;
+    font-size: 25px;
+  }
+  .prev-projects {
+    width: 400px;
+    position: relative;
+    left: 1px;
+    top: 30px;
+  }
+  .vertical-bar-image {
+    height: 24px;
+    width: 27px;
+  }
 }
-@media screen and (max-width: 375px){
-    .nav-conteiner p {
-        font-size: 25px;
-    }
+@media screen and (max-width: 375px) {
+  .nav-conteiner p {
+    font-size: 30px;
+  }
+  .vertical-bar-image {
+    height: 25px;
+    width: 27px;
+  }
+  .github-icon,
+  .linkedin-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 
-@media screen and (max-width: 320px){
-    .nav-conteiner p {
-        font-size: 20px;
-    }
-    .github-icon, .linkedin-icon {
-        width: 30px;
-        height: 30px;
-    }
-    .welcome-first-header {
-        font-size: 33px;
-    }
-    .welcome-second-header {
-        font-size: 40px;
-        width: 200px;
-    }
-    .welcome-text {
-        font-size: 25px;
-        width: 320px;
-    }
-    .welcome-button {
-        margin-left: 5px;
-    }
-    .welcome-text-conteiner {
-        margin-top: 25px;
-    }
+@media screen and (max-width: 320px) {
+  .nav-conteiner p {
+    font-size: 30px;
+  }
+  .github-icon,
+  .linkedin-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .welcome-first-header {
+    font-size: 33px;
+  }
+  .welcome-second-header {
+    font-size: 40px;
+    width: 200px;
+  }
+  .welcome-text {
+    font-size: 25px;
+    width: 320px;
+  }
+  .welcome-button {
+    margin-left: 5px;
+  }
+  .welcome-text-conteiner {
+    margin-top: 25px;
+  }
+  .vertical-bar-image {
+    height: 25px;
+    width:27px;
+  }
 }
