@@ -96,10 +96,13 @@
         margin-top: 35px;
     }
     .front-card {
-        margin: 55%;
+        margin-left: 3%;
+        margin-top: 0%;
         font-size: 32px
     }
-
+    .mounth-card {
+        top: 50%;
+    }
     .front-card-image {
         width: 600px;
         height: 300px;
@@ -112,8 +115,8 @@
     }
     .back-card {
         margin: 35%;
-        margin-top: 55%;
-        margin-left: 65%;
+        margin-top: 47%;
+        margin-left: 7%;
         font-size: 32px;
     }
     .back-card-image {
@@ -136,6 +139,9 @@
     .confirm {
         width: 350px;
        height: 60px;
+    }
+    .inputs-button {
+        margin-left: 390px;
     }
 }
 @media screen and (max-width: 1440px) {
