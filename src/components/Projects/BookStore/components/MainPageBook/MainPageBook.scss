@@ -18,6 +18,7 @@
     .container-pageBook {
         display: flex;
         flex-direction: column;
+        width: 410px;
     }
     .search-container {
         margin-top: 10px;
@@ -25,5 +26,15 @@
     }
     .book {
         align-items: center;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .container-pageBook {
+        width: 360px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .container-pageBook {
+        width: 305px;
     }
 }

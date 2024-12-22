@@ -52,3 +52,19 @@
     margin-left: 0px;
   }
 }
+@media screen and (max-width: 425px) {
+  .background {
+    width: 410px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .background {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .background{
+    width: 305px;
+  }
+}

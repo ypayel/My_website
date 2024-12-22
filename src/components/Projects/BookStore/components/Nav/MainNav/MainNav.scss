@@ -32,3 +32,42 @@ $gap: 20px;
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 425px) {
+  .main-nav-list {
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+  .main-nav-link {
+    font-size: 15px;
+  }
+  .container-for-links {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-for-links {
+    width: 350px;
+  }
+  .main-nav-link {
+    font-size: 13px;
+  }
+  .main-nav-list {
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .container-for-links {
+    width: 300px;
+  }
+  .main-nav-link {
+    font-size: 11px;
+    
+  }
+  .main-nav-list {
+    margin-left: 25px;
+  }
+}
