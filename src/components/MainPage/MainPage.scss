@@ -64,6 +64,10 @@ body {
   width: 256px;
   height: 256px;
 }
+.images-container {
+  display: grid;
+  justify-items: end;
+}
 .my-stack-icons {
   display: grid;
   position: absolute;

@@ -7,7 +7,7 @@ export const MainPage = () => {
     return (
         <>
             <Nav/> 
-            <div>
+            <div className="main-conteiner"> 
         <div className="welcome-text-conteiner">
             <h1 className="welcome-first-header">HI, I`M ARTEM</h1>
             <h2 className="welcome-second-header">I`M A JUNIOR FRONTEND DEVELOPER</h2>
