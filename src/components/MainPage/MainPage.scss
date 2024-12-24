@@ -2,7 +2,6 @@ body {
   background-color: black;
   color: white;
 }
-
 .link-about,
 .link-contact,
 .link-main,
@@ -60,6 +59,16 @@ body {
   position: relative;
   left: 850px;
   bottom: 620px;
+}
+.social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon {
+  width: 256px;
+  height: 256px;
+}
+.my-stack-icons {
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(2, 1fr);
+  
 }
 @media screen and (max-width: 2560px) {
   .nav-conteiner p {
