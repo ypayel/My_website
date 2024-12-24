@@ -15,8 +15,10 @@ export const MainPage = () => {
                 </p>
                 <button className="welcome-button"><Link className="welcome-button-text" to="/projects">VIEW MY PROJECTS</Link></button> 
                 </div>
-                <div className="images-container">  
+                <div className="images-container"> 
+                <h3 className="images-header">My stack</h3> 
                 <div className="my-stack-icons">
+                    
                     <img src={process.env.PUBLIC_URL + `/images/social.png`} className="social-icon" alt="social" />
                     <img src={process.env.PUBLIC_URL + `/images/react-icon.png`} className="react-icon" alt="react" />
                     <img src={process.env.PUBLIC_URL + `/images/sass.png`} className="sass-icon" alt="sass" />
