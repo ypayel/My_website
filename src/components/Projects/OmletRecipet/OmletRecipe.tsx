@@ -3,7 +3,7 @@ import "./OmletRecipe.scss"
 export const OmletRecipe = () => {
     return (
         <>
-            <div className="main-conteiner">
+            <div className="main-conteiner-omlette">
                 <Nav/>
                 <div className="image-conteiner">
                     <img src={process.env.PUBLIC_URL + "/images/image-omelette.jpeg"} alt="omlette-img" className="omlette-image" />
