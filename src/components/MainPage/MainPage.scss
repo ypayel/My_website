@@ -348,9 +348,7 @@ body {
   .social-icon, .html-icon, .react-icon, .sass-icon, .js-icon, .c-sharp-icon  {
     animation: move-left;
   }
-   .css-3-icon  {
-    animation: move-right;
-  }
+  
 }
 @media screen and (max-width: 375px) {
   .nav-conteiner p {
@@ -365,10 +363,10 @@ body {
     width: 32px;
     height: 32px;
   }
-  .social-icon, .html-icon, .react-icon,  .js-icon  {
+  .social-icon, .html-icon, .react-icon,  .js-icon {
     animation: move-left;
   }
-   .css-3-icon, .c-sharp-icon, .sass-icon  {
+    .c-sharp-icon, .sass-icon, .css-3-icon  {
     animation: move-right;
   }
 }
