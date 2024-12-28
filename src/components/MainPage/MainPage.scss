@@ -149,18 +149,15 @@ body {
   .welcome-button-text {
     font-size: 50px;
   }
-  .social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon {
+  .social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon  {
     width: 300px;
     height: 300px;
   }
   .images-container {
     margin-top: 25px;
   }
-  .social-icon, .html-icon, .react-icon, .js-icon, .sass-icon, .c-sharp-icon {
+  .social-icon, .html-icon, .react-icon, .js-icon, .sass-icon, .c-sharp-icon, .css-3-icon {
     animation: move-left;
-  }
-   .css-3-icon  {
-    animation: move-right;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -195,10 +192,10 @@ body {
   .images-header {
     font-size: 40px;
   }
-  .social-icon, .html-icon, .react-icon {
+  .social-icon, .html-icon, .react-icon, .css-3-icon {
     animation: move-left;
   }
-  .c-sharp-icon, .css-3-icon, .sass-icon, .js-icon   {
+  .c-sharp-icon,  .sass-icon, .js-icon {
     animation: move-right;
   }
 }
