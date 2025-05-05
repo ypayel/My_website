@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import Nav from "../Nav/Nav";
 import "./MainPage.scss"
-import Galleria from "../Projects/Galleria/Galleria";
-import { GalleriaStorage } from "../Projects/Galleria/GalleriaStorage";
 export const MainPage = () => {
     return (
         <>
