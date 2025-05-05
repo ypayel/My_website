@@ -1,8 +1,4 @@
 
-.form-main-conteiner {
-  background-color: #f0ffe8;
-  
-}
 .form-general-query-conteiner {
   display: flex;
   flex-direction: column;
@@ -25,27 +21,7 @@
 .form-message-input:hover {
   border-color: #036b52;
 }
-.form-query-button {
-  flex: 1;
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: white;
-  cursor: pointer;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
 
-.form-query-button.form-active,
-.form-consent-button.form-active {
-  background: #036b52;
-  color: black;
-  border-color: #036b52;
-}
-
-.form-query-button:hover {
-  background: #f0f0f0;
-}
 .form-consent-button-conteiner {
   display: flex;
   align-items: center;
@@ -130,14 +106,11 @@
   height: 60px;
 }
 .form-main-conteiner {
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  width: 50%;
+  width: 100%;
   height: 30%;
   display: flex;
   flex-direction: column;
-  margin-left: 25%;
+  align-items: center;
 }
 
 .form-contact {
