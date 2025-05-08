@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, } from "react";
 import "./ForumMain.scss";
+import PopOut from "../../PopOut/PopOut";
+
 export const ForumMain = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [messageSent, setMessageSent] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [clicked, setClicked] = useState(false);
 
-  useEffect(() => {
-    console.log("Stan messageSent został zmieniony:", messageSent);
-  }, [messageSent]);
+ 
   
 
   const validateForm = () => {
@@ -55,7 +54,7 @@ export const ForumMain = () => {
 
       if (result.success) {
         console.log("Wiadomość została wysłana!", result);
-        setMessageSent(true);
+        setClicked(true);
         setFirstName("");
         setLastName("");
         setEmail("");
@@ -115,19 +114,12 @@ export const ForumMain = () => {
               {errors.message && <span className="form-error-text-message">{errors.message}</span>}
             </div>
           </div>
-          {messageSent && (
-        <div className="form-success-message" >
-          <strong className="form-message-strong">Message Sent!</strong>  
-          <p className="form-message-success-paragraf">
-            Thanks for completing the form. We will be in touch soon!
-          </p>
-        </div>
-      )}
+          <PopOut messageSent={clicked} setMessageSent={setClicked} />
           <div className="form-submit-button-conteiner">
           <button
           className={`form-submit-button ${clicked ? 'clicked' : ''}`}
           type="submit"
-          onClick={() => console.log("🟡 Kliknięto przycisk")}
+          onClick={() => console.log("Kliknięto przycisk")}
         >Submit</button>
           </div>
         </form>

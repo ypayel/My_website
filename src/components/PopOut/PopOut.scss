@@ -1,0 +1,95 @@
+.popout-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeInOverlay 0.2s ease-out;
+  }
+  
+  .popout__content {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 480px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+    animation: fadeInScale 0.3s ease-out;
+  }
+  .popout__close {
+    position: absolute;
+    background: transparent;
+    border: none;
+    font-size: clamp(18px, 2.5vw, 24px);
+    cursor: pointer;
+    color: white;
+    margin-bottom: 5%;
+    margin-left: 19%;
+  }
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeInOverlay {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media screen  and (max-width: 1440px) {
+    .popout__close {
+        margin-bottom: 6%;
+        margin-left: 25%;
+    }
+    
+  }
+
+  @media screen and (max-width: 1024px) {
+    .popout__close {
+        margin-bottom: 10%;
+        margin-left: 25%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .popout__close {
+        margin-bottom: 12%;
+        margin-left: 51%;
+        font-size: 24px;
+    }
+  }
+
+  @media screen  and (max-width:425px) {
+    .popout__close {
+        margin-bottom: 28%;
+        margin-left: 62%;
+        font-size: 24px;
+        
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    .popout__close {
+        margin-bottom: 47%;
+        margin-left: 58%;
+       
+        
+    }
+  }
