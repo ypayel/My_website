@@ -13,15 +13,17 @@ const PopOut: React.FC<PopOutProps> = ({ messageSent, setMessageSent }) => {
 
   if (!messageSent) return null;
 
+  
   return (
     <div className="popout-overlay">
       <div className="popout-content">
-       
         <div className="form-success-message">
-        <button
-          className="popout__close"
-          onClick={() => setMessageSent(false)}
-        >x</button>
+          <button
+            className="popout__close"
+            onClick={() => setMessageSent(false)}
+          >
+            x
+          </button>
           <strong className="form-message-strong">Message Sent!</strong>
           <p className="form-message-success-paragraf">
             Thanks for completing the form. We will be in touch soon!
