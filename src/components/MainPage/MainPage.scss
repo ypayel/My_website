@@ -1,25 +1,26 @@
-body {
-  background-color: black;
-  color: white;
-}
+
 .link-about,
 .link-contact,
 .link-main,
-.link-projects,
-.welcome-button-text {
+.link-projects{
   text-decoration: none;
-  color: white;
+  color: #1f2937;
 }
 .welcome-text-conteiner {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: 50px;
+  max-width: 50%;
+  padding: 2%;
+ 
 }
 .nav-conteiner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  // overflow:hidden;
+  // position: sticky;
+  // top: 0;
 }
 
 .nav-menu {
@@ -27,384 +28,81 @@ body {
   justify-content: flex-end;
 }
 .welcome-text {
-  width: 450px;
-  font-size: 30px;
-  color: gray;
+  
+  font-size: 20px;
+ 
 }
 .welcome-first-header {
-  font-size: 40px;
+  font-size: 35px;
+  
 }
 .welcome-second-header {
-  font-size: 55px;
-  width: 350px;
+  font-size: 25px;
+ 
+}
+.welcome-button-text {
+color: white;
+text-decoration: none;
 }
 .welcome-button {
-  background-color: #6a11cb;
+  background-color: #1f2937;
   border-radius: 12px;
-  border: 2px solid #ff7e5f;
-  font-size: 22px;
-  padding: 10px 20px;
-  margin-top: 20px;
+  
+  font-size: 18px;
+  padding: 5px 10px;
+  
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .welcome-button:hover {
-  background-color: #ff7e5f;
-  color: #ffffff;
-  border-color: #feb47b;
-  box-shadow: 0 0 10px rgba(255, 126, 95, 0.8);
-  flex: 1;
-  text-align: left;
+  background-color: #1d4ed8;
 }
-.prev-projects {
-  width: 800px;
-  position: relative;
-  left: 850px;
-  bottom: 620px;
-}
-.social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon {
-  width: 256px;
-  height: 256px;
-}
+
 .images-container {
-  flex: 1; 
+  flex: 1;
+  max-width: 50%;
   display: flex;
-  flex-direction: column; 
-  align-items: center;
+  justify-content: flex-end;
 }
 .my-stack-icons {
+ display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 16px;
+  padding: 2%;
+   justify-content: center;
+}
+.stack-icon {
+   width: 100px;
+  height: 100px;
+  background-color: #f3f4f6;
+  border-radius: 12px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  align-items: center;
   justify-content: center;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.stack-icon img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+.stack-icon.center {
+  grid-column: 4 / 2;
+}
+.stack-icon.empty {
+  background: transparent;
+  box-shadow: none;
 }
 .main-conteiner {
   display: flex;
   justify-content: space-between; 
-  align-items: center; 
-  padding: 20px;
-}
-
-.images-header {
-  font-size: 55px;
-}
-.my-stack-icons img { 
-  animation-duration: 5s; 
-  animation-timing-function: linear; 
-  animation-iteration-count: infinite; 
+  align-items: flex-start;
+  gap: 40px;
+   max-width: 60%;
 }
 
 
 
-@keyframes move-left {
-  0% {
-      transform: translateX(0);
-  }
-  50% {
-      transform: translateX(-30px);
-  }
-  100% {
-      transform: translateX(0); 
-  }
-}
 
-@keyframes move-right {
-  0% {
-      transform: translateX(0);
-  }
-  50% {
-      transform: translateX(30px); 
-  }
-  100% {
-      transform: translateX(0); 
-  }
-}
-@media screen and (max-width: 2560px) {
-  .nav-conteiner p {
-    font-size: 65px;
-  }
-  .nav-conteiner a {
-    margin: 0 20px;
-  }
-  .vertical-bar-image {
-    margin-top: 10px;
-    height: 55px;
-    width: 48px;
-  }
-  .github-icon,
-  .linkedin-icon {
-    margin-top: 5px;
-    width: 65px;
-    height: 65px;
-  }
-  .welcome-first-header {
-    font-size: 60px;
-  }
-  .welcome-second-header {
-    font-size: 75px;
-  }
-  .welcome-text {
-    font-size: 50px;
-  }
-  .welcome-button-text {
-    font-size: 50px;
-  }
-  .social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon  {
-    width: 300px;
-    height: 300px;
-  }
-  .images-container {
-    margin-top: 25px;
-  }
-  .social-icon, .html-icon, .react-icon, .js-icon, .sass-icon, .c-sharp-icon, .css-3-icon {
-    animation: move-left;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .nav-conteiner p {
-    font-size: 40px;
-  }
-  .vertical-bar-image {
-    height: 40px;
-    width: 42px;
-  }
-  .github-icon,
-  .linkedin-icon {
-    width: 50px;
-    height: 50px;
-  }
-  .welcome-first-header {
-    font-size: 50px;
-  }
-  .welcome-second-header {
-    font-size: 55px;
-  }
-  .welcome-text {
-    font-size: 40px;
-  }
-  .welcome-button-text {
-    font-size: 35px;
-  }
-  .social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon {
-    width: 256px;
-    height: 256px;
-  }
-  .images-header {
-    font-size: 40px;
-  }
-  .social-icon, .html-icon, .react-icon, .css-3-icon {
-    animation: move-left;
-  }
-  .c-sharp-icon,  .sass-icon, .js-icon {
-    animation: move-right;
-  }
-}
 
-@media screen and (max-width: 1024px) {
-  .nav-conteiner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .welcome-text-conteiner {
-    margin-left: 0px;
-  }
-  .prev-projects {
-    width: 500px;
-    position: relative;
-    left: 260px;
-    top: 50px;
-  }
-  .welcome-first-header {
-    font-size: 40px;
-  }
-  .welcome-second-header {
-    font-size: 40px;
-  }
-  .welcome-text {
-    font-size: 30px;
-  }
-  .welcome-button-text {
-    font-size: 25px;
-  }
-  .vertical-bar-image {
-    height: 32px;
-    width: 37px;
-  }
-  .nav-conteiner a {
-    margin: 0 10px;
-  }
-  .nav-conteiner p {
-    font-size: 34px;
-  }
-  .github-icon, .linkedin-icon {
-    width: 37px;
-    height: 37px;
-  }
-  .social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon {
-    width: 128px;
-    height: 128px;
-  }
-  .images-header {
-    font-size: 45px;
-  }
-  .social-icon, .html-icon, .react-icon, .css-3-icon {
-    animation: move-left;
-  }
-  .c-sharp-icon, .sass-icon, .js-icon   {
-    animation: move-right;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .nav-conteiner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .welcome-text-conteiner {
-    margin-left: 0px;
-  }
-  .prev-projects {
-    width: 450px;
-    position: relative;
-    left: 155px;
-    top: 50px;
-  }
-  .social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon {
-    width: 64px;
-    height: 64px;
-  }
-  .images-header {
-    font-size: 35px;
-  }
-  .my-stack-icons {
-    margin-bottom: 170px;
-  }
-  .social-icon, .html-icon, .react-icon, .css-3-icon {
-    animation: move-left;
-  }
-  .c-sharp-icon, .sass-icon, .js-icon   {
-    animation: move-right;
-  }
-}
-@media screen and (max-width: 425px) {
-  .nav-conteiner {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .nav-conteiner p {
-    font-size: 30px;
-    text-align: center;
-  }
-  .nav-conteiner a {
-    margin: 0px;
-  }
-  .github-icon,
-  .linkedin-icon {
-    width: 32px;
-    height: 32px;
-    margin-left: 10px;
-  }
-
-  .welcome-text-conteiner {
-    display: flex;
-    flex-direction: column;
-  }
-  .welcome-text {
-    width: 400px;
-    font-size: 25px;
-  }
-  .prev-projects {
-    width: 400px;
-    position: relative;
-    left: 1px;
-    top: 30px;
-  }
-  .vertical-bar-image {
-    height: 24px;
-    width: 27px;
-  }
-  .images-header {
-    font-size: 28px;
-  }
-  .social-icon , .react-icon, .sass-icon, .js-icon, .html-icon, .c-sharp-icon, .css-3-icon {
-    width: 64px;
-    height: 64px;
-  }
-  .main-conteiner {
-    display: block;
-  }
-  .my-stack-icons {
-    margin: 0px;
-  }
-  .images-container {
-    margin-top: 25px;
-  }
-  .social-icon, .html-icon, .react-icon, .sass-icon, .js-icon, .c-sharp-icon  {
-    animation: move-left;
-  }
-  
-}
-@media screen and (max-width: 375px) {
-  .nav-conteiner p {
-    font-size: 30px;
-  }
-  .vertical-bar-image {
-    height: 25px;
-    width: 27px;
-  }
-  .github-icon,
-  .linkedin-icon {
-    width: 32px;
-    height: 32px;
-  }
-  .social-icon, .html-icon, .react-icon,  .js-icon {
-    animation: move-left;
-  }
-    .c-sharp-icon, .sass-icon, .css-3-icon  {
-    animation: move-right;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .nav-conteiner p {
-    font-size: 30px;
-  }
-  .github-icon,
-  .linkedin-icon {
-    width: 32px;
-    height: 32px;
-  }
-  .welcome-first-header {
-    font-size: 33px;
-  }
-  .welcome-second-header {
-    font-size: 40px;
-    width: 200px;
-  }
-  .welcome-text {
-    font-size: 25px;
-    width: 320px;
-  }
-  .welcome-button {
-    margin-left: 5px;
-  }
-  .welcome-text-conteiner {
-    margin-top: 25px;
-  }
-  .vertical-bar-image {
-    height: 25px;
-    width:27px;
-  }
-  .social-icon, .html-icon, .react-icon {
-    animation: move-left;
-  }
-    .c-sharp-icon, .sass-icon, .js-icon  {
-    animation: move-right;
-  }
-  .css-3-icon {
-    animation:  move-left;
-  }
-}
