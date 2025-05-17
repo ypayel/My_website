@@ -11,7 +11,8 @@
   align-items: flex-start;
   flex-direction: column;
   max-width: 50%;
-  padding: 2%;
+  padding-left: 2%;
+  padding-top: 5%;
  
 }
 .nav-conteiner {
@@ -68,7 +69,7 @@ text-decoration: none;
  display: grid;
   grid-template-columns: repeat(3, 100px);
   gap: 16px;
-  padding: 2%;
+  padding-top: 12%;
    justify-content: center;
 }
 .stack-icon {

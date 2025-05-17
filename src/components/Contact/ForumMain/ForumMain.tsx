@@ -73,13 +73,15 @@ export const ForumMain = () => {
       <div className="form-main-conteiner">
         <form className="form-contact" onSubmit={handleSubmit}>
           <h2 className="form-first-header">Contact Me</h2>
+          <p className="contact-welcometext">Feel free to reach out!
+            </p>
           <div className="form-name-main">
             <div className="form-headers-conteiner">
               <h3 className="form-first-name-header">
-                First Name <span className="form-text-star">*</span>
+                First Name 
               </h3>
               <h3 className="form-last-name-header">
-                Last Name <span className="form-text-star">*</span>
+                Last Name 
               </h3>
             </div>
             <div className="form-name-inputs-conteiner">
@@ -116,7 +118,7 @@ export const ForumMain = () => {
           <div className="form-email-main">
             <div className="form-email-header-conteiner">
               <h3 className="form-email-header">
-                Email Adress <span className="form-text-star">*</span>
+                Email Adress 
               </h3>
             </div>
             <div className="form-email-input-conteiner">
@@ -138,7 +140,7 @@ export const ForumMain = () => {
 
           <div className="form-message-conteiner">
             <h3 className="form-message-header">
-              Message <span className="form-text-star">*</span>
+              Message
             </h3>
             <div className="form-message-input-conteiner">
               <textarea
@@ -163,9 +165,13 @@ export const ForumMain = () => {
               type="submit"
               onClick={() => console.log("Kliknięto przycisk")}
             >
-              Submit
+              Send Message
             </button>
           </div>
+          <div className="info-conteiner">
+            <p className="e-mail">kukankouartsiom@gmail.com</p> 
+            <p className="contact-text"><a href="https://www.linkedin.com/in/artsiom-kukankou/" className="contact-link" target="_blank">www.linkedin.com/in/artsiom-kukankou</a></p>
+            </div>
         </form>
       </div>
     </>

@@ -6,7 +6,9 @@
 
 .contact-welcometext, .contact-first-header {
     text-align: center;
-}
+} 
+
+
 .info-conteiner {
     display: flex;
     flex-direction: column;
@@ -20,21 +22,8 @@
     display: flex;
     justify-content: flex-end;
 }
-.contact-welcometext {
-    font-size: 20px;
-}
-@media screen and (max-width:2560px) {
-    .contact-conteiner, .contact-welcometext {
-        font-size: 44px
-    }
-}
 
-@media screen and (max-width: 1440px) {
-    .contact-conteiner {
-        font-size: 40px;
-    }
-    
-}
+
 @media screen and (max-width: 1024px) {
     .info-conteiner {
         align-items: center;

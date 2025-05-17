@@ -2,25 +2,18 @@ import Nav from "../Nav/Nav";
 import "./Contact.scss";
 import ForumMain from "./ForumMain/ForumMain";
 export const Contact = () => {
-    return (
-        <>
-            <Nav/>
-        <div className="contact-conteiner">
-            <h1 className="contact-first-header">Contact Me</h1>
-            <p className="contact-welcometext">Here you will find how to contact me
-            </p>
-            <div className="contact-forum-main">
-                <div className="contact-forum">
-                    <ForumMain />
-                </div>
-            </div>
-            <div className="info-conteiner">
-            <p className="e-mail">E mail: kukankouartsiom@gmail.com</p> 
-            <p className="contact-text">LinkedIn: <a href="https://www.linkedin.com/in/artsiom-kukankou/" className="contact-link" target="_blank">Link</a></p>
-            </div>
+  return (
+    <>
+      <Nav />
+      <div className="contact-conteiner">
+        <div className="contact-forum-main">
+          <div className="contact-forum">
+            <ForumMain />
+          </div>
         </div>
-        </>
-    )
-} 
+      </div>
+    </>
+  );
+};
 
 export default Contact;
