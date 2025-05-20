@@ -10,7 +10,7 @@ export const ForumMain = () => {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [clicked, setClicked] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
-  
+
   const validateForm = () => {
     let newErrors: { [key: string]: string } = {};
 
@@ -73,16 +73,11 @@ export const ForumMain = () => {
       <div className="form-main-conteiner">
         <form className="form-contact" onSubmit={handleSubmit}>
           <h2 className="form-first-header">Contact Me</h2>
-          <p className="contact-welcometext">Feel free to reach out!
-            </p>
+          <p className="contact-welcometext">Feel free to reach out!</p>
           <div className="form-name-main">
             <div className="form-headers-conteiner">
-              <h3 className="form-first-name-header">
-                First Name 
-              </h3>
-              <h3 className="form-last-name-header">
-                Last Name 
-              </h3>
+              <h3 className="form-first-name-header">First Name</h3>
+              <h3 className="form-last-name-header">Last Name</h3>
             </div>
             <div className="form-name-inputs-conteiner">
               <input
@@ -117,9 +112,7 @@ export const ForumMain = () => {
           </div>
           <div className="form-email-main">
             <div className="form-email-header-conteiner">
-              <h3 className="form-email-header">
-                Email Adress 
-              </h3>
+              <h3 className="form-email-header">Email Adress</h3>
             </div>
             <div className="form-email-input-conteiner">
               <input
@@ -139,9 +132,7 @@ export const ForumMain = () => {
           </div>
 
           <div className="form-message-conteiner">
-            <h3 className="form-message-header">
-              Message
-            </h3>
+            <h3 className="form-message-header">Message</h3>
             <div className="form-message-input-conteiner">
               <textarea
                 name="message"
@@ -158,7 +149,7 @@ export const ForumMain = () => {
               )}
             </div>
           </div>
-          <PopOut messageSent={clicked} setMessageSent={setClicked} /> 
+          <PopOut messageSent={clicked} setMessageSent={setClicked} />
           <div className="form-submit-button-conteiner">
             <button
               className={`form-submit-button ${clicked ? "clicked" : ""}`}
@@ -168,10 +159,20 @@ export const ForumMain = () => {
               Send Message
             </button>
           </div>
+
           <div className="info-conteiner">
-            <p className="e-mail">kukankouartsiom@gmail.com</p> 
-            <p className="contact-text"><a href="https://www.linkedin.com/in/artsiom-kukankou/" className="contact-link" target="_blank">www.linkedin.com/in/artsiom-kukankou</a></p>
-            </div>
+            <p className="e-mail">kukankouartsiom@gmail.com</p>
+
+            <p className="contact-text">
+              <a
+                href="https://www.linkedin.com/in/artsiom-kukankou/"
+                className="contact-link"
+                target="_blank"
+              >
+                www.linkedin.com/in/artsiom-kukankou
+              </a>
+            </p>
+          </div>
         </form>
       </div>
     </>

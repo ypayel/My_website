@@ -13,8 +13,7 @@ export const About = () => {
                 <p className="about-first-text">
                     I am a graduate of the Technical
                     Schools named Józef Bem. In technical
-                    school, I learned the basics of
-                    programming languages and I want to
+                    programming languages and. I want to
                     further develop in this industry. I like
                     to overcome various challenges, I am
                     ambitious and I can work in a team.
