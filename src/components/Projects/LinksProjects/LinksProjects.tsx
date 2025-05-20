@@ -5,94 +5,290 @@ export const LinksProjects = () => {
   return (
     <div className="links-container">
       <div className="project-container">
-        <Link className="project-link" to="/second">
-          <img
-            src={process.env.PUBLIC_URL + "/images/BookStore.jpg"}
-            className="project-image"
-            alt="bookStore"
-          />
-        </Link>
+        <img
+          src={process.env.PUBLIC_URL + "/images/BookStore.jpg"}
+          className="project-image"
+          alt="bookStore"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project one (Book Store)</h3>
+          <p className="project-description">
+            In this project, my team and I developed an online bookstore where
+            users can search for books, add them to the cart, and switch between
+            languages using a built-in language selector.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/second">
+              <a href="" className="project-link-demo">
+                Live Demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/BookStore"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/Calculator.jpg"}
+          className="project-image"
+          alt="calculator"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project two (Calculator)</h3>
+          <p className="project-description">
+            A basic calculator that supports all standard arithmetic operations
+            such as addition, subtraction, multiplication, and division.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/calculator">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/Calculator"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/ColorPicker.jpg"}
+          className="project-image"
+          alt="colorPicker"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project third (Color Picker)</h3>
+          <p className="project-description">
+            A color palette tool that allows users to pick any color and preview
+            how it will appear on the page in real time.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/colorPicker">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/ColorPicker"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
       </div>
       <div className="project-container">
-        <Link className="project-link" to="/calculator">
-          <img
-            src={process.env.PUBLIC_URL + "/images/Calculator.jpg"}
-            className="project-image"
-            alt="calculator"
-          />
-        </Link>
+        <img
+          src={process.env.PUBLIC_URL + "/images/CreditCard.jpg"}
+          className="project-image"
+          alt="creditCard"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project four (Credit Card Form)</h3>
+          <p className="project-description">
+            A simple and responsive form for entering credit card details during
+            online purchases.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/creditCard">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/CreditCard"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
       </div>
       <div className="project-container">
-        <Link className="project-link" to="/colorPicker">
-          <img
-            src={process.env.PUBLIC_URL + "/images/ColorPicker.jpg"}
-            className="project-image"
-            alt="colorPicker"
-          />
-        </Link>
+        <img
+          src={process.env.PUBLIC_URL + "/images/Fryzjer.jpg"}
+          className="project-image"
+          alt="fryzjer"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project five (Barder Shop)</h3>
+          <p className="project-description">
+            A hairdressing salon website where users can browse different
+            haircut styles and see the price for each one.
+          </p>
+
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/salon">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/Fryzjer"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/Gazeta.jpg"}
+          className="project-image"
+          alt="gazeta"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project six (NewsPapper website)</h3>
+          <p className="project-description">
+            In this project, I created a digital newspaper website that displays
+            articles from various categories such as politics, technology, and
+            entertainment.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/gazeta">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/Gazeta"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
       </div>
       <div className="project-container">
-        <Link className="project-link" to="/creditCard">
-          <img
-            src={process.env.PUBLIC_URL + "/images/CreditCard.jpg"}
-            className="project-image"
-            alt="creditCard"
-          />
-        </Link>
+        <img
+          src={process.env.PUBLIC_URL + "/images/Galleria.jpg"}
+          className="project-image"
+          alt="galleria"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project seven (Galleri)</h3>
+          <p className="project-description">
+            A photo gallery with images that automatically change in sequence,
+            creating a simple slideshow effect.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/galleria">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/Galleria"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
       </div>
       <div className="project-container">
-        <Link className="project-link" to="/salon">
-          <img
-            src={process.env.PUBLIC_URL + "/images/Fryzjer.jpg"}
-            className="project-image"
-            alt="fryzjer"
-          />
-        </Link>
+        <img
+          src={process.env.PUBLIC_URL + "/images/LinkPage.jpg"}
+          className="project-image"
+          alt="linkPage"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project eight (Social Links)</h3>
+          <p className="project-description">
+            A responsive webpage with styled buttons and icons that link to
+            social platforms and useful external websites.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/linkPage">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/SocialLinks"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
       </div>
       <div className="project-container">
-        <Link className="project-link" to="/gazeta">
-          <img
-            src={process.env.PUBLIC_URL + "/images/Gazeta.jpg"}
-            className="project-image"
-            alt="gazeta"
-          />
-        </Link>
+        <img
+          src={process.env.PUBLIC_URL + "/images/Omlette.jpg"}
+          className="project-image"
+          alt="omlette"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project nine (Omlette Recipe)</h3>
+          <p className="project-description">
+            A mobile-friendly recipe page featuring a detailed omelette recipe,
+            including ingredients and clear cooking steps.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/omlette">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/OmletRecipet"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
       </div>
       <div className="project-container">
-        <Link className="project-link" to="/galleria">
-          <img
-            src={process.env.PUBLIC_URL + "/images/Galleria.jpg"}
-            className="project-image"
-            alt="galleria"
-          />
-        </Link>
-      </div>
-      <div className="project-container">
-        <Link className="project-link" to="/linkPage">
-          <img
-            src={process.env.PUBLIC_URL + "/images/LinkPage.jpg"}
-            className="project-image"
-            alt="linkPage"
-          />
-        </Link>
-      </div>
-      <div className="project-container">
-        <Link className="project-link" to="/omlette">
-          <img
-            src={process.env.PUBLIC_URL + "/images/Omlette.jpg"}
-            className="project-image"
-            alt="omlette"
-          />
-        </Link>
-      </div>
-      <div className="project-container">
-        <Link className="project-link" to="/responseWeb">
-          <img
-            src={process.env.PUBLIC_URL + "/images/ResponseWeb.jpg"}
-            className="project-image"
-            alt="responseWeb"
-          />
-        </Link>
+        <img
+          src={process.env.PUBLIC_URL + "/images/ResponseWeb.jpg"}
+          className="project-image"
+          alt="responseWeb"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project ten (Resposive Website)</h3>
+          <p className="project-description">
+            A simple landing page with a fully responsive layout, optimized for
+            both desktop and mobile devices.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/responseWeb">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/ResponseWebSite"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
