@@ -19,6 +19,7 @@ import { GalleriaStorage } from "./components/Projects/Galleria/GalleriaStorage"
 import Gazeta from "./components/Projects/Gazeta/Gazeta"
 import OmletRecipe from "./components/Projects/OmletRecipet/OmletRecipe"
 import Projects from "./components/Projects/Projects"
+import QrCode from "./components/Projects/QrCode/QrCode"
 import ResponseWebSite from "./components/Projects/ResponseWebSite/ResponseWebSite"
 import SocialLinks from "./components/Projects/SocialLinks/SocialLinks"
 import { Link, Route, Routes } from "react-router-dom";
@@ -49,6 +50,7 @@ export const RoutesComponent = () => {
         <Route path="/linkPage" element={<SocialLinks /> } />
         <Route path="/omlette" element={<OmletRecipe /> } />
         <Route path="/responseWeb" element={<ResponseWebSite /> } />
+        <Route path="/qr-code" element={<QrCode />} />
       </Routes>
     </div>
     </>
