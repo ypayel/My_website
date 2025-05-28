@@ -299,8 +299,9 @@ export const LinksProjects = () => {
         <div className="project-info">
           <h3 className="project-header">Project eleven (Qr Code)</h3>
           <p className="project-description">
-            A simple landing page with a fully responsive layout, optimized for
-            both desktop and mobile devices.
+            A clean and responsive QR code component that encourages users to
+            visit Frontend Mentor and improve their frontend skills by building
+            real projects.
           </p>
           <div className="project-buttons-link">
             <Link className="project-link" to="/qr-code">
@@ -309,7 +310,36 @@ export const LinksProjects = () => {
               </a>
             </Link>
             <a
-              href="https://github.com/ypayel/My_website/tree/a3eff856d57992ab49e4bff3ba61368b0154806c/src/components/Projects/ResponseWebSite"
+              href="https://github.com/ypayel/My_website/tree/main/src/components/Projects/QrCode"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/image-qr-code.png"}
+          className="project-image"
+          alt="responseWeb"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project twelve (Fuel Station)</h3>
+          <p className="project-description">
+            A clean and responsive QR code component that encourages users to
+            visit Frontend Mentor and improve their frontend skills by building
+            real projects.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/stacjaPaliw">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/My_website/tree/main/src/components/Projects/QrCode"
               target="_blank"
               className="project-link-code"
             >

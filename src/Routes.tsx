@@ -23,6 +23,8 @@ import QrCode from "./components/Projects/QrCode/QrCode"
 import ResponseWebSite from "./components/Projects/ResponseWebSite/ResponseWebSite"
 import SocialLinks from "./components/Projects/SocialLinks/SocialLinks"
 import { Link, Route, Routes } from "react-router-dom";
+import StacjaPaliw from "./components/Projects/StacjaPaliw/StacjaPaliw"
+import StacjaCount from "./components/Projects/StacjaPaliw/StacjaCount"
 
 export const RoutesComponent = () => {
     return (
@@ -51,6 +53,9 @@ export const RoutesComponent = () => {
         <Route path="/omlette" element={<OmletRecipe /> } />
         <Route path="/responseWeb" element={<ResponseWebSite /> } />
         <Route path="/qr-code" element={<QrCode />} />
+        <Route path="/stacjaPaliw" element={<StacjaPaliw />} />
+        <Route path="/stacjaCount" element={<StacjaCount />} />
+        
       </Routes>
     </div>
     </>
