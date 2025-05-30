@@ -321,7 +321,7 @@ export const LinksProjects = () => {
       </div>
       <div className="project-container">
         <img
-          src={process.env.PUBLIC_URL + "/images/image-qr-code.png"}
+          src={process.env.PUBLIC_URL + "/images/stacja.png"}
           className="project-image"
           alt="responseWeb"
         />

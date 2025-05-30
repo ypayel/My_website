@@ -1,33 +1,38 @@
-
-// .banerLewy,
-// .lewy {
-// 	background: rgb(130, 69, 85);
-// 	color: white;
-// 	width: 30%;
-// 	height: 200px;
-// 	text-align: center;
-// 	float: left;
-// }
-// .banerPrawy,
-// .prawy {
-// 	background: rgb(130, 69, 85);
-// 	color: white;
-// 	width: 70%;
-// 	height: 200px;
-// 	text-align: center;
-// 	float: left;
-// }
-// .prawy,
-// .stopka {
-// 	background: rgb(240, 234, 226);
-// 	padding: 120px;
-// }
-// table,
-// td {
-// 	border: 1px solid rgb(130, 69, 85);
-// 	color: rgb(130, 69, 85);
-// 	padding: 10px;
-// }
-// a {
-// 	color: rgb(240, 234, 226);
-// }
+.count-baner-left,
+.count-left,
+.banerLewy,
+.statcja-left {
+  background: rgb(130, 69, 85);
+  color: white;
+  width: 30%;
+  height: 200px;
+  text-align: center;
+  float: left;
+}
+.count-right,
+.count-baner-right,
+.banerPrawy,
+.stacja-right {
+  background: rgb(130, 69, 85);
+  color: white;
+  width: 70%;
+  height: 200px;
+  text-align: center;
+  float: left;
+}
+.count-main,
+.stacja-main-conteiner,
+.count-footer,
+.stacja-footer {
+  background: rgb(240, 234, 226);
+  padding: 120px;
+}
+.stacja-table,
+.stacja-table-data {
+  border: 1px solid rgb(130, 69, 85);
+  color: rgb(130, 69, 85);
+  padding: 10px;
+}
+.count-link-download, .stacja-link-download {
+  color: rgb(240, 234, 226);
+}

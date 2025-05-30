@@ -12,29 +12,29 @@ export const StacjaPaliw = () => {
 	</div>
 	<div className="stacja-main-conteiner">
 		<h3>Godziny otwarcia stacji paliw</h3>
-		<table>
+		<table className="stacja-table">
 			<tr>
-				<td>Dzień</td>
-				<td>Od</td>
-				<td>Do</td>
+				<td className="stacja-table-data">Dzień</td>
+				<td className="stacja-table-data">Od</td>
+				<td className="stacja-table-data">Do</td>
 			</tr>
 			<tr>
-				<td>Pn - Sb</td>
-				<td>6:00</td>
-				<td>24:00</td>
+				<td className="stacja-table-data">Pn - Sb</td>
+				<td className="stacja-table-data">6:00</td>
+				<td className="stacja-table-data">24:00</td>
 			</tr>
 			<tr>
-				<td>Nd</td>
-				<td>7:00</td>
-				<td>24:00</td>
+				<td className="stacja-table-data">Nd</td>
+				<td className="stacja-table-data">7:00</td>
+				<td className="stacja-table-data">24:00</td>
 			</tr>
 		</table>
 	</div>
 	<div className="statcja-left">
-		<Link to="./kwerendy.txt">Pobierz kwerendy</Link>
+		<a href="./kwerendy.txt" className="stacja-link-download">Pobierz kwerendy</a>
 	</div>
 	<div className="stacja-right">
-		<img src="samochod.png" alt="samochod" className="statcja-car"/>
+		<img src={process.env.PUBLIC_URL + "/images/samochod.png"} alt="samochod" className="statcja-car"/>
 	</div>
 	<div className="stacja-footer">
 		<p>000000000</p>
