@@ -11,7 +11,7 @@ export const LinksProjects = () => {
           alt="bookStore"
         />
         <div className="project-info">
-          <h3 className="project-header">Project one (Book Store)</h3>
+          <h3 className="project-header">Project 1 (Book Store)</h3>
           <p className="project-description">
             In this project, my team and I developed an online bookstore where
             users can search for books, add them to the cart, and switch between
@@ -41,7 +41,7 @@ export const LinksProjects = () => {
           alt="calculator"
         />
         <div className="project-info">
-          <h3 className="project-header">Project two (Calculator)</h3>
+          <h3 className="project-header">Project 2 (Calculator)</h3>
           <p className="project-description">
             A basic calculator that supports all standard arithmetic operations
             such as addition, subtraction, multiplication, and division.
@@ -70,7 +70,7 @@ export const LinksProjects = () => {
           alt="colorPicker"
         />
         <div className="project-info">
-          <h3 className="project-header">Project third (Color Picker)</h3>
+          <h3 className="project-header">Project 3 (Color Picker)</h3>
           <p className="project-description">
             A color palette tool that allows users to pick any color and preview
             how it will appear on the page in real time.
@@ -98,7 +98,7 @@ export const LinksProjects = () => {
           alt="creditCard"
         />
         <div className="project-info">
-          <h3 className="project-header">Project four (Credit Card Form)</h3>
+          <h3 className="project-header">Project 4 (Credit Card Form)</h3>
           <p className="project-description">
             A simple and responsive form for entering credit card details during
             online purchases.
@@ -126,7 +126,7 @@ export const LinksProjects = () => {
           alt="fryzjer"
         />
         <div className="project-info">
-          <h3 className="project-header">Project five (Barder Shop)</h3>
+          <h3 className="project-header">Project 5 (Barder Shop)</h3>
           <p className="project-description">
             A hairdressing salon website where users can browse different
             haircut styles and see the price for each one.
@@ -156,7 +156,7 @@ export const LinksProjects = () => {
           alt="gazeta"
         />
         <div className="project-info">
-          <h3 className="project-header">Project six (NewsPapper website)</h3>
+          <h3 className="project-header">Project 6 (NewsPapper website)</h3>
           <p className="project-description">
             In this project, I created a digital newspaper website that displays
             articles from various categories such as politics, technology, and
@@ -185,7 +185,7 @@ export const LinksProjects = () => {
           alt="galleria"
         />
         <div className="project-info">
-          <h3 className="project-header">Project seven (Galleri)</h3>
+          <h3 className="project-header">Project 7 (Galleri)</h3>
           <p className="project-description">
             A photo gallery with images that automatically change in sequence,
             creating a simple slideshow effect.
@@ -213,7 +213,7 @@ export const LinksProjects = () => {
           alt="linkPage"
         />
         <div className="project-info">
-          <h3 className="project-header">Project eight (Social Links)</h3>
+          <h3 className="project-header">Project 8 (Social Links)</h3>
           <p className="project-description">
             A responsive webpage with styled buttons and icons that link to
             social platforms and useful external websites.
@@ -241,7 +241,7 @@ export const LinksProjects = () => {
           alt="omlette"
         />
         <div className="project-info">
-          <h3 className="project-header">Project nine (Omlette Recipe)</h3>
+          <h3 className="project-header">Project 9 (Omlette Recipe)</h3>
           <p className="project-description">
             A mobile-friendly recipe page featuring a detailed omelette recipe,
             including ingredients and clear cooking steps.
@@ -269,7 +269,7 @@ export const LinksProjects = () => {
           alt="responseWeb"
         />
         <div className="project-info">
-          <h3 className="project-header">Project ten (Resposive Website)</h3>
+          <h3 className="project-header">Project 10 (Resposive Website)</h3>
           <p className="project-description">
             A simple landing page with a fully responsive layout, optimized for
             both desktop and mobile devices.
@@ -297,7 +297,7 @@ export const LinksProjects = () => {
           alt="responseWeb"
         />
         <div className="project-info">
-          <h3 className="project-header">Project eleven (Qr Code)</h3>
+          <h3 className="project-header">Project 11 (Qr Code)</h3>
           <p className="project-description">
             A clean and responsive QR code component that encourages users to
             visit Frontend Mentor and improve their frontend skills by building
@@ -326,7 +326,7 @@ export const LinksProjects = () => {
           alt="responseWeb"
         />
         <div className="project-info">
-          <h3 className="project-header">Project twelve (Fuel Station)</h3>
+          <h3 className="project-header">Project 12 (Fuel Station)</h3>
           <p className="project-description">
             A clean and responsive QR code component that encourages users to
             visit Frontend Mentor and improve their frontend skills by building
