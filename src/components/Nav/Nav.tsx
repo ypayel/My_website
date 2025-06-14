@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import MainPage from "../MainPage/MainPage";
 import './Nav.scss';
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import BurgerMenuHeader from "../BurgerMenuHeader/BurgerMenuHeader";
 export const Nav = () => {
     return (
         <>
@@ -12,6 +14,7 @@ export const Nav = () => {
             <a href="https://www.linkedin.com/in/artsiom-kukankou/" className="linkedIn" target="_blank"><img src={process.env.PUBLIC_URL + '/images/icons8-linkedin.svg'} className="linkedin-icon"/></a>
             <a href="https://github.com/ypayel" className="gitHub" target="_blank"><img src={process.env.PUBLIC_URL + '/images/icons8-github.svg'} alt="icon" className="github-icon"/></a>
         </div>
+        <BurgerMenuHeader />
         </>
     )
 }

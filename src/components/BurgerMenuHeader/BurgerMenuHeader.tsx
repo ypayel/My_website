@@ -21,7 +21,7 @@ export const BurgerMenuHeader = () => {
                 <div className="box__burgermenu__stripe"></div>
                 <div className="box__burgermenu__stripe"></div>
               </div>
-              {/* <BurgerMenu isOpen={isOpen} toggleMenu={toggleMenu}/> */}
+              <BurgerMenu isOpen={isOpen} toggleMenu={toggleMenu}/>
         </>
         
     )

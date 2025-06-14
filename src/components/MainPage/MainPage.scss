@@ -1,8 +1,7 @@
-
 .link-about,
 .link-contact,
 .link-main,
-.link-projects{
+.link-projects {
   text-decoration: none;
   color: #1f2937;
 }
@@ -13,7 +12,6 @@
   max-width: 50%;
   padding-left: 2%;
   padding-top: 5%;
- 
 }
 .nav-conteiner {
   display: flex;
@@ -29,29 +27,25 @@
   justify-content: flex-end;
 }
 .welcome-text {
-  
   font-size: 20px;
- 
 }
 .welcome-first-header {
   font-size: 35px;
-  
 }
 .welcome-second-header {
   font-size: 25px;
- 
 }
 .welcome-button-text {
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 .welcome-button {
   background-color: #1f2937;
   border-radius: 12px;
-  
+
   font-size: 18px;
   padding: 5px 10px;
-  
+
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -67,14 +61,14 @@ text-decoration: none;
   flex-direction: column;
 }
 .my-stack-icons {
- display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 100px);
   gap: 16px;
   padding-top: 12%;
-   justify-content: center;
+  justify-content: center;
 }
 .stack-icon {
-   width: 100px;
+  width: 100px;
   height: 100px;
   background-color: #f3f4f6;
   border-radius: 12px;
@@ -98,54 +92,55 @@ text-decoration: none;
 }
 .main-conteiner {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-   max-width: 60%;
+  max-width: 60%;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width: 1024px) {
   .images-container {
-        display: flex;
-        justify-content: flex-start;
-        
-    }
-    .my-stack-icons {
-      padding-left: 75px;
-      padding-top: 55px;
-    }
+    display: flex;
+    justify-content: flex-start;
+  }
+  .my-stack-icons {
+    padding-left: 75px;
+    padding-top: 55px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .images-container {
-        display: flex;
-        justify-content: flex-start;
-        
-    }
-    .my-stack-icons {
-      padding-left: 75px;
-      padding-top: 45px;
-    }
+    display: flex;
+    justify-content: flex-start;
+  }
+  .my-stack-icons {
+    padding-left: 75px;
+    padding-top: 45px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .images-container {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .my-stack-icons {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .my-stack-icons {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding-left: 75px;
   }
+
+  .nav-conteiner {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .images-container {
-        display: flex;
-        justify-content: flex-start;
-        
-    }
+    display: flex;
+    justify-content: flex-start;
+  }
   .my-stack-icons {
     display: flex;
     flex-direction: column;
@@ -156,16 +151,13 @@ text-decoration: none;
 
 @media screen and (max-width: 320px) {
   .images-container {
-        display: flex;
-        justify-content: flex-start;
-        
-    }
-     .my-stack-icons {
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-        padding-left: 24px;
-    }
+    display: flex;
+    justify-content: flex-start;
+  }
+  .my-stack-icons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-left: 24px;
+  }
 }
-
-
