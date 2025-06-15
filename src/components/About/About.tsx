@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 import Nav from "../Nav/Nav";
 import "./About.scss";
 export const About = () => {
     return (
-        <>
+        <motion.div
+        initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 100 }}
+      transition={{ duration: 0.5 }}
+        >
         <Nav/>
         <div className="about-container">
         <div className="image-container">
@@ -31,7 +37,7 @@ export const About = () => {
             </div>
            
         </div>
-        </>
+        </motion.div>
     )
 }
 

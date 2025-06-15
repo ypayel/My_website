@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import Nav from "../Nav/Nav";
 import "./MainPage.scss";
+import { motion } from "framer-motion";
 export const MainPage = () => {
   return (
-    <>
+    <motion.div
+    initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 100 }}
+      transition={{ duration: 0.5 }}
+    >
       <Nav />
       <div className="main-conteiner">
         <div className="welcome-text-conteiner">
@@ -77,7 +83,7 @@ export const MainPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

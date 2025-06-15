@@ -22,15 +22,19 @@ import Projects from "./components/Projects/Projects"
 import QrCode from "./components/Projects/QrCode/QrCode"
 import ResponseWebSite from "./components/Projects/ResponseWebSite/ResponseWebSite"
 import SocialLinks from "./components/Projects/SocialLinks/SocialLinks"
-import { Link, Route, Routes } from "react-router-dom";
+import {Route, Routes, useLocation } from "react-router-dom";
 import StacjaPaliw from "./components/Projects/StacjaPaliw/StacjaPaliw"
 import StacjaCount from "./components/Projects/StacjaPaliw/StacjaCount"
+import { AnimatePresence } from "framer-motion"
 
 export const RoutesComponent = () => {
+
+  const location = useLocation();
     return (
     <>
     <div className="routes-main">
-    <Routes>
+      <AnimatePresence mode="wait">
+    <Routes location={location} key={location.pathname}>
         <Route path="/" element={<MainPage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
@@ -55,8 +59,8 @@ export const RoutesComponent = () => {
         <Route path="/qr-code" element={<QrCode />} />
         <Route path="/stacjaPaliw" element={<StacjaPaliw />} />
         <Route path="/stacjaCount" element={<StacjaCount />} />
-        
       </Routes>
+      </AnimatePresence>
     </div>
     </>
     );
