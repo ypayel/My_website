@@ -36,3 +36,21 @@
 .count-link-download, .stacja-link-download {
   color: rgb(240, 234, 226);
 }
+
+@media screen and (max-width: 636px) {
+  .stacja-home-image, .stacja-count-image {
+  max-width: 100px;
+ 
+}
+.banerLewy {
+  max-width: 150px;
+  height: 100px;
+}
+.banerPrawy {
+  height: 100px;
+}
+.banerLewy-header {
+font-size: 25px;
+}
+}
+

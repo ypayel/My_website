@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Nav from "../../Nav/Nav";
 
 export const StacjaCount = () => {
   const [paliwo, setPaliwo] = useState("");
@@ -25,8 +26,9 @@ export const StacjaCount = () => {
   };
   return (
     <div>
+      <Nav/>
       <div className="count-baner-left">
-        <h1>Stacja Paliw</h1>
+        <h1 className="count-baner-left-header">Stacja Paliw</h1>
       </div>
       <div className="count-baner-right">
         <Link to="/stacjaPaliw">

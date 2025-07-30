@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import "./StacjaPaliw.scss"
+import Nav from "../../Nav/Nav";
 export const StacjaPaliw = () => {
     return (
         <div>
+			<Nav/>
 	<div className="banerLewy">
-		<h1>Stacja Paliw</h1>
+		
+		<h1 className="banerLewy-header">Stacja Paliw</h1>
 	</div>
 	<div className="banerPrawy">
 		<Link to="/stacjaPaliw" className="stacja-main-link"><img src={process.env.PUBLIC_URL + "/images/home.png"} className="stacja-home-image" alt="home"/></Link>
