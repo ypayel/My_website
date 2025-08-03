@@ -25,7 +25,7 @@ export const StacjaCount = () => {
     setWynik(`Koszt paliwa: ${koszt.toFixed(2)} zł`);
   };
   return (
-    <div>
+    <div className="count-conteiner">
       <Nav/>
       <div className="count-baner-left">
         <h1 className="count-baner-left-header">Stacja Paliw</h1>
