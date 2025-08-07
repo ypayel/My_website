@@ -1,9 +1,12 @@
 import React from 'react';
 import "./QrCode.scss"
+import Nav from '../../Nav/Nav';
 export const MainQr = () => {
     return (
         <>
+        <Nav/>
         <div className="main-conteiner-qr">
+            
             <div className="image-conteiner-qr">
         <img src="/images/image-qr-code.png" className="qr-code-images" alt="qr-code"/>
         </div>

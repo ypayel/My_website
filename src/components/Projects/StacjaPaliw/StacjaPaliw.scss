@@ -33,58 +33,61 @@
   color: rgb(130, 69, 85);
   padding: 10px;
 }
-.count-link-download, .stacja-link-download {
+.count-link-download,
+.stacja-link-download {
   color: rgb(240, 234, 226);
 }
-.box__burgermenu {
-  display: none;
-}
+// .box__burgermenu {
+//   display: none;
+// }
 @media screen and (max-width: 636px) {
-  .stacja-home-image, .stacja-count-image {
-  max-width: 100px;
- 
-}
-.banerLewy {
-  max-width: 100%;
-  height: 100px;
-  margin-top: 3%;
-}
-.banerPrawy {
-  height: 100px;
-  margin-top: 3%;
-}
-.banerLewy-header {
-font-size: 25px;
-}
-.box__burgermenu {
-  display:inline;
-}
-.nav-conteiner {
-  display: none;
-}
-.stacja-main-conteiner {
-  margin-top: 3%;
- 
-}
+  .stacja-home-image,
+  .stacja-count-image {
+    max-width: 100px;
+  }
+  .banerLewy {
+    max-width: 100%;
+    height: 100px;
+    margin-top: 3%;
+  }
+  .banerPrawy {
+    height: 100px;
+    margin-top: 3%;
+  }
+  .banerLewy-header {
+    font-size: 25px;
+  }
+  // .box__burgermenu {
+  //   display: inline;
+  // }
+  // .nav-conteiner {
+  //   display: none;
+  // }
+  .stacja-main-conteiner {
+    margin-top: 3%;
+  }
 }
 
-@media screen and (max-width: 424px){
+@media screen and (max-width: 424px) {
   .statcja-car {
     width: 170px;
   }
   .box__burgermenu {
     top: 0px;
   }
-  .stacja-table, .stacja-table-data {
+  .stacja-table,
+  .stacja-table-data {
     padding: 5px;
+  }
+  .stacja-header {
+    font-size: 16px;
+    text-align: center;
+  }
+  .stacja-main-conteiner {
+    padding: 70px;
+  }
+  .stacja-home-image, .stacja-count-image {
+  max-width: 80px;
+ 
 }
-.stacja-header {
-  font-size: 16px;
-  text-align: center;
 }
-.stacja-main-conteiner {
-  padding: 70px;
-}
-}
-
-

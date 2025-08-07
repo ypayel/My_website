@@ -115,6 +115,9 @@
     padding-left: 75px;
     padding-top: 45px;
   }
+  .nav-conteiner {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -129,9 +132,7 @@
     padding-left: 75px;
   }
 
-  .nav-conteiner {
-    display: none;
-  }
+  
 }
 
 @media screen and (max-width: 375px) {

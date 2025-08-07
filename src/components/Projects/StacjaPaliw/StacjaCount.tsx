@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Nav from "../../Nav/Nav";
-
+import "./StacjaCount.scss"
 export const StacjaCount = () => {
   const [paliwo, setPaliwo] = useState("");
   const [ilosc, setIlosc] = useState("");

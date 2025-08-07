@@ -1,0 +1,27 @@
+@media screen and (max-width: 636px) {
+  .count-baner-left,
+  .count-baner-right {
+    height: 131px;
+    margin-top: 3%;
+  }
+  .count-main {
+    margin-top: 3%;
+  }
+  .count-car-image {
+    width: 200px;
+  }
+   .count-baner-left-header {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .count-main {
+    padding: 73px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+}
