@@ -328,9 +328,9 @@ export const LinksProjects = () => {
         <div className="project-info">
           <h3 className="project-header">Project 12 (Fuel Station)</h3>
           <p className="project-description">
-            A clean and responsive QR code component that encourages users to
-            visit Frontend Mentor and improve their frontend skills by building
-            real projects.
+            This website displays the opening hours of a gas station and
+            includes a simple calculator to estimate the fuel cost based on the
+            fuel type and the number of liters.
           </p>
           <div className="project-buttons-link">
             <Link className="project-link" to="/stacjaPaliw">
