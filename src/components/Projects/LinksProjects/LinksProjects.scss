@@ -66,12 +66,11 @@
   background-color: #1d4ed8;
 }
 @media screen and (max-width: 1440px) {
-  
   .project-image {
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
   }
- .links-container {
+  .links-container {
     gap: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -81,8 +80,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .project-image
- {
+  .project-image {
     width: 200px;
     height: 200px;
   }
@@ -93,20 +91,14 @@
     justify-items: center;
     margin-right: 15px;
   }
-   .project-info {
+  .project-info {
     width: 100%;
   }
   .project-container {
     padding: 14px;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .project-image
-   {
-    width: 250px;
-    height: 250px;
-  }
+@media screen and (max-width: 930px) {
   .links-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -114,28 +106,37 @@
     gap: 10px;
     margin-right: 10px;
   }
-   .project-info {
+}
+
+@media screen and (max-width: 768px) {
+  .project-image {
+    width: 250px;
+    height: 250px;
+  }
+  .project-info {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 425px) {
-  .project-image
-   {
-    width: 275px;
-    height: 275px;
-  }
-
-   .links-container {
+@media screen and (max-width: 510px) {
+  .project-container {
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
   }
-.project-container {
-    margin-top: 25px;
+
+  .links-container {
     display: flex;
- flex-direction: column;
+    flex-direction: column;
   }
-   .project-info {
+}
+
+@media screen and (max-width: 425px) {
+  .project-image {
+    width: 275px;
+    height: 275px;
+  }
+  .project-info {
     width: 100%;
   }
 }
@@ -147,15 +148,14 @@
   .project-container {
     margin-top: 25px;
     display: flex;
- flex-direction: column;
+    flex-direction: column;
   }
   .project-info {
     width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
-  .project-image
-   {
+  .project-image {
     width: 200px;
     height: 200px;
   }
@@ -167,7 +167,7 @@
     width: 100%;
   }
   .project-container {
- display: flex;
- flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -37,9 +37,11 @@
 .stacja-link-download {
   color: rgb(240, 234, 226);
 }
-// .box__burgermenu {
-//   display: none;
+// @media screen and (max-width: 769px) {
+ 
 // }
+
+
 @media screen and (max-width: 636px) {
   .stacja-home-image,
   .stacja-count-image {
@@ -57,12 +59,7 @@
   .banerLewy-header {
     font-size: 25px;
   }
-  // .box__burgermenu {
-  //   display: inline;
-  // }
-  // .nav-conteiner {
-  //   display: none;
-  // }
+
   .stacja-main-conteiner {
     margin-top: 3%;
   }
