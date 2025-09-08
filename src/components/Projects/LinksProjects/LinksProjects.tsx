@@ -348,6 +348,33 @@ export const LinksProjects = () => {
           </div>
         </div>
       </div>
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/strongCard-image.png"}
+          className="project-image"
+          alt="strongCard"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project 13 (Strong Card)</h3>
+          <p className="project-description">
+            StrongCard – an interactive platform displaying restaurants and
+            entertainment venues on a map that offer discounts. Users can browse
+            a catalog of b
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/strongCard">
+              <a className="project-link-demo">Live Demo</a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/StrongCard"
+              target="blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
