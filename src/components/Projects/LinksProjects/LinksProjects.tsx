@@ -362,12 +362,35 @@ export const LinksProjects = () => {
             a catalog of b
           </p>
           <div className="project-buttons-link">
-            <Link className="project-link" to="/strongCard">
-              <a className="project-link-demo">Live Demo</a>
-            </Link>
+            <a className="project-link-demo">Live Demo</a>
             <a
               href="https://github.com/ypayel/StrongCard"
               target="blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/TrainApi-image.png"}
+          className="project-image"
+          alt="TrainApi"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project 14(TrainApi)</h3>
+          <p className="project-description">
+            Roller Coaster Queue Management API – A TypeScript backend system
+            with REST API and Redis integration. Manages roller coasters,
+            wagons, staff, and clients while ensuring performance, scalability,
+            and real-time monitoring.
+          </p>
+          <div className="project-buttons-link">
+            <a
+              href="https://github.com/ypayel/Train_Mountains"
+              target="_blank"
               className="project-link-code"
             >
               Code

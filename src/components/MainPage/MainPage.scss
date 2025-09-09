@@ -17,7 +17,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .nav-menu {
@@ -60,7 +59,7 @@
 }
 .my-stack-icons {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 120px);
   gap: 16px;
   padding-top: 12%;
   justify-content: center;
@@ -106,17 +105,28 @@
   }
 }
 
+@media screen and (max-width: 802px) {
+  .nav-conteiner {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .images-container {
     display: flex;
     justify-content: flex-start;
   }
   .my-stack-icons {
-    padding-left: 75px;
     padding-top: 45px;
+    padding-left: 120px;
   }
-  .nav-conteiner {
-    display: none;
+}
+
+@media screen and (max-width: 660px) {
+  .my-stack-icons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
   }
 }
 
@@ -126,13 +136,8 @@
     justify-content: flex-start;
   }
   .my-stack-icons {
-    display: flex;
-    flex-direction: column;
     gap: 16px;
-    padding-left: 75px;
   }
-
-  
 }
 
 @media screen and (max-width: 375px) {
@@ -144,7 +149,7 @@
     display: flex;
     flex-direction: column;
     gap: 11px;
-    padding-left: 50px;
+    padding-left: 25px;
   }
 }
 
