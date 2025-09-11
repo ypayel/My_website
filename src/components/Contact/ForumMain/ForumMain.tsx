@@ -75,18 +75,17 @@ export const ForumMain = () => {
           <h2 className="form-first-header">Contact Me</h2>
           <p className="contact-welcometext">Feel free to reach out!</p>
           <div className="form-name-main">
-            <div className="form-headers-conteiner">
-              <h3 className="form-first-name-header">First Name</h3>
-              <h3 className="form-last-name-header">Last Name</h3>
-            </div>
-            <div className="form-name-inputs-conteiner">
+            <div className="form-group">
+              <label className="form-first-name-header" htmlFor="firstName">
+                First Name
+              </label>
               <input
                 type="text"
+                id="firstName"
                 name="firstName"
                 className={`form-first-input ${
                   errors.firstName ? "error" : ""
                 }`}
-                alt="first-name"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
               />
@@ -95,11 +94,16 @@ export const ForumMain = () => {
                   {errors.firstName}
                 </span>
               )}
+            </div>
+            <div className="form-group">
+              <label className="form-last-name-header" htmlFor="lastName">
+                Last Name
+              </label>
               <input
                 type="text"
+                id="lastName"
                 name="lastName"
                 className={`form-last-input ${errors.lastName ? "error" : ""}`}
-                alt="last-name"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
@@ -110,44 +114,38 @@ export const ForumMain = () => {
               )}
             </div>
           </div>
-          <div className="form-email-main">
-            <div className="form-email-header-conteiner">
-              <h3 className="form-email-header">Email Adress</h3>
-            </div>
-            <div className="form-email-input-conteiner">
-              <input
-                type="text"
-                name="email"
-                className={`form-email-input ${errors.email ? "error" : ""}`}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                alt="email"
-              />
-              {errors.email && (
-                <span className="form-error-text-email-input">
-                  {errors.email}
-                </span>
-              )}
-            </div>
+          <div className="form-group">
+            <label htmlFor="email" className="form-email-header">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className={`form-email-input ${errors.email ? "error" : ""}`}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {errors.email && (
+              <span className="form-error-text-email-input">
+                {errors.email}
+              </span>
+            )}
           </div>
-
-          <div className="form-message-conteiner">
-            <h3 className="form-message-header">Message</h3>
-            <div className="form-message-input-conteiner">
-              <textarea
-                name="message"
-                value={message}
-                className={`form-message-input ${
-                  errors.message ? "error" : ""
-                }`}
-                onChange={(e) => setMessage(e.target.value)}
-              ></textarea>
-              {errors.message && (
-                <span className="form-error-text-message">
-                  {errors.message}
-                </span>
-              )}
-            </div>
+          <div className="form-group">
+            <label htmlFor="message" className="form-message-header">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              className={`form-message-input ${errors.message ? "error" : ""}`}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            {errors.message && (
+              <span className="form-error-text-message">{errors.message}</span>
+            )}
           </div>
           <PopOut messageSent={clicked} setMessageSent={setClicked} />
           <div className="form-submit-button-conteiner">
