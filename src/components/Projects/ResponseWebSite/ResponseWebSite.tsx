@@ -3,7 +3,7 @@ import "./ResponseWebSite.scss"
 export const ResponseWebSite = () => {
     return (
         <>
-            <div className="main-conteiner">
+            <div className="main-conteiner-response">
             <Nav/>
                 <div className="response-container">
                 
@@ -12,7 +12,6 @@ export const ResponseWebSite = () => {
                         <img className="logo" src={process.env.PUBLIC_URL + '/images/58px.webp'} alt="58px"/> <span>Sections</span>
                     </div>
                     <div className="nav">
-                        <img className="nav-icon" src={process.env.PUBLIC_URL + '/images/menu.webp'} alt="menu"/>
                         <div className="nav-links">
                             <span>First Link</span>
                             <span>Second Link</span>
