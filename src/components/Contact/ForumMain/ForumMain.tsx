@@ -170,6 +170,15 @@ export const ForumMain = () => {
                 www.linkedin.com/in/artsiom-kukankou
               </a>
             </p>
+            <p className="contact-text">
+              <a
+                href="https://github.com/ypayel"
+                className="contact-link"
+                target="_blank"
+              >
+               www.github.com/ypayel
+              </a>
+            </p>
           </div>
         </form>
       </div>
