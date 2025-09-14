@@ -14,15 +14,15 @@ export const BurgerMenu = ( {isOpen, toggleMenu} : BurgerMenuProps ) => {
           className={`slide__left ${isOpen ? "open" : ""}`}
           onClick={toggleMenu}
         ></div>
-        <div className={`slide__right ${isOpen ? "open" : ""}`}>
-          <ul className="slide__right__ul">
-            <div className="slide__right__all__li">
-              <li className="slide__right__ul__li">
+        <div className={`slide__leftMenu ${isOpen ? "open" : ""}`}>
+          <ul className="slide__leftMenu__ul">
+            <div className="slide__leftMenu__all__li">
+              <li className="slide__leftMenu__ul__li">
                 <Link className="p_link" to="/">
                   Home
                 </Link>
                 <svg
-                  className="slide__right__ul__svg"
+                  className="slide__leftMenu__ul__svg"
                   viewBox="-2.4 -2.4 28.80 28.80"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -47,12 +47,12 @@ export const BurgerMenu = ( {isOpen, toggleMenu} : BurgerMenuProps ) => {
                   </g>
                 </svg>
               </li>
-              <li className="slide__right__ul__li">
+              <li className="slide__leftMenu__ul__li">
                 <Link className="p_link" to="/projects">
                   Projects
                 </Link>
                 <svg
-                  className="slide__right__ul__svg"
+                  className="slide__leftMenu__ul__svg"
                   viewBox="-2.4 -2.4 28.80 28.80"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,12 +77,12 @@ export const BurgerMenu = ( {isOpen, toggleMenu} : BurgerMenuProps ) => {
                   </g>
                 </svg>
               </li>
-              <li className="slide__right__ul__li">
+              <li className="slide__leftMenu__ul__li">
                 <Link className="p_link" to="/about">
                   About
                 </Link>
                 <svg
-                  className="slide__right__ul__svg"
+                  className="slide__leftMenu__ul__svg"
                   viewBox="-2.4 -2.4 28.80 28.80"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -107,12 +107,12 @@ export const BurgerMenu = ( {isOpen, toggleMenu} : BurgerMenuProps ) => {
                   </g>
                 </svg>
               </li>
-              <li className="slide__right__ul__li">
+              <li className="slide__leftMenu__ul__li">
                 <Link className="p_link" to="/contact">
                   Contact
                 </Link>
                 <svg
-                  className="slide__right__ul__svg"
+                  className="slide__leftMenu__ul__svg"
                   viewBox="-2.4 -2.4 28.80 28.80"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"

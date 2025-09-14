@@ -120,37 +120,41 @@
     padding-top: 45px;
     padding-left: 120px;
   }
+  
 }
 
 @media screen and (max-width: 660px) {
-  .my-stack-icons {
-    display: flex;
+   .main-conteiner {
     flex-direction: column;
+  }
+  .my-stack-icons {
+    grid-template-columns: repeat(3, 100px);
+    display: grid;
+    justify-content: start;
     padding-left: 0px;
   }
+  .stack-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .welcome-text-conteiner {
+    max-width: 100%;
+  }
+  .main-conteiner {
+    max-width: 80%;
+  }
 }
 
-@media screen and (max-width: 425px) {
-  .images-container {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .my-stack-icons {
-    gap: 16px;
-  }
-}
+
 
 @media screen and (max-width: 375px) {
-  .images-container {
-    display: flex;
-    justify-content: flex-start;
-  }
   .my-stack-icons {
     display: flex;
     flex-direction: column;
     gap: 11px;
     padding-left: 25px;
   }
+ 
 }
 
 @media screen and (max-width: 320px) {
