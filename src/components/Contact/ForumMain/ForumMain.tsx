@@ -176,7 +176,7 @@ export const ForumMain = () => {
                 className="contact-link"
                 target="_blank"
               >
-               www.github.com/ypayel
+                www.github.com/ypayel
               </a>
             </p>
           </div>
