@@ -11,8 +11,8 @@ export const Nav = () => {
             <p><Link className="link-projects" to="/projects">Projects</Link></p>
             <p><Link className="link-about" to="/about">About</Link></p>
             <p><Link className="link-contact" to="/contact">Contact</Link></p>
-            <a href="https://www.linkedin.com/in/artsiom-kukankou/" className="linkedIn" target="_blank"><img src={process.env.PUBLIC_URL + '/images/icons8-linkedin.svg'} className="linkedin-icon"/></a>
-            <a href="https://github.com/ypayel" className="gitHub" target="_blank"><img src={process.env.PUBLIC_URL + '/images/icons8-github.svg'} alt="icon" className="github-icon"/></a>
+            <a href="https://www.linkedin.com/in/artsiom-kukankou/" className="linkedIn" target="_blank"><img src={process.env.PUBLIC_URL + '/images/linkedin.png'} className="linkedin-icon"/></a>
+            <a href="https://github.com/ypayel" className="gitHub" target="_blank"><img src={process.env.PUBLIC_URL + '/images/github.png'} alt="icon" className="github-icon"/></a>
         </div>
         <BurgerMenuHeader />
         </>
