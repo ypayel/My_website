@@ -159,26 +159,31 @@ export const ForumMain = () => {
           </div>
 
           <div className="info-conteiner">
-            <p className="e-mail">kukankouartsiom@gmail.com</p>
-
-            <p className="contact-text">
+            <p className="contact-e-mail">kukankouartsiom@gmail.com</p>
+            <div className="contact-icons">
               <a
                 href="https://www.linkedin.com/in/artsiom-kukankou/"
                 className="contact-link"
                 target="_blank"
               >
-                www.linkedin.com/in/artsiom-kukankou
+                <img
+                  src={process.env.PUBLIC_URL + "images/linkedin.png"}
+                  alt="linkedin"
+                  className="contact-linkedin-image"
+                />
               </a>
-            </p>
-            <p className="contact-text">
               <a
                 href="https://github.com/ypayel"
                 className="contact-link"
                 target="_blank"
               >
-                www.github.com/ypayel
+                <img
+                  src={process.env.PUBLIC_URL + "images/github.png"}
+                  alt="github"
+                  className="contact-github-image"
+                />
               </a>
-            </p>
+            </div>
           </div>
         </form>
       </div>

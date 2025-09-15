@@ -198,7 +198,7 @@
 
 .form-first-name-header,
 .form-last-name-header,
-.form-email-header, 
+.form-email-header,
 .form-message-header {
   font-weight: bold;
   margin-bottom: 6px;
@@ -213,7 +213,28 @@
   font-size: 16px;
   margin-top: 4px;
 }
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
+.contact-linkedin-image,
+.contact-github-image {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-linkedin-image:hover,
+.contact-github-image:hover {
+  transform: scale(1.1);
+}
+.contact-e-mail {
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 1440px) {
   .form-main-conteiner {
     width: 75%;
