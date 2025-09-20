@@ -12,11 +12,11 @@ export const SocialLinks = () => {
                 </div>
                 <header>
                     <div className="avatar-section">
-                        <img src={process.env.PUBLIC_URL + '/images/avatar-jessica.jpeg'} alt="avatar" className="avatar" />
+                        <img src={process.env.PUBLIC_URL + '/images/me.jpg'} alt="avatar" className="avatar" />
                     </div>
                     <div className="description-social">
-                        <span className="name-social">Jessica Randall</span>
-                        <span className="adress-social">London, United Kingdom</span>
+                        <span className="name-social">Artsiom Kukankou</span>
+                        <span className="adress-social">Gdynia, Poland</span>
                         <span className="describe-social">"Front-end developer and avid reader."</span>
                     </div>
                 </header>

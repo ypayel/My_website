@@ -110,30 +110,21 @@
   }
   @media screen and (max-width: 2560px) {
     .galleri-container {
-      width: 1300px;
-      height: 1300px;
+      width: 50%;
+      height: 50%;
       margin-left: 25%;
     }
   }
 
-  @media screen and (max-width: 1440px ) {
-    .galleri-container {
-      width: 600px;
-      height: 600px;
-      margin-left: 450px;
-    }
-    
-  }
 
-  @media screen and (max-width: 1024px) {
-    .galleri-container {
-      margin-left: 270px;
-    }
-  }
+
+ 
 
   @media screen and (max-width: 768px) {
     .galleri-container {
-      margin-left: 150px;
+      margin-left: 83px;
+      width: 65%;
+      height: 65%;
     }
   }
 
@@ -142,7 +133,7 @@
     .galleri-container {
       width: 350px;
       height: 350px;
-      margin-left: 20px;
+      margin-left: 6px;
       margin-bottom: 35px;
     }
   }

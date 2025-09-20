@@ -43,8 +43,10 @@ export const About = () => {
 
           <div className="about-third-container">
             <p className="about-third-text">
-              I study at the WSB University in Gdansk, majoring in computer
-              science, specializing in Front-End.
+              I am studying Computer Science at WSB University in Gdańsk with a
+              specialization in Front-End Development. My studies have included
+              C# programming, computer networks, and cybersecurity basics, and
+              from the second year I will focus on Front-End technologies.
             </p>
           </div>
           <div className="about-third-container">

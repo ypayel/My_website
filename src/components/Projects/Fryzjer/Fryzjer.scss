@@ -47,13 +47,13 @@
 }
 
 .second-img {
-  width: 1424px;
+  width: 100%;
   height: 370px;
 }
 
 @media screen and (max-width: 1024px ) {
   .second-img {
-    width: 1008px;
+    width: 100%;
     height: 275px;
   }
   .header-fryzura {
@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 768px ) {
   .second-img {
-    width: 752px;
+    width: 100%;
     height: 240px;
   }
   .header-fryzura {
@@ -76,6 +76,6 @@
 
 @media screen and (max-width: 425px) {
   .second-img {
-    width: 409px;
+    width: 100%;
   }
 }

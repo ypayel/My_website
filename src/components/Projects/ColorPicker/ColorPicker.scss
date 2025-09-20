@@ -52,16 +52,11 @@
 	margin: 10px;
 	border-bottom: 1px solid white;
 }
-@media screen and (max-width: 2560px) {
-	.color-container {
-		margin-left: 450px;
-	}
-	
-}
+
 
 @media screen and (max-width: 1440px) {
 	.color-container {
-		margin-left: 150px;
+		margin-left: 29px;
 	}
 }
 @media screen and (max-width: 1024px) {
@@ -73,7 +68,7 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		margin-left: 140px;
+		margin-left: 35px;
 		width: 750px;
 	}
 	.color-table {
@@ -94,7 +89,7 @@
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		margin-left: 115px;
+		margin-left: 75px;
 		width: 530px;
 	}
 	.color-table {
