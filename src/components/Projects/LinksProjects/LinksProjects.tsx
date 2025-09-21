@@ -362,7 +362,7 @@ export const LinksProjects = () => {
             a catalog of b
           </p>
           <div className="project-buttons-link">
-            <a className="project-link-demo">Live Demo</a>
+            <a className="project-link-demo" href="https://strong-card.vercel.app/" target="blank">Live Demo</a>
             <a
               href="https://github.com/ypayel/StrongCard"
               target="blank"
