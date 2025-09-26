@@ -30,7 +30,7 @@ export const CreditCard = () => {
                             <div className="inputs-button">
                                 <div className="name-input">
                                     <label htmlFor="first-input">
-                                        <p className="card-name">CARDHOLDER NAME</p>
+                                      
                                         <input
                                             type="text"
                                             value={cardName}
@@ -40,7 +40,7 @@ export const CreditCard = () => {
                                     </label>
                                 </div>
                                 <div className="card-number-input">
-                                    <p className="card-number">CARD NUMBER</p>
+                                   
                                     <label htmlFor="second-input">
                                         <input
                                             type="text"
@@ -52,7 +52,7 @@ export const CreditCard = () => {
                                     </label>
                                 </div>
                                 <div className="data-input">
-                                    <p className="data">EXP. DATE (MM/YY)</p>
+                                 
                                     <label htmlFor="third-input">
                                         <input
                                             type="text"
@@ -73,7 +73,7 @@ export const CreditCard = () => {
                                     </label>
                                 </div>
                                 <div className="cvc-input">
-                                    <p className="cvc">CVC</p>
+                                   
                                     <label htmlFor="five-input">
                                         <input
                                             type="text"

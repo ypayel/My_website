@@ -104,7 +104,7 @@ export const LinksProjects = () => {
             online purchases.
           </p>
           <div className="project-buttons-link">
-            <Link className="project-link" to="/creditCard">
+            <Link className="project-link" to="/creditCard" >
               <a href="" className="project-link-demo">
                 Live demo
               </a>
