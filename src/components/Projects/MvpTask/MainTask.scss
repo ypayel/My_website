@@ -1,0 +1,123 @@
+.meals-container {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(2, 0.3fr);
+  justify-content: center;
+}
+.meals-dish {
+  background-color: #ffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px #0000000a;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  padding: 13px;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.meal-button {
+  background-color: #3b82f6;
+  color: white;
+    text-decoration: none;
+    width: 55%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.meal-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #e11d48;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px
+}
+
+.meal-input {
+  width: 45%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.meal-describe {
+  font-size: 18px;
+  
+}
+.meal-header-third {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  
+}
+.meals-header {
+  font-size: 22px;
+}
+
+.delete-button:hover {
+  color: #b91c1c;
+  transform: scale(1.1);
+}
+
+.meal-button:hover {
+  background-color: #2563eb;
+}
+
+.meals-dish:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px #0000001a;
+  transition: all 0.2s ease-in-out;
+}
+
+.meal-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px #3b82f633;
+}
+
+.box-container {
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 600px) {
+  .meals-container {
+    grid-template-columns: 1fr;
+  }
+   .meal-describe {
+  font-size: 16px;
+  
+}
+.meal-header-third{
+  font-size: 17px;
+  
+}
+.meals-header {
+  font-size: 20px;
+}
+}

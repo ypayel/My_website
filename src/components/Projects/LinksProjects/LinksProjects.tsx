@@ -398,6 +398,33 @@ export const LinksProjects = () => {
           </div>
         </div>
       </div>
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/MvpPage.png"}
+          className="project-image"
+          alt="MvpPage"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project 15(Mvp Page)</h3>
+          <p className="project-description">
+            The project was created as a simple MVP application. The purpose of the application is to enable the user to plan healthy meals throughout the day.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/mvpPage">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/Mvp_task"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

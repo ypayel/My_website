@@ -26,6 +26,7 @@ import {Route, Routes, useLocation } from "react-router-dom";
 import StacjaPaliw from "./components/Projects/StacjaPaliw/StacjaPaliw"
 import StacjaCount from "./components/Projects/StacjaPaliw/StacjaCount"
 import { AnimatePresence } from "framer-motion"
+import MainTask from "./components/Projects/MvpTask/MainTask"
 
 
 export const RoutesComponent = () => {
@@ -60,6 +61,7 @@ export const RoutesComponent = () => {
         <Route path="/qr-code" element={<QrCode />} />
         <Route path="/stacjaPaliw" element={<StacjaPaliw />} />
         <Route path="/stacjaCount" element={<StacjaCount />} />
+        <Route path="/mvpPage" element={<MainTask />} />
       </Routes>
       </AnimatePresence>
     </div>
