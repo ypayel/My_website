@@ -358,8 +358,7 @@ export const LinksProjects = () => {
           <h3 className="project-header">Project 13 (Strong Card)</h3>
           <p className="project-description">
             StrongCard – an interactive platform displaying restaurants and
-            entertainment venues on a map that offer discounts. Users can browse
-            a catalog of b
+            entertainment venues on a map that offer discounts. 
           </p>
           <div className="project-buttons-link">
             <a className="project-link-demo" href="https://strong-card.vercel.app/" target="blank">Live Demo</a>

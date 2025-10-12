@@ -1,46 +1,97 @@
-# Getting Started with Create React App
+# 🌐 My Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[**Live Demo**](https://my-website-omega-three.vercel.app/)  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧭 Project Overview
 
-### `npm start`
+This website serves as my **personal portfolio**, presenting 15 different web projects — ranging from simple MVPs and frontend layouts to advanced full-stack applications with API and Redis integration.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Each project demonstrates different aspects of web development: UI design, state management, responsive layouts, API handling, and backend logic.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The portfolio was built using **React, Vite, and SCSS**, with some projects also involving **TypeScript** and **Node.js** for backend functionality.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🧱 Technologies Used
 
-### `npm run build`
+- **React** – main frontend framework  
+- **Vite** – fast build tool and development server  
+- **SCSS (Sass)** – modular styling with variables and mixins  
+- **TypeScript** – used in backend projects for strong typing  
+- **Redis** – caching and real-time data management (Project 14)  
+- **HTML5 / CSS3 / JavaScript (ES6+)**  
+- **Vercel** – for deployment and hosting  
+- **Git / GitHub** – version control and collaboration  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💡 Projects Included
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| # | Project | Description |
+|---|----------|-------------|
+| **1** | **Book Store** | An online bookstore where users can search books, add them to the cart, and switch between languages via a language selector. |
+| **2** | **Calculator** | A simple calculator supporting addition, subtraction, multiplication, and division. |
+| **3** | **Color Picker** | A color palette tool that lets users select and preview colors in real-time. |
+| **4** | **Credit Card Form** | A responsive online payment form for entering and validating credit card details. |
+| **5** | **Barber Shop** | A salon website displaying different haircut styles and prices for each. |
+| **6** | **Newspaper Website** | A digital newspaper layout showing articles from categories like politics, tech, and entertainment. |
+| **7** | **Galleria** | An automatic image slider / gallery with smooth transitions. |
+| **8** | **Social Links** | A page featuring custom social media buttons and external useful links. |
+| **9** | **Omelette Recipe** | A clean and mobile-friendly recipe page with ingredients and cooking steps. |
+| **10** | **Responsive Website** | A landing page optimized for all screen sizes and devices. |
+| **11** | **QR Code Component** | A simple responsive card featuring a QR code linking to Frontend Mentor. |
+| **12** | **Fuel Station** | Displays gas station opening hours and includes a calculator to estimate fuel costs. |
+| **13** | **StrongCard** | An interactive app showing restaurants and entertainment venues on a map offering discounts. |
+| **14** | **Train API (Roller Coaster API)** | A backend TypeScript + Redis REST API managing roller coasters, staff, and clients — optimized for performance and scalability. |
+| **15** | **MVP Healthy Meal Planner** | A minimal app that helps users plan healthy meals for the day — add, delete, and view meals easily. |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📱 Features
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Responsive and mobile-first layout across all projects  
+- Consistent design system built with SCSS  
+- Modular and reusable React components  
+- State management with React hooks  
+- Integration with REST APIs (in backend projects)  
+- Language selector and theme customization (in Book Store)  
+- Data persistence and caching (Redis in Train API)  
+- Smooth UI transitions and animations  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## ⚙️ Installation and Local Development
 
-## Learn More
+To run this project locally:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# 1. Clone repository
+git clone https://github.com/ypayel/My_website.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 2. Enter project directory
+cd My_website
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
+npm run dev
+
+# 5. Open in browser
+http://localhost:5173
+
+---
+
+👤 Author
+
+Artsiom Kukankou
+
+🌐 Live Site
+
+💻 GitHub
+
+🧠 Frontend Developer (React + TypeScript + SCSS)
+
+📍 Based in Poland
