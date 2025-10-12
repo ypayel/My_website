@@ -88,9 +88,9 @@ http://localhost:5173
 
 Artsiom Kukankou
 
-🌐 Live Site
+🌐 Live Site - https://my-website-omega-three.vercel.app/
 
-💻 GitHub
+💻 GitHub - https://github.com/ypayel
 
 🧠 Frontend Developer (React + TypeScript + SCSS)
 
