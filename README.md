@@ -81,7 +81,7 @@ npm run dev
 
 # 5. Open in browser
 http://localhost:5173
-
+```
 ---
 
 👤 Author
