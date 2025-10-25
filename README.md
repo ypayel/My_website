@@ -51,8 +51,6 @@ The portfolio was built using **React, Vite, and SCSS**, with some projects also
 
 ## 📱 Features
 
-
-
 - Responsive and mobile-first layout across all projects  
 - Consistent design system built with SCSS  
 - Modular and reusable React components  
