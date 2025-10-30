@@ -104,7 +104,7 @@ export const LinksProjects = () => {
             online purchases.
           </p>
           <div className="project-buttons-link">
-            <Link className="project-link" to="/creditCard" >
+            <Link className="project-link" to="/creditCard">
               <a href="" className="project-link-demo">
                 Live demo
               </a>
@@ -358,10 +358,16 @@ export const LinksProjects = () => {
           <h3 className="project-header">Project 13 (Strong Card)</h3>
           <p className="project-description">
             StrongCard – an interactive platform displaying restaurants and
-            entertainment venues on a map that offer discounts. 
+            entertainment venues on a map that offer discounts.
           </p>
           <div className="project-buttons-link">
-            <a className="project-link-demo" href="https://strong-card.vercel.app/" target="blank">Live Demo</a>
+            <a
+              className="project-link-demo"
+              href="https://strong-card.vercel.app/"
+              target="blank"
+            >
+              Live Demo
+            </a>
             <a
               href="https://github.com/ypayel/StrongCard"
               target="blank"
@@ -406,7 +412,9 @@ export const LinksProjects = () => {
         <div className="project-info">
           <h3 className="project-header">Project 15(Mvp Page)</h3>
           <p className="project-description">
-            The project was created as a simple MVP application. The purpose of the application is to enable the user to plan healthy meals throughout the day.
+            The project was created as a simple MVP application. The purpose of
+            the application is to enable the user to plan healthy meals
+            throughout the day.
           </p>
           <div className="project-buttons-link">
             <Link className="project-link" to="/mvpPage">
@@ -416,6 +424,36 @@ export const LinksProjects = () => {
             </Link>
             <a
               href="https://github.com/ypayel/Mvp_task"
+              target="_blank"
+              className="project-link-code"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/konfigurator.png"}
+          className="project-image"
+          alt="Konfigurator"
+        />
+        <div className="project-info">
+          <h3 className="project-header">Project 16(Konfigurator)</h3>
+          <p className="project-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+            ducimus facilis sequi est! Necessitatibus placeat saepe debitis
+            repellat? Laborum at ea illum fugiat ipsa nisi culpa numquam
+            obcaecati exercitationem dolorem..
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/konfigurator">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a
+              href="https://github.com/ypayel/Konfigurator"
               target="_blank"
               className="project-link-code"
             >

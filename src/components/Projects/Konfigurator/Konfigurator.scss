@@ -1,0 +1,44 @@
+#lewy {
+	background: Maroon;
+	color: white;
+	height: 600px;
+	width: 30%;
+	float: left;
+    margin-top: 10px;
+}
+#prawy {
+	background: Maroon;
+	color: white;
+	height: 600px;
+	width: 70%;
+	overflow: scroll;
+	float: left;
+    
+}
+#stopka {
+	background: DimGray;
+	color: white;
+	clear: both;
+}
+#prawy img, ul{
+	float: left;
+}
+#prawy p {
+	clear: both;
+}
+#text {
+	padding: 10px;
+}
+#image-gibraltar {
+	padding: 10px;
+	border: 1px solid white;
+}
+#indigo {
+	background: Indigo
+}
+#steelblue {
+	background: SteelBlue;
+}
+#olive {
+	background: Olive;
+}
