@@ -28,6 +28,8 @@ import StacjaCount from "./components/Projects/StacjaPaliw/StacjaCount"
 import { AnimatePresence } from "framer-motion"
 import MainTask from "./components/Projects/MvpTask/MainTask"
 import Konfigurator from "./components/Projects/Konfigurator/Konfigurator"
+import BeatySalonFace from "./components/Projects/BeatySalon/BeatySalonFace"
+import BeatySalon from "./components/Projects/BeatySalon/BeatySalon"
 
 
 export const RoutesComponent = () => {
@@ -64,6 +66,8 @@ export const RoutesComponent = () => {
         <Route path="/stacjaCount" element={<StacjaCount />} />
         <Route path="/mvpPage" element={<MainTask />} />
         <Route path="/konfigurator" element={<Konfigurator />} />
+        <Route path="/face" element={<BeatySalonFace /> } />
+        <Route path="/beaty-salon" element={ <BeatySalon /> } />
       </Routes>
       </AnimatePresence>
     </div>

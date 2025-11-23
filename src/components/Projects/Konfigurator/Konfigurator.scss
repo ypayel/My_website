@@ -1,44 +1,48 @@
-#lewy {
-	background: Maroon;
-	color: white;
-	height: 600px;
-	width: 30%;
-	float: left;
-    margin-top: 10px;
+#lewy-konf {
+  background: Maroon;
+  color: white;
+  height: 600px;
+  width: 30%;
+  float: left;
+  margin-top: 10px;
 }
-#prawy {
-	background: Maroon;
-	color: white;
-	height: 600px;
-	width: 70%;
-	overflow: scroll;
-	float: left;
-    
+#prawy-konf {
+  background: Maroon;
+  color: white;
+  height: 600px;
+  width: 70%;
+  overflow: scroll;
+  float: left;
 }
 #stopka {
-	background: DimGray;
-	color: white;
-	clear: both;
+  background: DimGray;
+  color: white;
+  clear: both;
 }
-#prawy img, ul{
-	float: left;
+#image-gibraltar
+ {
+  float: left;
 }
-#prawy p {
-	clear: both;
+
+#lista {
+  float: left;
+}
+#prawy-konf p {
+  clear: both;
 }
 #text {
-	padding: 10px;
+  padding: 10px;
 }
 #image-gibraltar {
-	padding: 10px;
-	border: 1px solid white;
+  padding: 10px;
+  border: 1px solid white;
 }
 #indigo {
-	background: Indigo
+  background: Indigo;
 }
 #steelblue {
-	background: SteelBlue;
+  background: SteelBlue;
 }
 #olive {
-	background: Olive;
+  background: Olive;
 }

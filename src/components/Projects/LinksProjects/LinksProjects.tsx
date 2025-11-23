@@ -441,10 +441,11 @@ export const LinksProjects = () => {
         <div className="project-info">
           <h3 className="project-header">Project 16(Konfigurator)</h3>
           <p className="project-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
-            ducimus facilis sequi est! Necessitatibus placeat saepe debitis
-            repellat? Laborum at ea illum fugiat ipsa nisi culpa numquam
-            obcaecati exercitationem dolorem..
+            The Style Configurator is an interactive React application that
+            allows users to dynamically customize the appearance of various
+            elements on the page. The project demonstrates practical use of
+            component state (useState) and inline styling to produce instant
+            visual changes without reloading the application.
           </p>
           <div className="project-buttons-link">
             <Link className="project-link" to="/konfigurator">
@@ -458,6 +459,34 @@ export const LinksProjects = () => {
               className="project-link-code"
             >
               Code
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/beatysalon_3.png"}
+          className="project-image"
+          alt="BeatySalon"
+        />
+        <div className="project-info">
+          <h3 className="project-header">(Project 17)Beaty Salon</h3>
+          <p className="project-description">
+            This project is a simple single-page application built with React,
+            designed for a beauty salon website. The application allows users to
+            explore the available cosmetic services and calculate the price of
+            their selected facial treatments.
+          </p>
+          <div className="project-buttons-link">
+            <Link className="project-link" to="/beaty-salon">
+              <a href="" className="project-link-demo">
+                Live demo
+              </a>
+            </Link>
+            <a href="https://github.com/ypayel/Salon_kosmietyczny" 
+            className="project-link-code"
+             target="_blank">
+                Code
             </a>
           </div>
         </div>

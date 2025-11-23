@@ -23,9 +23,8 @@ export const Konfigurator = () => {
   return (
     <>
       <Nav />
-      <div id="lewy">
+      <div id="lewy-konf">
         <h1>Konfigurator stylów</h1>
-
         <p>Podaj kolor tła</p>
         <button onClick={() => setKolorTla("Indigo")}>Indigo</button>
         <button onClick={() => setKolorTla("SteelBlue")}>SteelBlue</button>
@@ -50,7 +49,6 @@ export const Konfigurator = () => {
           value={rozmiar}
           onChange={(e) => setRozmiar(Number(e.target.value))}
         />
-
         <p>Czy rysunek ma mieć ramkę?</p>
         <label>
           <input
@@ -93,9 +91,7 @@ export const Konfigurator = () => {
           okrąg
         </label>
       </div>
-
-      {/* ✅ tutaj dodaj stylPrawy */}
-      <div id="prawy" style={stylPrawy}>
+      <div id="prawy-konf" style={stylPrawy}>
         <img
           src={process.env.PUBLIC_URL + "/images/gibraltar.jpg"}
           alt="Gibraltar"
@@ -108,13 +104,10 @@ export const Konfigurator = () => {
           <li>element 3</li>
         </ul>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde
+          praesentium earum nostrum, sequi, explicabo temporibus quas dolor sunt
+          nesciunt laudantium laboriosam? Assumenda atque nesciunt, optio
+          laborum reiciendis vitae officia!
         </p>
       </div>
 
