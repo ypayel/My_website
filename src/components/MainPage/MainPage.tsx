@@ -78,6 +78,11 @@ export const MainPage = () => {
                 alt="css-3"
               />
             </div>
+            <div className="stack-icon">
+              <img src={process.env.PUBLIC_URL + `/images/MySQL-Dark.svg`}
+              className="my-sql-icon"
+               alt="my-sql" />
+            </div>
             <div className="stack-icon empty"></div>
             <div className="stack-icon empty"></div>
           </div>
