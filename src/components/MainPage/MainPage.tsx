@@ -83,6 +83,11 @@ export const MainPage = () => {
               className="my-sql-icon"
                alt="my-sql" />
             </div>
+            <div className="stack-icon">
+              <img src={process.env.PUBLIC_URL + `/images/Docker.svg`}
+              className="docker-icon"
+               alt="docker" />
+            </div>
             <div className="stack-icon empty"></div>
             <div className="stack-icon empty"></div>
           </div>
