@@ -483,10 +483,37 @@ export const LinksProjects = () => {
                 Live demo
               </a>
             </Link>
-            <a href="https://github.com/ypayel/Salon_kosmietyczny" 
-            className="project-link-code"
-             target="_blank">
-                Code
+            <a
+              href="https://github.com/ypayel/Salon_kosmietyczny"
+              className="project-link-code"
+              target="_blank"
+            >
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img
+          src={process.env.PUBLIC_URL + "/images/Sql_Database.png"}
+          className="project-image"
+          alt="SqlDatabase"
+        />
+        <div className="project-info">
+          <h3 className="project-header">(Project 18)Sql Database</h3>
+          <p className="project-description">
+            WydarzeniaDB is an event management database that supports users,
+            roles, events, registrations, payments, and reviews. The project
+            consists of 10 relational tables, views, and stored procedures and
+            was implemented in MS SQL Server.
+          </p>
+          <div className="project-buttons-link">
+            <a
+              href="https://github.com/ypayel/Sql_practice/blob/main/Wydarzenia_project.txt"
+              className="project-link-code"
+              target="_blank"
+            >
+              Code
             </a>
           </div>
         </div>
