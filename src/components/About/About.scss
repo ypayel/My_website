@@ -1,7 +1,6 @@
 .about-container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   width: 100%; 
   height: 100%; 
 }
@@ -12,10 +11,10 @@
 }
 
 .my-image {
-  height: 500px;
-  width: 435px;
+  height: 300px;
+  width: 300px;
   border: 10px solid white;
-  border-radius: 20px;
+  border-radius: 50%;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.705);
   object-fit: cover;
 }
