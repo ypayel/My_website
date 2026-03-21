@@ -1,7 +1,29 @@
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Nav from "../Nav/Nav";
 import "./About.scss";
+
 export const About = () => {
+  const containerVariants: Variants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.7,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}
@@ -19,10 +41,22 @@ export const About = () => {
           />
         </div>
 
-        <div className="text-container">
-          <h1 className="about-header">About Me</h1>
-          <h3 className="about-header-first">Summary</h3>
-          <div className="about-first-container">
+        <motion.div
+          className="text-container"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+        >
+          <motion.h1 className="about-header" variants={itemVariants}>
+            About Me
+          </motion.h1>
+
+          <motion.h3 className="about-header-first" variants={itemVariants}>
+            Summary
+          </motion.h3>
+
+          <motion.div className="about-first-container" variants={itemVariants}>
             <p className="about-first-text">
               Ambitious and motivated IT enthusiast with a strong technical
               background. I enjoy learning new technologies, solving problems,
@@ -30,47 +64,60 @@ export const About = () => {
               to continue growing in the IT industry and contribute to
               innovative projects.
             </p>
-          </div>
-          <h3 className="about-header-second">Education</h3>
-          <div className="about-second-container">
+          </motion.div>
+
+          <motion.h3 className="about-header-second" variants={itemVariants}>
+            Education
+          </motion.h3>
+
+          <motion.div
+            className="about-second-container"
+            variants={itemVariants}
+          >
             <p className="about-second-text">
               I successfully completed a one-year programming course at Software
               Development Academy (SDA Academy), earning a certificate of
               completion. The program covered a wide range of topics including
               HTML, CSS, JavaScript, Git, and frontend development practices.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="about-third-container">
+          <motion.div className="about-third-container" variants={itemVariants}>
             <p className="about-third-text">
               I am studying Computer Science at WSB University in Gdańsk with a
               specialization in Front-End Development. My studies have included
               C# programming, computer networks, and cybersecurity basics, and
               from the second year I will focus on Front-End technologies.
             </p>
-          </div>
-          <div className="about-third-container">
+          </motion.div>
+
+          <motion.div className="about-third-container" variants={itemVariants}>
             <p className="about-third-text">
               Graduate of the Józef Bem Technical School, where I gained
               practical skills in HTML, CSS, SQL, C++, computer networks and
               topologies, hardware assembly, and command line tools.
             </p>
-          </div>
-          <h3 className="about-header-four">Certificate</h3>
-          <div className="about-four-container">
+          </motion.div>
+
+          <motion.h3 className="about-header-four" variants={itemVariants}>
+            Certificate
+          </motion.h3>
+
+          <motion.div className="about-four-container" variants={itemVariants}>
             <p className="about-four-text">
               You can view my verified course certificate here:
               <a
                 href="https://app.diplomasafe.com/pl-PL/diploma/d859f9cfc625bf746ae5add1a94d275450f1f2760"
                 target="_blank"
+                rel="noreferrer"
                 className="certificate-link"
               >
                 {" "}
                 Certificate
               </a>
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </motion.div>
   );
