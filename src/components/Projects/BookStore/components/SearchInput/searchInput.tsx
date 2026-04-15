@@ -9,13 +9,13 @@ export type SearchTag = {
 };
 
 type Props = {
-  query: string,
-  setQuery: Dispatch<SetStateAction<string>>
-}
+  query: string;
+  setQuery: Dispatch<SetStateAction<string>>;
+};
 
 export const SearchInput = () => {
   const { t, i18n } = useTranslation();
-  const {query, setQuery} = useContext(SearchContext);
+  const { query, setQuery } = useContext(SearchContext);
 
   return (
     <>
@@ -25,7 +25,7 @@ export const SearchInput = () => {
             <input
               value={query}
               type="text"
-              placeholder={t("search")}
+              placeholder={t("search") as string}
               className="search-input"
               onChange={(e) => setQuery(e.target.value)}
             />
